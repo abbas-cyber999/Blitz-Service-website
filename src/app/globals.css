@@ -1,6 +1,26 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-brand-blue: #0f2d52;
+  --color-brand-blue-soft: #1c4f86;
+  --color-brand-gold: #c8a34f;
+  --color-brand-gold-soft: #e9d4a1;
+  --color-brand-cream: #f8f6f0;
+  --color-brand-ink: #1b2430;
+
+  --font-display: var(--font-display-family);
+  --font-sans: var(--font-sans-family);
+
+  --shadow-card: 0 18px 45px rgba(15, 45, 82, 0.08);
+  --shadow-glow: 0 10px 30px rgba(200, 163, 79, 0.18);
+}
+
+.bg-hero-rings {
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(200, 163, 79, 0.14), transparent 28%),
+    radial-gradient(circle at 80% 0%, rgba(28, 79, 134, 0.18), transparent 24%),
+    linear-gradient(135deg, rgba(15, 45, 82, 0.98), rgba(28, 79, 134, 0.92));
+}
 
 :root {
   color-scheme: light;

@@ -7,13 +7,13 @@ import { SiteHeader } from "@/components/site-header";
 
 const displayFont = Cormorant_Garamond({
   subsets: ["latin"],
-  variable: "--font-display",
+  variable: "--font-display-family",
   weight: ["500", "600", "700"]
 });
 
 const bodyFont = Manrope({
   subsets: ["latin"],
-  variable: "--font-sans",
+  variable: "--font-sans-family",
   weight: ["400", "500", "600", "700"]
 });
 
