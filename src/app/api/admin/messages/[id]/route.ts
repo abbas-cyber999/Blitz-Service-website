@@ -1,0 +1,29 @@
+import { NextResponse } from "next/server";
+import { isAdminAuthenticated } from "@/lib/auth";
+import { prisma } from "@/lib/prisma";
+import { messageStatusSchema } from "@/lib/validations";
+
+export async function PATCH(
+  request: Request,
+  context: { params: Promise<{ id: string }> }
+) {
+  if (!(await isAdminAuthenticated())) {
+    return NextResponse.json({ error: "Nicht autorisiert." }, { status: 401 });
+  }
+
+  const body = await request.json();
+  const parsed = messageStatusSchema.safeParse(body);
+
+  if (!parsed.success) {
+    return NextResponse.json({ error: "Ungueltiger Status." }, { status: 400 });
+  }
+
+  const { id } = await context.params;
+
+  await prisma.contactMessage.update({
+    where: { id },
+    data: { status: parsed.data.status }
+  });
+
+  return NextResponse.json({ success: true });
+}
