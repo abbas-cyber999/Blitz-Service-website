@@ -15,7 +15,7 @@ export async function PATCH(
   const parsed = messageStatusSchema.safeParse(body);
 
   if (!parsed.success) {
-    return NextResponse.json({ error: "Ungueltiger Status." }, { status: 400 });
+    return NextResponse.json({ error: "Ungültiger Status." }, { status: 400 });
   }
 
   const { id } = await context.params;

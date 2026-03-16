@@ -48,7 +48,7 @@ export function AdminMessagesTable({ messages }: AdminMessagesTableProps) {
         <div>
           <h2 className="font-display text-2xl text-brand-blue">Kontaktanfragen</h2>
           <p className="mt-2 text-sm text-slate-500">
-            Uebersicht aller ueber das Kontaktformular eingegangenen Nachrichten.
+            Übersicht aller über das Kontaktformular eingegangenen Nachrichten.
           </p>
         </div>
         <button
@@ -84,7 +84,7 @@ export function AdminMessagesTable({ messages }: AdminMessagesTableProps) {
                 <td className="max-w-md px-3 py-4 align-top">{message.message}</td>
                 <td className="px-3 py-4 align-top">
                   <select
-                    aria-label={`Status fuer ${message.name}`}
+                    aria-label={`Status für ${message.name}`}
                     className="rounded-xl border border-brand-blue/10 bg-white px-3 py-2"
                     defaultValue={message.status}
                     disabled={isPending}

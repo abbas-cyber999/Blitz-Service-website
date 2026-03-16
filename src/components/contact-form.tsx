@@ -48,7 +48,7 @@ export function ContactForm() {
             success: true,
             error: "",
             message:
-              data.message ?? "Vielen Dank. Ihre Anfrage wurde erfolgreich uebermittelt."
+              data.message ?? "Vielen Dank. Ihre Anfrage wurde erfolgreich übermittelt."
           });
         });
       }}
@@ -87,7 +87,7 @@ export function ContactForm() {
           rows={6}
           required
           className="w-full rounded-3xl border border-brand-blue/10 px-4 py-3 text-sm text-slate-800 outline-none transition focus:border-brand-gold"
-          placeholder="Beschreiben Sie kurz Ihr Anliegen, den gewuenschten Service und den Einsatzort."
+          placeholder="Beschreiben Sie kurz Ihr Anliegen, den gewünschten Service und den Einsatzort."
         />
       </div>
       <div className="mt-6 hidden">
@@ -103,7 +103,7 @@ export function ContactForm() {
           className="mt-1 h-4 w-4 rounded border-brand-blue/20 text-brand-gold focus:ring-brand-gold"
         />
         <span>
-          Ich habe die Datenschutzerklaerung gelesen und stimme der Verarbeitung meiner
+          Ich habe die Datenschutzerklärung gelesen und stimme der Verarbeitung meiner
           Angaben zur Bearbeitung meiner Anfrage zu.
         </span>
       </label>

@@ -20,15 +20,15 @@ export default function HomePage() {
         <Container className="grid gap-16 py-20 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:py-28">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-brandGoldSoft">
-              Professionelle Reinigung mit Prioritaet
+              Professionelle Reinigung mit Priorität
             </p>
             <h1 className="mt-6 max-w-3xl font-display text-5xl leading-tight sm:text-6xl">
-              Sauberkeit, auf die Unternehmen und Haushalte sich verlassen koennen.
+              Sauberkeit, auf die Unternehmen und Haushalte sich verlassen können.
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-200">
-              {business.name} bietet hochwertige Reinigungsleistungen fuer Gebaeude,
-              Buero und Treppenhaus. Ergaenzend stehen Transport- und Umzugsservices zur
-              Verfuegung, wenn mehrere Leistungen aus einer Hand gewuenscht sind.
+              {business.name} bietet hochwertige Reinigungsleistungen für Gebäude,
+              Büro und Treppenhaus. Ergänzend stehen Transport- und Umzugsservices zur
+              Verfügung, wenn mehrere Leistungen aus einer Hand gewünscht sind.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <ButtonLink href="/contact">{business.ctaPrimary}</ButtonLink>
@@ -59,7 +59,7 @@ export default function HomePage() {
                 <p className="text-sm font-semibold uppercase tracking-[0.24em] text-brandBlueSoft">
                   Reinigungsfokus
                 </p>
-                <p className="mt-4 font-display text-3xl">Gebaeude. Buero. Treppenhaus.</p>
+                <p className="mt-4 font-display text-3xl">Gebäude. Büro. Treppenhaus.</p>
                 <p className="mt-3 text-sm leading-7 text-slate-600">
                   Unsere Hauptleistung ist die professionelle Reinigung mit planbaren
                   Standards, festen Ansprechpartnern und sauber dokumentierten Absprachen.
@@ -73,9 +73,9 @@ export default function HomePage() {
                     text: "Sichtbar gepflegte Immobilien und Arbeitsbereiche."
                   },
                   {
-                    title: "Zuverlaessigkeit",
+                    title: "Zuverlässigkeit",
                     icon: ShieldCheck,
-                    text: "Verbindliche Ausfuehrung und klare Kommunikation."
+                    text: "Verbindliche Ausführung und klare Kommunikation."
                   },
                   {
                     title: "Schnelligkeit",
@@ -99,8 +99,8 @@ export default function HomePage() {
         <Container>
           <SectionHeading
             eyebrow="Services"
-            title="Reinigung zuerst, Transport sinnvoll ergaenzt"
-            description="Die Marke Blitz Service GmbH steht im Auftritt bewusst fuer professionelle Reinigungsleistungen. Transport- und Umzugsservices ergaenzen das Angebot dort, wo Kunden eine koordinierte Gesamtausfuehrung benoetigen."
+            title="Reinigung zuerst, Transport sinnvoll ergänzt"
+            description="Die Marke Blitz Service GmbH steht im Auftritt bewusst für professionelle Reinigungsleistungen. Transport- und Umzugsservices ergänzen das Angebot dort, wo Kunden eine koordinierte Gesamtausführung benötigen."
           />
           <div className="mt-12 grid gap-6 lg:grid-cols-3">
             {featuredServices.map((service, index) => (
@@ -136,8 +136,8 @@ export default function HomePage() {
           <div>
             <SectionHeading
               eyebrow="Warum wir"
-              title="Professionell, klar organisiert und auf dauerhafte Qualitaet ausgerichtet"
-              description="Wir verbinden einen gepflegten Markenauftritt mit der Nuechternheit, die Kunden von einem verlaesslichen Dienstleister erwarten."
+              title="Professionell, klar organisiert und auf dauerhafte Qualität ausgerichtet"
+              description="Wir verbinden einen gepflegten Markenauftritt mit der Nüchternheit, die Kunden von einem verlässlichen Dienstleister erwarten."
             />
           </div>
           <div className="grid gap-6 sm:grid-cols-2">
@@ -148,15 +148,15 @@ export default function HomePage() {
               },
               {
                 title: "Verbindliche Betreuung",
-                text: "Anfragen, Rueckfragen und laufende Abstimmungen erhalten feste Ansprechpartner und kurze Wege."
+                text: "Anfragen, Rückfragen und laufende Abstimmungen erhalten feste Ansprechpartner und kurze Wege."
               },
               {
                 title: "Flexibler Einsatz",
-                text: "Regelmaessige Intervalle und individuelle Termine lassen sich passend zu Objekt und Nutzung organisieren."
+                text: "Regelmäßige Intervalle und individuelle Termine lassen sich passend zu Objekt und Nutzung organisieren."
               },
               {
-                title: "Vertrauenswuerdiger Auftritt",
-                text: "Das visuelle Erscheinungsbild bleibt hochwertig und serioes, passend fuer eine deutsche Servicegesellschaft."
+                title: "Vertrauenswürdiger Auftritt",
+                text: "Das visuelle Erscheinungsbild bleibt hochwertig und seriös, passend für eine deutsche Servicegesellschaft."
               }
             ].map((item) => (
               <div key={item.title} className="rounded-[28px] border border-brandBlue/10 bg-white p-7 shadow-card">
@@ -172,7 +172,7 @@ export default function HomePage() {
         <Container>
           <SectionHeading
             eyebrow="Ablauf"
-            title="So laeuft die Zusammenarbeit"
+            title="So läuft die Zusammenarbeit"
             description="Vom Erstkontakt bis zur laufenden Betreuung bleibt der Ablauf transparent, unkompliziert und terminsicher."
           />
           <div className="mt-12 grid gap-6 lg:grid-cols-4">
@@ -194,7 +194,7 @@ export default function HomePage() {
           <SectionHeading
             eyebrow="Bewertungen"
             title="Kundenstimmen"
-            description="Beispielhafte Rezensionen, die spaeter einfach durch echte Kundenbewertungen ersetzt werden koennen."
+            description="Beispielhafte Rezensionen, die später einfach durch echte Kundenbewertungen ersetzt werden können."
           />
           <div className="mt-12 grid gap-6 lg:grid-cols-3">
             {reviews.map((review) => (
@@ -213,10 +213,10 @@ export default function HomePage() {
             <div className="mt-4 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
               <div className="max-w-2xl">
                 <h2 className="font-display text-4xl">
-                  Sie benoetigen eine verlaessliche Reinigung oder ein passendes Angebot?
+                  Sie benötigen eine verlässliche Reinigung oder ein passendes Angebot?
                 </h2>
                 <p className="mt-4 text-base leading-7 text-slate-200">
-                  Wir erstellen gerne ein unverbindliches Angebot fuer Ihr Objekt oder Ihr
+                  Wir erstellen gerne ein unverbindliches Angebot für Ihr Objekt oder Ihr
                   Vorhaben. Reinigung steht dabei immer im Mittelpunkt unseres Auftritts und
                   unserer Leistung.
                 </p>

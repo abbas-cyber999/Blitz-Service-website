@@ -12,7 +12,7 @@ export async function POST(request: Request) {
   }
 
   if (!process.env.ADMIN_PASSWORD || parsed.data.password !== process.env.ADMIN_PASSWORD) {
-    return NextResponse.json({ error: "Ungueltiges Passwort." }, { status: 401 });
+    return NextResponse.json({ error: "Ungültiges Passwort." }, { status: 401 });
   }
 
   const cookieStore = await cookies();

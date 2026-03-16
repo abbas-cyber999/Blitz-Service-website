@@ -37,7 +37,7 @@ export function SiteHeader() {
           onClick={() => setOpen((value) => !value)}
           aria-expanded={open}
           aria-controls="mobile-menu"
-          aria-label={open ? "Navigation schliessen" : "Navigation oeffnen"}
+          aria-label={open ? "Navigation schließen" : "Navigation öffnen"}
         >
           {open ? <X size={22} /> : <Menu size={22} />}
         </button>

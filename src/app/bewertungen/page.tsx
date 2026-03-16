@@ -8,7 +8,7 @@ import { reviews } from "@/data/site-content";
 export const metadata: Metadata = {
   title: "Bewertungen",
   description:
-    "Beispielhafte Kundenbewertungen fuer die Leistungen von Blitz Service GmbH."
+    "Beispielhafte Kundenbewertungen für die Leistungen von Blitz Service GmbH."
 };
 
 export default function ReviewsPage() {
@@ -16,8 +16,8 @@ export default function ReviewsPage() {
     <>
       <PageHero
         eyebrow="Kundenbewertungen"
-        title="Vertrauen entsteht durch verlaessliche Leistung"
-        description="Diese Rezensionen sind realistische Platzhalter und koennen spaeter direkt durch echte Bewertungen ersetzt oder erweitert werden."
+        title="Vertrauen entsteht durch verlässliche Leistung"
+        description="Diese Rezensionen sind realistische Platzhalter und können später direkt durch echte Bewertungen ersetzt oder erweitert werden."
         actions={<ButtonLink href="/contact">Eigene Anfrage stellen</ButtonLink>}
       />
       <section className="pb-24">

@@ -9,7 +9,7 @@ import { services } from "@/data/site-content";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Gebaeudereinigung, Bueroreinigung, Treppenhausreinigung, Endreinigung und Transportservices von Blitz Service GmbH."
+    "Gebäudereinigung, Büroreinigung, Treppenhausreinigung, Endreinigung und Transportservices von Blitz Service GmbH."
 };
 
 export default function ServicesPage() {
@@ -17,8 +17,8 @@ export default function ServicesPage() {
     <>
       <PageHero
         eyebrow="Leistungen"
-        title="Professionelle Services mit klarer Prioritaet auf Reinigung"
-        description="Blitz Service GmbH konzentriert sich im Markenauftritt und in der Leistungserbringung vor allem auf hochwertige Reinigungsarbeiten. Transport- und Umzugsleistungen stehen als ergaenzender Service zur Verfuegung."
+        title="Professionelle Services mit klarer Priorität auf Reinigung"
+        description="Blitz Service GmbH konzentriert sich im Markenauftritt und in der Leistungserbringung vor allem auf hochwertige Reinigungsarbeiten. Transport- und Umzugsleistungen stehen als ergänzender Service zur Verfügung."
         actions={<ButtonLink href="/contact">{business.ctaPrimary}</ButtonLink>}
       />
       <section className="pb-24">

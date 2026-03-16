@@ -26,11 +26,11 @@ export const metadata: Metadata = {
     template: `%s | ${business.name}`
   },
   description:
-    "Premium Reinigungsdienstleistungen fuer Gebaeude, Buero und Treppenhaus sowie ergaenzende Transportservices in NRW.",
+    "Premium Reinigungsdienstleistungen für Gebäude, Büro und Treppenhaus sowie ergänzende Transportservices in NRW.",
   openGraph: {
     title: `${business.name} | Professionelle Reinigung und Transport`,
     description:
-      "Gebaeudereinigung, Bueroreinigung, Treppenhausreinigung und Transportservices mit Fokus auf Qualitaet und Zuverlaessigkeit.",
+      "Gebäudereinigung, Büroreinigung, Treppenhausreinigung und Transportservices mit Fokus auf Qualität und Zuverlässigkeit.",
     locale: "de_DE",
     type: "website",
     url: siteUrl,
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: business.name,
     description:
-      "Professionelle Reinigungsleistungen und Transportservices fuer Unternehmen und Privatkunden."
+      "Professionelle Reinigungsleistungen und Transportservices für Unternehmen und Privatkunden."
   },
   alternates: {
     canonical: siteUrl

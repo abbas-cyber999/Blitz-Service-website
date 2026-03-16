@@ -7,7 +7,7 @@ import { business, fullAddress } from "@/config/business";
 export const metadata: Metadata = {
   title: "Kontakt",
   description:
-    "Kontaktieren Sie Blitz Service GmbH fuer Reinigungs- und Transportanfragen."
+    "Kontaktieren Sie Blitz Service GmbH für Reinigungs- und Transportanfragen."
 };
 
 export default function ContactPage() {
@@ -16,7 +16,7 @@ export default function ContactPage() {
       <PageHero
         eyebrow="Kontakt"
         title="Anfrage senden"
-        description="Beschreiben Sie kurz Ihr Vorhaben. Wir melden uns mit einer Rueckmeldung oder einem Angebot bei Ihnen zurueck."
+        description="Beschreiben Sie kurz Ihr Vorhaben. Wir melden uns mit einer Rückmeldung oder einem Angebot bei Ihnen zurück."
       />
       <section className="pb-24">
         <Container className="grid gap-8 lg:grid-cols-[0.85fr_1.15fr]">
@@ -46,7 +46,7 @@ export default function ContactPage() {
                 <p>{business.serviceAreas.join(", ")}</p>
               </div>
               <div>
-                <p className="font-semibold text-white">Geschaeftszeiten</p>
+                <p className="font-semibold text-white">Geschäftszeiten</p>
                 <ul>
                   {business.businessHours.map((item) => (
                     <li key={item}>{item}</li>

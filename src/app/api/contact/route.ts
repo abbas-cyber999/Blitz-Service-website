@@ -13,14 +13,14 @@ export async function POST(request: Request) {
 
     if (!parsed.success) {
       return NextResponse.json(
-        { error: parsed.error.issues[0]?.message ?? "Ungueltige Formulardaten." },
+        { error: parsed.error.issues[0]?.message ?? "Ungültige Formulardaten." },
         { status: 400 }
       );
     }
 
     if (parsed.data.website) {
       return NextResponse.json(
-        { message: "Vielen Dank. Ihre Anfrage wurde erfolgreich uebermittelt." },
+        { message: "Vielen Dank. Ihre Anfrage wurde erfolgreich übermittelt." },
         { status: 200 }
       );
     }
@@ -40,12 +40,12 @@ export async function POST(request: Request) {
     await sendContactNotification(parsed.data);
 
     return NextResponse.json({
-      message: "Vielen Dank. Ihre Anfrage wurde erfolgreich uebermittelt."
+      message: "Vielen Dank. Ihre Anfrage wurde erfolgreich übermittelt."
     });
   } catch (error) {
     console.error(error);
     return NextResponse.json(
-      { error: "Beim Versand ist ein Fehler aufgetreten. Bitte versuchen Sie es spaeter erneut." },
+      { error: "Beim Versand ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut." },
       { status: 500 }
     );
   }

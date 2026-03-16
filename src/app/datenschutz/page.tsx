@@ -6,7 +6,7 @@ import { legalDraftNotice } from "@/data/site-content";
 
 export const metadata: Metadata = {
   title: "Datenschutz",
-  description: "Entwurf der Datenschutzerklaerung fuer Blitz Service GmbH."
+  description: "Entwurf der Datenschutzerklärung für Blitz Service GmbH."
 };
 
 export default function DatenschutzPage() {
@@ -14,7 +14,7 @@ export default function DatenschutzPage() {
     <>
       <PageHero
         eyebrow="Rechtliches"
-        title="Datenschutzerklaerung"
+        title="Datenschutzerklärung"
         description="Strukturierter Entwurf mit Fokus auf Kontaktformular, Betroffenenrechte und organisatorische Hinweise."
       />
       <section className="pb-24">
@@ -37,33 +37,33 @@ export default function DatenschutzPage() {
             </h2>
             <p className="mt-4 text-sm leading-7 text-slate-600">
               Wenn Nutzer das Kontaktformular verwenden, verarbeiten wir Name, E-Mail,
-              Telefonnummer, Betreff, ausgewaehlten Service, Nachricht, Zustimmung zur
-              Datenschutzerklaerung sowie technische Metadaten fuer die Bearbeitung der
-              Anfrage. Die Daten werden in der Datenbank gespeichert und koennen optional an
+              Telefonnummer, Betreff, ausgewählten Service, Nachricht, Zustimmung zur
+              Datenschutzerklärung sowie technische Metadaten für die Bearbeitung der
+              Anfrage. Die Daten werden in der Datenbank gespeichert und können optional an
               die Unternehmens-E-Mail-Adresse weitergeleitet werden.
             </p>
           </section>
           <section>
             <h2 className="font-display text-3xl text-brand-blue">3. Zwecke und Rechtsgrundlagen</h2>
             <p className="mt-4 text-sm leading-7 text-slate-600">
-              Die Verarbeitung erfolgt ausschliesslich zur Bearbeitung von Anfragen, zur
+              Die Verarbeitung erfolgt ausschließlich zur Bearbeitung von Anfragen, zur
               Angebotserstellung und zur Dokumentation des Kundenkontakts. Die konkrete
-              Rechtsgrundlage muss vor dem Livegang rechtlich geprueft und passend zum
-              tatsaechlichen Einsatz ergaenzt werden.
+              Rechtsgrundlage muss vor dem Livegang rechtlich geprüft und passend zum
+              tatsächlichen Einsatz ergänzt werden.
             </p>
           </section>
           <section>
-            <h2 className="font-display text-3xl text-brand-blue">4. Empfaenger und Weitergabe</h2>
+            <h2 className="font-display text-3xl text-brand-blue">4. Empfänger und Weitergabe</h2>
             <p className="mt-4 text-sm leading-7 text-slate-600">
-              Eine Weitergabe erfolgt nur, soweit dies fuer Hosting, E-Mail-Zustellung oder
+              Eine Weitergabe erfolgt nur, soweit dies für Hosting, E-Mail-Zustellung oder
               die Bearbeitung einer Anfrage erforderlich ist. Eingesetzte Dienstleister und
-              Auftragsverarbeiter muessen vor Produktion konkret benannt und geprueft werden.
+              Auftragsverarbeiter müssen vor Produktion konkret benannt und geprüft werden.
             </p>
           </section>
           <section>
             <h2 className="font-display text-3xl text-brand-blue">5. Speicherdauer</h2>
             <p className="mt-4 text-sm leading-7 text-slate-600">
-              Kontaktanfragen werden nur so lange gespeichert, wie dies fuer die Bearbeitung,
+              Kontaktanfragen werden nur so lange gespeichert, wie dies für die Bearbeitung,
               gesetzliche Aufbewahrungspflichten oder berechtigte organisatorische Zwecke
               erforderlich ist. Die finalen Fristen sind vor Produktivbetrieb festzulegen.
             </p>
@@ -72,9 +72,9 @@ export default function DatenschutzPage() {
             <h2 className="font-display text-3xl text-brand-blue">6. Rechte betroffener Personen</h2>
             <p className="mt-4 text-sm leading-7 text-slate-600">
               Betroffene Personen haben insbesondere das Recht auf Auskunft, Berichtigung,
-              Loeschung, Einschraenkung der Verarbeitung, Datenuertragbarkeit sowie
+              Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit sowie
               Widerspruch gegen bestimmte Verarbeitungen. Zudem besteht ein Beschwerderecht
-              bei einer zustaendigen Datenschutzaufsichtsbehoerde.
+              bei einer zuständigen Datenschutzaufsichtsbehörde.
             </p>
           </section>
           <section>
@@ -83,8 +83,8 @@ export default function DatenschutzPage() {
             </h2>
             <p className="mt-4 text-sm leading-7 text-slate-600">
               Diese Website nutzt serverseitige Validierung, Spam-Schutz via Honeypot und
-              eine geschuetzte Administrationsoberflaeche fuer Kontaktanfragen. Vor dem
-              Livegang muessen Hosting, Logging, Zugriffsschutz und Aufbewahrungsprozesse
+              eine geschützte Administrationsoberfläche für Kontaktanfragen. Vor dem
+              Livegang müssen Hosting, Logging, Zugriffsschutz und Aufbewahrungsprozesse
               final dokumentiert werden.
             </p>
           </section>

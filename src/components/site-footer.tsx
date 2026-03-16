@@ -10,8 +10,8 @@ export function SiteFooter() {
         <div>
           <p className="font-display text-2xl text-brandBlue">{business.name}</p>
           <p className="mt-3 max-w-md text-sm leading-6 text-slate-600">
-            Professionelle Reinigungsleistungen mit Fokus auf Gebaeude, Bueros und
-            regelmaessig gepflegte Immobilien. Ergaenzend bieten wir Transport- und
+            Professionelle Reinigungsleistungen mit Fokus auf Gebäude, Büros und
+            regelmäßig gepflegte Immobilien. Ergänzend bieten wir Transport- und
             Umzugsleistungen an.
           </p>
         </div>

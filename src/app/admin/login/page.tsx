@@ -15,7 +15,7 @@ export default async function AdminLoginPage() {
           <p className="text-sm font-semibold uppercase tracking-[0.24em] text-brand-blue-soft">
             Admin
           </p>
-          <h1 className="mt-4 font-display text-4xl text-brand-blue">Geschuetzter Bereich</h1>
+          <h1 className="mt-4 font-display text-4xl text-brand-blue">Geschützter Bereich</h1>
         </div>
         <AdminLoginForm />
       </Container>

@@ -6,7 +6,7 @@ import { legalDraftNotice } from "@/data/site-content";
 
 export const metadata: Metadata = {
   title: "Impressum",
-  description: "Entwurf des Impressums fuer Blitz Service GmbH."
+  description: "Entwurf des Impressums für Blitz Service GmbH."
 };
 
 export default function ImpressumPage() {
@@ -15,7 +15,7 @@ export default function ImpressumPage() {
       <PageHero
         eyebrow="Rechtliches"
         title="Impressum"
-        description="Strukturierter Entwurf fuer die spaetere rechtliche Finalisierung."
+        description="Strukturierter Entwurf für die spätere rechtliche Finalisierung."
       />
       <section className="pb-24">
         <Container className="max-w-4xl space-y-8 rounded-[32px] border border-brand-blue/10 bg-white p-8 shadow-card">
@@ -23,7 +23,7 @@ export default function ImpressumPage() {
             {legalDraftNotice}
           </p>
           <section>
-            <h2 className="font-display text-3xl text-brand-blue">Angaben gemaess § 5 TMG</h2>
+            <h2 className="font-display text-3xl text-brand-blue">Angaben gemäß § 5 TMG</h2>
             <div className="mt-4 space-y-2 text-sm leading-7 text-slate-600">
               <p>{business.legalName}</p>
               <p>{fullAddress}</p>
@@ -34,7 +34,7 @@ export default function ImpressumPage() {
           <section>
             <h2 className="font-display text-3xl text-brand-blue">Vertreten durch</h2>
             <p className="mt-4 text-sm leading-7 text-slate-600">
-              Geschaeftsfuehrung: {business.managingDirector}
+              Geschäftsführung: {business.managingDirector}
             </p>
           </section>
           <section>
@@ -46,16 +46,16 @@ export default function ImpressumPage() {
           <section>
             <h2 className="font-display text-3xl text-brand-blue">Umsatzsteuer-ID</h2>
             <p className="mt-4 text-sm leading-7 text-slate-600">
-              Umsatzsteuer-Identifikationsnummer gemaess § 27 a Umsatzsteuergesetz: {business.vatId}
+              Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz: {business.vatId}
             </p>
           </section>
           <section>
             <h2 className="font-display text-3xl text-brand-blue">
-              Haftung fuer Inhalte und Links
+              Haftung für Inhalte und Links
             </h2>
             <p className="mt-4 text-sm leading-7 text-slate-600">
               Dieser Abschnitt ist als Platzhalter vorgesehen und muss vor dem Livegang durch
-              rechtlich gepruefte, unternehmensspezifische Inhalte ersetzt werden.
+              rechtlich geprüfte, unternehmensspezifische Inhalte ersetzt werden.
             </p>
           </section>
         </Container>

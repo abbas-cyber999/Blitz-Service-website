@@ -6,9 +6,9 @@ import { SectionHeading } from "@/components/section-heading";
 import { aboutValues } from "@/data/site-content";
 
 export const metadata: Metadata = {
-  title: "Ueber uns",
+  title: "Über uns",
   description:
-    "Lernen Sie Blitz Service GmbH als zuverlaessigen, puenktlichen und kundenorientierten Dienstleister kennen."
+    "Lernen Sie Blitz Service GmbH als zuverlässigen, pünktlichen und kundenorientierten Dienstleister kennen."
 };
 
 export default function AboutPage() {
@@ -16,8 +16,8 @@ export default function AboutPage() {
     <>
       <PageHero
         eyebrow="Unternehmen"
-        title="Verlaesslicher Service fuer Immobilien, Arbeitsumgebungen und Umzugsphasen"
-        description="Blitz Service GmbH versteht sich als professioneller Dienstleister mit Fokus auf saubere Ergebnisse, klare Kommunikation und puenktliche Ausfuehrung. Unser Anspruch ist nicht laute Werbung, sondern belastbare Leistung im Alltag unserer Kunden."
+        title="Verlässlicher Service für Immobilien, Arbeitsumgebungen und Umzugsphasen"
+        description="Blitz Service GmbH versteht sich als professioneller Dienstleister mit Fokus auf saubere Ergebnisse, klare Kommunikation und pünktliche Ausführung. Unser Anspruch ist nicht laute Werbung, sondern belastbare Leistung im Alltag unserer Kunden."
         actions={<ButtonLink href="/contact">Kostenloses Angebot</ButtonLink>}
       />
       <section className="pb-24">
@@ -29,20 +29,20 @@ export default function AboutPage() {
             />
             <div className="mt-8 space-y-5 text-base leading-8 text-slate-600">
               <p>
-                Wir arbeiten fuer Unternehmen, Hausverwaltungen und Privatkunden, die einen
-                zuverlaessigen Partner fuer wiederkehrende oder einmalige Leistungen
-                suchen. Im Mittelpunkt steht die Reinigung: gruendlich geplant, sauber
-                ausgefuehrt und passend zur Nutzung der jeweiligen Flaechen.
+                Wir arbeiten für Unternehmen, Hausverwaltungen und Privatkunden, die einen
+                zuverlässigen Partner für wiederkehrende oder einmalige Leistungen
+                suchen. Im Mittelpunkt steht die Reinigung: gründlich geplant, sauber
+                ausgeführt und passend zur Nutzung der jeweiligen Flächen.
               </p>
               <p>
-                Puenktlichkeit, gute Erreichbarkeit und ein strukturierter Ablauf sind fuer
-                uns Teil der eigentlichen Leistung. Deshalb stimmen wir Einsaetze klar ab,
-                reagieren zuegig auf Rueckfragen und halten den Aufwand fuer unsere Kunden so
-                gering wie moeglich.
+                Pünktlichkeit, gute Erreichbarkeit und ein strukturierter Ablauf sind für
+                uns Teil der eigentlichen Leistung. Deshalb stimmen wir Einsätze klar ab,
+                reagieren zügig auf Rückfragen und halten den Aufwand für unsere Kunden so
+                gering wie möglich.
               </p>
               <p>
-                Wo es sinnvoll ist, ergaenzen wir unser Angebot durch Transport- und
-                Umzugsleistungen. So koennen Kunden mehrere Aufgaben koordiniert ueber einen
+                Wo es sinnvoll ist, ergänzen wir unser Angebot durch Transport- und
+                Umzugsleistungen. So können Kunden mehrere Aufgaben koordiniert über einen
                 Ansprechpartner abwickeln, ohne dass der Schwerpunkt auf Reinigung verloren
                 geht.
               </p>
