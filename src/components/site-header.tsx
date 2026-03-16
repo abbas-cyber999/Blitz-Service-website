@@ -14,7 +14,7 @@ export function SiteHeader() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-brand-blue/10 bg-white/95 backdrop-blur">
+    <header className="bg-[#0f2d52] text-white">
       <Container className="flex min-h-[84px] items-center justify-between gap-4">
         <LogoMark />
         <nav className="hidden items-center gap-8 lg:flex" aria-label="Hauptnavigation">

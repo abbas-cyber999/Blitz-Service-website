@@ -58,7 +58,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="de" className={`${displayFont.variable} ${bodyFont.variable}`}>
-      <body className="font-sans antialiased">
+      <body className="bg-[var(--brand-cream)] text-[var(--brand-dark)]">
         <a
           href="#content"
           className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-brand-gold focus:px-4 focus:py-2 focus:text-brand-blue"
