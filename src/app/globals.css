@@ -1,53 +1,43 @@
+@config "../../tailwind.config.ts";
 @import "tailwindcss";
 
-/* Brand colors */
 :root {
-  --brand-blue: #0f2d52;
-  --brand-blue-soft: #1c4f86;
-  --brand-gold: #c8a34f;
-  --brand-gold-soft: #e9d4a1;
-  --brand-cream: #f8f6f0;
-  --brand-dark: #1b2430;
+  color-scheme: light;
 }
 
-/* Base styling */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  margin: 0;
-  background-color: var(--brand-cream);
-  color: var(--brand-dark);
-  font-family: system-ui, Arial, sans-serif;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(200, 163, 79, 0.08), transparent 18%),
+    linear-gradient(180deg, #f8f6f0 0%, #fffdf8 100%);
+  color: #1b2430;
+  font-family: var(--font-sans-family), Arial, sans-serif;
 }
 
-/* Header style */
-header {
-  background: var(--brand-blue);
-  color: white;
+.bg-hero-rings {
+  background-image:
+    radial-gradient(circle at 18% 18%, rgba(200, 163, 79, 0.22), transparent 20%),
+    radial-gradient(circle at 80% 12%, rgba(233, 212, 161, 0.14), transparent 16%),
+    linear-gradient(135deg, rgba(15, 45, 82, 0.98) 0%, rgba(19, 57, 102, 0.96) 48%, rgba(28, 79, 134, 0.92) 100%);
 }
 
-/* Navigation links */
-nav a {
-  color: white;
-  text-decoration: none;
-  margin-right: 20px;
-}
-
-nav a:hover {
-  color: var(--brand-gold);
-}
-
-/* Buttons */
+a,
 button,
-.cta-button {
-  background: var(--brand-gold);
-  color: #0f2d52;
-  border: none;
-  padding: 12px 22px;
-  border-radius: 6px;
-  font-weight: 600;
-  cursor: pointer;
+input,
+textarea,
+select {
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    opacity 0.2s ease;
 }
 
-button:hover,
-.cta-button:hover {
-  background: var(--brand-gold-soft);
+::selection {
+  background: rgba(200, 163, 79, 0.24);
 }

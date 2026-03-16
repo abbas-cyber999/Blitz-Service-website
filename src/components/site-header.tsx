@@ -14,15 +14,15 @@ export function SiteHeader() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="bg-[#0f2d52] text-white">
+    <header className="sticky top-0 z-40 border-b border-white/10 bg-brandBlue text-white shadow-[0_10px_30px_rgba(15,45,82,0.18)]">
       <Container className="flex min-h-[84px] items-center justify-between gap-4">
-        <LogoMark />
+        <LogoMark className="text-white" />
         <nav className="hidden items-center gap-8 lg:flex" aria-label="Hauptnavigation">
           {navigation.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="text-sm font-medium text-slate-700 transition hover:text-brand-blue"
+              className="text-sm font-medium text-white/92 transition hover:text-brandGold"
             >
               {item.label}
             </Link>
@@ -33,7 +33,7 @@ export function SiteHeader() {
         </div>
         <button
           type="button"
-          className="inline-flex rounded-full border border-brand-blue/10 p-2 text-brand-blue lg:hidden"
+          className="inline-flex rounded-xl border border-white/20 p-2 text-white hover:border-brandGold hover:text-brandGold lg:hidden"
           onClick={() => setOpen((value) => !value)}
           aria-expanded={open}
           aria-controls="mobile-menu"
@@ -45,7 +45,7 @@ export function SiteHeader() {
       <div
         id="mobile-menu"
         className={cn(
-          "overflow-hidden border-t border-brand-blue/10 transition-[max-height] duration-200 lg:hidden",
+          "overflow-hidden border-t border-white/10 bg-brandBlue transition-[max-height] duration-200 lg:hidden",
           open ? "max-h-96" : "max-h-0"
         )}
       >
@@ -54,7 +54,7 @@ export function SiteHeader() {
             <Link
               key={item.href}
               href={item.href}
-              className="text-base font-medium text-slate-700"
+              className="text-base font-medium text-white/92 hover:text-brandGold"
               onClick={() => setOpen(false)}
             >
               {item.label}
@@ -63,7 +63,7 @@ export function SiteHeader() {
           <ButtonLink href="/contact" className="w-full" variant="primary">
             {business.ctaPrimary}
           </ButtonLink>
-          <a href={`tel:${business.phone}`} className="text-sm font-semibold text-brand-blue">
+          <a href={`tel:${business.phone}`} className="text-sm font-semibold text-brandGold">
             {business.phone}
           </a>
         </Container>
