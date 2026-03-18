@@ -17,14 +17,26 @@ export default function ReviewsPage() {
       <PageHero
         eyebrow="Kundenbewertungen"
         title="Vertrauen entsteht durch verlässliche Leistung"
-        description="Diese Rezensionen sind realistische Platzhalter und können später direkt durch echte Bewertungen ersetzt oder erweitert werden."
+        description="Die Rezensionen sind als hochwertige Platzhalter angelegt und können später sehr einfach durch echte Kundenbewertungen ersetzt oder ergänzt werden."
         actions={<ButtonLink href="/contact">Eigene Anfrage stellen</ButtonLink>}
       />
       <section className="pb-24">
-        <Container className="grid gap-6 lg:grid-cols-3">
-          {reviews.map((review) => (
-            <ReviewCard key={`${review.name}-${review.city}`} {...review} />
-          ))}
+        <Container>
+          <div className="mb-10 rounded-[32px] border border-brandBlue/10 bg-white p-8 shadow-[0_22px_48px_rgba(15,45,82,0.08)]">
+            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-brandBlueSoft">
+              Bewertungsbild
+            </p>
+            <p className="mt-4 max-w-3xl text-base leading-8 text-slate-600">
+              Die Seite erhält durch großzügige Karten, klare Typografie und hochwertige
+              Abstände mehr Glaubwürdigkeit. So wirken Bewertungen wie ein echter
+              Vertrauensbaustein und nicht wie ein einfacher Textblock.
+            </p>
+          </div>
+          <div className="grid gap-6 lg:grid-cols-3">
+            {reviews.map((review) => (
+              <ReviewCard key={`${review.name}-${review.city}`} {...review} />
+            ))}
+          </div>
         </Container>
       </section>
     </>

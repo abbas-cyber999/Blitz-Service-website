@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useTransition } from "react";
+import { ShieldCheck } from "lucide-react";
 import { serviceOptions } from "@/data/site-content";
 
 const initialState = {
@@ -15,7 +16,7 @@ export function ContactForm() {
 
   return (
     <form
-      className="rounded-[32px] border border-brand-blue/10 bg-white p-8 shadow-card"
+      className="rounded-[34px] border border-brandBlue/10 bg-white/95 p-8 shadow-[0_24px_60px_rgba(15,45,82,0.10)] backdrop-blur"
       onSubmit={(event) => {
         event.preventDefault();
         const form = event.currentTarget;
@@ -66,7 +67,7 @@ export function ContactForm() {
         <select
           id="service"
           name="service"
-          className="w-full rounded-2xl border border-brand-blue/10 bg-white px-4 py-3 text-sm text-slate-800 outline-none transition focus:border-brand-gold"
+          className="w-full rounded-2xl border border-brandBlue/10 bg-brandCream/40 px-4 py-3 text-sm text-slate-800 outline-none focus:border-brandGold"
           defaultValue={serviceOptions[0]}
           required
         >
@@ -86,7 +87,7 @@ export function ContactForm() {
           name="message"
           rows={6}
           required
-          className="w-full rounded-3xl border border-brand-blue/10 px-4 py-3 text-sm text-slate-800 outline-none transition focus:border-brand-gold"
+          className="w-full rounded-[28px] border border-brandBlue/10 bg-brandCream/40 px-4 py-3 text-sm text-slate-800 outline-none focus:border-brandGold"
           placeholder="Beschreiben Sie kurz Ihr Anliegen, den gewünschten Service und den Einsatzort."
         />
       </div>
@@ -94,13 +95,13 @@ export function ContactForm() {
         <label htmlFor="website">Website</label>
         <input id="website" name="website" type="text" tabIndex={-1} autoComplete="off" />
       </div>
-      <label className="mt-6 flex items-start gap-3 rounded-2xl bg-brand-cream px-4 py-4 text-sm text-slate-700">
+      <label className="mt-6 flex items-start gap-3 rounded-2xl border border-brandBlue/10 bg-brandCream/60 px-4 py-4 text-sm text-slate-700">
         <input
           name="privacyAccepted"
           type="checkbox"
           value="true"
           required
-          className="mt-1 h-4 w-4 rounded border-brand-blue/20 text-brand-gold focus:ring-brand-gold"
+          className="mt-1 h-4 w-4 rounded border-brandBlue/20 text-brandGold focus:ring-brandGold"
         />
         <span>
           Ich habe die Datenschutzerklärung gelesen und stimme der Verarbeitung meiner
@@ -110,10 +111,14 @@ export function ContactForm() {
       <button
         type="submit"
         disabled={isPending}
-        className="mt-6 inline-flex rounded-full bg-brand-gold px-6 py-3 text-sm font-semibold text-brand-blue transition hover:bg-[#b8923f] disabled:cursor-not-allowed disabled:opacity-70"
+        className="mt-6 inline-flex items-center gap-2 rounded-2xl bg-brandGold px-6 py-3.5 text-sm font-semibold text-brandBlue shadow-[0_16px_30px_rgba(200,163,79,0.24)] hover:-translate-y-0.5 hover:bg-[#d3ae59] disabled:cursor-not-allowed disabled:opacity-70"
       >
         {isPending ? "Anfrage wird gesendet..." : "Anfrage absenden"}
       </button>
+      <div className="mt-5 inline-flex items-center gap-2 rounded-full bg-brandBlue/5 px-4 py-2 text-xs text-slate-600">
+        <ShieldCheck className="h-4 w-4 text-brandBlue" />
+        Ihre Anfrage wird vertraulich behandelt und direkt an Blitz Service GmbH übermittelt.
+      </div>
       {result.error ? <p className="mt-4 text-sm text-red-600">{result.error}</p> : null}
       {result.success ? <p className="mt-4 text-sm text-emerald-700">{result.message}</p> : null}
     </form>
@@ -138,7 +143,7 @@ function Field({ label, name, type = "text", required = false }: FieldProps) {
         name={name}
         type={type}
         required={required}
-        className="w-full rounded-2xl border border-brand-blue/10 px-4 py-3 text-sm text-slate-800 outline-none transition focus:border-brand-gold"
+        className="w-full rounded-2xl border border-brandBlue/10 bg-brandCream/40 px-4 py-3 text-sm text-slate-800 outline-none focus:border-brandGold"
       />
     </div>
   );
