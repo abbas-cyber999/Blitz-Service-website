@@ -29,6 +29,9 @@ export default function ServicesPage() {
               badge="Gebäudereinigung"
               title="Visueller Platzhalter für hochwertige Reinigungsfotos"
               description="Hier kann später ein professionelles Bild von Gebäude-, Büro- oder Treppenhausreinigung eingesetzt werden."
+              imageSrc="/images/building-cleaning.svg"
+              imageAlt="Illustration für Gebäudereinigung"
+              replacementNote="Datei austauschen: public/images/building-cleaning.svg"
             />
             <div className="rounded-[32px] border border-brandBlue/10 bg-white p-8 shadow-[0_22px_48px_rgba(15,45,82,0.08)]">
               <p className="text-sm font-semibold uppercase tracking-[0.24em] text-brandBlueSoft">
@@ -43,6 +46,24 @@ export default function ServicesPage() {
                 Relevanz für die meisten Anfragen.
               </p>
             </div>
+          </div>
+          <div className="mb-10 grid gap-6 lg:grid-cols-2">
+            <PlaceholderImageCard
+              badge="Büroreinigung"
+              title="Moderne Arbeitsumgebungen gepflegt betreut"
+              description="Ein zusätzlicher Bildblock für spätere echte Motive aus Büroreinigung, Empfangszonen oder gemeinschaftlich genutzten Arbeitsbereichen."
+              imageSrc="/images/office-cleaning.svg"
+              imageAlt="Illustration einer professionellen Büroreinigung"
+              replacementNote="Datei austauschen: public/images/office-cleaning.svg"
+            />
+            <PlaceholderImageCard
+              badge="Transport / Umzug"
+              title="Ergänzende Visualisierung für Transport und Umzug"
+              description="Der sekundäre Service bleibt sichtbar, aber klar nachgeordnet zur Reinigung. Die Bildfläche kann später direkt mit einem passenden Foto ersetzt werden."
+              imageSrc="/images/transport-service.svg"
+              imageAlt="Illustration eines Transport- und Umzugsservices"
+              replacementNote="Datei austauschen: public/images/transport-service.svg"
+            />
           </div>
           <div className="grid gap-6">
             {services.map((service) => (

@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ChevronDown, Mail, Menu, Phone, X } from "lucide-react";
 import { business } from "@/config/business";
 import { navigation, serviceMenuItems } from "@/data/site-content";
@@ -13,6 +13,31 @@ import { cn } from "@/lib/utils";
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
+  const closeTimerRef = useRef<NodeJS.Timeout | null>(null);
+
+  function clearCloseTimer() {
+    if (closeTimerRef.current) {
+      clearTimeout(closeTimerRef.current);
+      closeTimerRef.current = null;
+    }
+  }
+
+  function openServicesMenu() {
+    clearCloseTimer();
+    setServicesOpen(true);
+  }
+
+  function closeServicesMenuWithDelay() {
+    clearCloseTimer();
+    closeTimerRef.current = setTimeout(() => {
+      setServicesOpen(false);
+    }, 180);
+  }
+
+  useEffect(() => {
+    return () => clearCloseTimer();
+  }, []);
 
   return (
     <header className="sticky top-0 z-40 border-b border-white/10 bg-brandBlue/95 text-white backdrop-blur-xl">
@@ -34,13 +59,13 @@ export function SiteHeader() {
       <Container className="flex min-h-[84px] items-center justify-between gap-4">
         <LogoMark className="text-white" />
         <nav className="hidden items-center gap-8 lg:flex" aria-label="Hauptnavigation">
-          {navigation.map((item) => (
+          {navigation.map((item) =>
             item.label === "Dienstleistungen" ? (
               <div
                 key={item.href}
                 className="relative"
-                onMouseEnter={() => setServicesOpen(true)}
-                onMouseLeave={() => setServicesOpen(false)}
+                onMouseEnter={openServicesMenu}
+                onMouseLeave={closeServicesMenuWithDelay}
               >
                 <button
                   type="button"
@@ -54,41 +79,45 @@ export function SiteHeader() {
                 </button>
                 <div
                   className={cn(
-                    "absolute left-1/2 top-full mt-5 w-[620px] -translate-x-1/2 rounded-[28px] border border-white/10 bg-white p-5 text-brandDark shadow-[0_30px_60px_rgba(15,45,82,0.22)] transition duration-200",
+                    "absolute left-1/2 top-full z-50 w-[660px] -translate-x-1/2 pt-4 transition duration-200",
                     servicesOpen ? "visible opacity-100" : "invisible opacity-0"
                   )}
+                  onMouseEnter={openServicesMenu}
+                  onMouseLeave={closeServicesMenuWithDelay}
                 >
-                  <div className="mb-4 flex items-center justify-between px-2">
-                    <div>
-                      <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brandBlueSoft">
-                        Dienstleistungen
-                      </p>
-                      <p className="mt-2 text-sm text-slate-500">
-                        Reinigung im Fokus, Transport als ergänzender Service.
-                      </p>
+                  <div className="rounded-[28px] border border-white/10 bg-white p-5 text-brandDark shadow-[0_30px_60px_rgba(15,45,82,0.22)]">
+                    <div className="mb-4 flex items-center justify-between px-2">
+                      <div>
+                        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brandBlueSoft">
+                          Dienstleistungen
+                        </p>
+                        <p className="mt-2 text-sm text-slate-500">
+                          Reinigung im Fokus, Transport als ergänzender Service.
+                        </p>
+                      </div>
+                      <ButtonLink href="/services" variant="dark" className="px-4 py-2.5 text-xs">
+                        Alle Leistungen
+                      </ButtonLink>
                     </div>
-                    <ButtonLink href="/services" variant="dark" className="px-4 py-2.5 text-xs">
-                      Alle Leistungen
-                    </ButtonLink>
-                  </div>
-                  <div className="grid gap-3 sm:grid-cols-2">
-                    {serviceMenuItems.map((service) => (
-                      <Link
-                        key={service.title}
-                        href={service.href}
-                        className="rounded-2xl border border-brandBlue/8 p-4 transition hover:-translate-y-0.5 hover:border-brandGold/40 hover:bg-brandCream"
-                      >
-                        <div className="flex items-start gap-3">
-                          <span className="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-brandBlue text-white shadow-[0_12px_20px_rgba(15,45,82,0.16)]">
-                            <service.icon className="h-4.5 w-4.5" />
-                          </span>
-                          <div>
-                            <p className="font-semibold text-brandBlue">{service.title}</p>
-                            <p className="mt-1 text-sm leading-6 text-slate-500">{service.text}</p>
+                    <div className="grid gap-3 sm:grid-cols-2">
+                      {serviceMenuItems.map((service) => (
+                        <Link
+                          key={service.title}
+                          href={service.href}
+                          className="rounded-2xl border border-brandBlue/8 p-4 transition hover:-translate-y-0.5 hover:border-brandGold/40 hover:bg-brandCream"
+                        >
+                          <div className="flex items-start gap-3">
+                            <span className="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-brandBlue text-white shadow-[0_12px_20px_rgba(15,45,82,0.16)]">
+                              <service.icon className="h-4.5 w-4.5" />
+                            </span>
+                            <div>
+                              <p className="font-semibold text-brandBlue">{service.title}</p>
+                              <p className="mt-1 text-sm leading-6 text-slate-500">{service.text}</p>
+                            </div>
                           </div>
-                        </div>
-                      </Link>
-                    ))}
+                        </Link>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -101,7 +130,7 @@ export function SiteHeader() {
                 {item.label}
               </Link>
             )
-          ))}
+          )}
         </nav>
         <div className="hidden items-center gap-3 lg:flex">
           <ButtonLink href="/contact" variant="secondary">
@@ -124,37 +153,51 @@ export function SiteHeader() {
         id="mobile-menu"
         className={cn(
           "overflow-hidden border-t border-white/10 bg-brandBlue transition-[max-height] duration-300 lg:hidden",
-          open ? "max-h-[32rem]" : "max-h-0"
+          open ? "max-h-[40rem]" : "max-h-0"
         )}
       >
         <Container className="flex flex-col gap-4 py-5">
-          {navigation.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="rounded-2xl px-3 py-2 text-base font-medium text-white/92 hover:bg-white/5 hover:text-brandGold"
-              onClick={() => setOpen(false)}
-            >
-              {item.label}
-            </Link>
-          ))}
-          <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-brandGoldSoft">
-              Dienstleistungen
-            </p>
-            <div className="mt-3 grid gap-3">
-              {serviceMenuItems.slice(0, 4).map((service) => (
-                <Link
-                  key={service.title}
-                  href={service.href}
-                  className="text-sm text-white/82 hover:text-brandGold"
-                  onClick={() => setOpen(false)}
+          {navigation.map((item) =>
+            item.label === "Dienstleistungen" ? (
+              <div key={item.href} className="rounded-2xl border border-white/10 bg-white/5">
+                <button
+                  type="button"
+                  className="flex w-full items-center justify-between px-4 py-3 text-left text-base font-medium text-white/92"
+                  onClick={() => setMobileServicesOpen((value) => !value)}
+                  aria-expanded={mobileServicesOpen}
                 >
-                  {service.title}
-                </Link>
-              ))}
-            </div>
-          </div>
+                  <span>{item.label}</span>
+                  <ChevronDown
+                    className={cn("h-4 w-4 transition", mobileServicesOpen && "rotate-180")}
+                  />
+                </button>
+                <div className={cn("grid gap-3 px-4 pb-4", mobileServicesOpen ? "block" : "hidden")}>
+                  {serviceMenuItems.map((service) => (
+                    <Link
+                      key={service.title}
+                      href={service.href}
+                      className="rounded-xl px-2 py-2 text-sm text-white/82 hover:bg-white/5 hover:text-brandGold"
+                      onClick={() => {
+                        setOpen(false);
+                        setMobileServicesOpen(false);
+                      }}
+                    >
+                      {service.title}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            ) : (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="rounded-2xl px-3 py-2 text-base font-medium text-white/92 hover:bg-white/5 hover:text-brandGold"
+                onClick={() => setOpen(false)}
+              >
+                {item.label}
+              </Link>
+            )
+          )}
           <ButtonLink href="/contact" className="w-full" variant="primary">
             {business.ctaPrimary}
           </ButtonLink>

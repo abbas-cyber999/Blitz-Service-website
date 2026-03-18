@@ -1,7 +1,9 @@
-import Link from "next/link";
+"use client";
+
 import { ReactNode } from "react";
+import { usePathname, useRouter } from "next/navigation";
 import { MessageSquareText } from "lucide-react";
-import { business, whatsappHref } from "@/config/business";
+import { business, contactAnchorId, whatsappHref } from "@/config/business";
 import { cn } from "@/lib/utils";
 
 function WhatsAppGlyph() {
@@ -14,18 +16,18 @@ function WhatsAppGlyph() {
 }
 
 type FabProps = {
-  href: string;
+  href?: string;
   label: string;
   icon: ReactNode;
   primary?: boolean;
-  external?: boolean;
+  onClick?: () => void;
 };
 
-function FloatingAction({ href, label, icon, primary = false, external = false }: FabProps) {
+function FloatingAction({ href, label, icon, primary = false, onClick }: FabProps) {
   const sharedClass =
-    "group relative floating-pulse flex h-14 w-14 items-center justify-center rounded-full shadow-[0_18px_34px_rgba(15,45,82,0.18)] hover:-translate-y-1";
+    "group relative floating-pulse flex h-14 w-14 items-center justify-center rounded-full shadow-[0_18px_34px_rgba(15,45,82,0.18)] transition duration-200 hover:-translate-y-1 active:translate-y-0";
 
-  if (external) {
+  if (href) {
     return (
       <a
         href={href}
@@ -35,8 +37,8 @@ function FloatingAction({ href, label, icon, primary = false, external = false }
         className={cn(
           sharedClass,
           primary
-            ? "bg-brandGold text-brandBlue"
-            : "border border-brandBlue/10 bg-white text-brandBlue"
+            ? "bg-brandGold text-brandBlue hover:bg-[#d3ae59]"
+            : "border border-brandBlue/10 bg-white text-brandBlue hover:border-brandGold/40 hover:bg-brandCream"
         )}
       >
         {icon}
@@ -45,37 +47,59 @@ function FloatingAction({ href, label, icon, primary = false, external = false }
   }
 
   return (
-    <Link
-      href={href}
+    <button
+      type="button"
       aria-label={label}
+      onClick={onClick}
       className={cn(
         sharedClass,
-        primary ? "bg-brandGold text-brandBlue" : "border border-brandBlue/10 bg-white text-brandBlue"
+        primary
+          ? "bg-brandGold text-brandBlue hover:bg-[#d3ae59]"
+          : "border border-brandBlue/10 bg-white text-brandBlue hover:border-brandGold/40 hover:bg-brandCream"
       )}
     >
       {icon}
-    </Link>
+    </button>
   );
 }
 
 export function FloatingActions() {
+  const pathname = usePathname();
+  const router = useRouter();
+
+  function openContact() {
+    if (typeof document !== "undefined") {
+      const target = document.getElementById(contactAnchorId);
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+        return;
+      }
+    }
+
+    if (pathname === "/contact") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      return;
+    }
+
+    router.push(`/contact#${contactAnchorId}`);
+  }
+
   return (
-    <div className="fixed bottom-5 right-4 z-50 flex flex-col items-end gap-3 sm:bottom-8 sm:right-8">
-      <div className="hidden rounded-full bg-brandBlue px-4 py-2 text-xs font-medium text-white shadow-[0_14px_24px_rgba(15,45,82,0.18)] sm:block">
+    <div className="pointer-events-none fixed bottom-5 right-4 z-[60] flex flex-col items-end gap-3 sm:bottom-8 sm:right-8">
+      <div className="pointer-events-none hidden rounded-full bg-brandBlue px-4 py-2 text-xs font-medium text-white shadow-[0_14px_24px_rgba(15,45,82,0.18)] sm:block">
         Schnell erreichbar: WhatsApp oder Kontakt
       </div>
-      <div className="flex flex-col gap-3">
+      <div className="pointer-events-auto flex flex-col gap-3">
         <FloatingAction
           href={whatsappHref}
           label={`WhatsApp an ${business.whatsappNumber}`}
           icon={<WhatsAppGlyph />}
           primary
-          external
         />
         <FloatingAction
-          href="/contact"
-          label="Kontaktseite öffnen"
+          label="Zum Kontaktformular"
           icon={<MessageSquareText className="h-5 w-5" />}
+          onClick={openContact}
         />
       </div>
     </div>

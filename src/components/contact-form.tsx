@@ -111,7 +111,7 @@ export function ContactForm() {
       <button
         type="submit"
         disabled={isPending}
-        className="mt-6 inline-flex items-center gap-2 rounded-2xl bg-brandGold px-6 py-3.5 text-sm font-semibold text-brandBlue shadow-[0_16px_30px_rgba(200,163,79,0.24)] hover:-translate-y-0.5 hover:bg-[#d3ae59] disabled:cursor-not-allowed disabled:opacity-70"
+        className="mt-6 inline-flex items-center gap-2 rounded-2xl bg-brandGold px-6 py-3.5 text-sm font-semibold text-brandBlue shadow-[0_16px_30px_rgba(200,163,79,0.24)] transition duration-200 hover:-translate-y-0.5 hover:bg-[#d3ae59] disabled:cursor-not-allowed disabled:opacity-70"
       >
         {isPending ? "Anfrage wird gesendet..." : "Anfrage absenden"}
       </button>

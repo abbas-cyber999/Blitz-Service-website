@@ -1,13 +1,11 @@
 import {
   ArrowRight,
   BadgeCheck,
-  CheckCircle2,
   Clock3,
   MessageCircleMore,
   ShieldCheck,
   Sparkles,
-  Star,
-  Truck
+  Star
 } from "lucide-react";
 import { ButtonLink } from "@/components/button-link";
 import { Container } from "@/components/container";
@@ -69,6 +67,9 @@ export default function HomePage() {
                 badge="Premium Reinigung"
                 title="Gebäude, Büros und Treppenhäuser in gepflegtem Zustand."
                 description="Diese Bildfläche ist als hochwertiger Platzhalter für spätere echte Reinigungs- oder Objektfotos vorbereitet."
+                imageSrc="/images/building-cleaning.svg"
+                imageAlt="Moderne Gebäudereinigung in einem gepflegten Objekt"
+                replacementNote="Datei später durch echtes Reinigungsfoto ersetzen"
                 overlay={
                   <div className="grid gap-3 sm:grid-cols-2">
                     <div className="rounded-2xl border border-brandBlue/10 bg-white/90 p-4">
@@ -151,6 +152,24 @@ export default function HomePage() {
               </div>
             ))}
           </div>
+          <div className="mt-10 grid gap-6 lg:grid-cols-2">
+            <PlaceholderImageCard
+              badge="Büroreinigung"
+              title="Visueller Akzent für moderne Büro- und Empfangsbereiche"
+              description="Dieser Bildblock ergänzt die bestehende Startseite um eine hochwertige Fläche für spätere reale Fotos aus Büro- und Unterhaltsreinigung."
+              imageSrc="/images/office-cleaning.svg"
+              imageAlt="Illustration einer modernen Büroreinigung"
+              replacementNote="Austauschbar unter public/images/office-cleaning.svg"
+            />
+            <PlaceholderImageCard
+              badge="Transport ergänzend"
+              title="Sekundärer Visual-Block für Umzug und Transport"
+              description="Transport bleibt ein zusätzlicher Service. Der Bildblock macht das sichtbar, ohne den Reinigungsfokus der Startseite zu verschieben."
+              imageSrc="/images/transport-service.svg"
+              imageAlt="Illustration eines Umzugs- und Transportservices"
+              replacementNote="Austauschbar unter public/images/transport-service.svg"
+            />
+          </div>
         </Container>
       </section>
 
@@ -207,6 +226,9 @@ export default function HomePage() {
             badge="Austauschbar"
             title="Platzhalter für hochwertige Reinigungsfotos"
             description="Hier kann später ein echtes Bild aus Büro-, Gebäude- oder Treppenhausreinigung eingesetzt werden, ohne die Struktur der Seite zu ändern."
+            imageSrc="/images/building-cleaning.svg"
+            imageAlt="Illustration eines hochwertigen Reinigungsbereichs"
+            replacementNote="Empfohlen: horizontales Foto mit heller Architektur oder modernem Office-Kontext"
             overlay={
               <div className="rounded-2xl border border-brandBlue/10 bg-white/92 p-4 text-sm text-slate-600">
                 Empfohlen: horizontale Bilder mit heller Architektur, gepflegten Böden, Glasflächen oder modernem Office-Kontext.

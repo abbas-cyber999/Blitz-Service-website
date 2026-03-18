@@ -36,6 +36,8 @@ export const business = {
 
 export const fullAddress = `${business.address.street}, ${business.address.postalCode} ${business.address.city}, ${business.address.country}`;
 
+export const contactAnchorId = "kontakt-formular";
+
 export const whatsappHref = `https://wa.me/${business.whatsappNumber.replace(/\D/g, "")}?text=${encodeURIComponent(
   "Guten Tag, ich interessiere mich für ein Angebot von Blitz Service GmbH."
 )}`;

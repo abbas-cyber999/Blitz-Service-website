@@ -53,6 +53,9 @@ export default function AboutPage() {
               badge="Unternehmensbild"
               title="Bereich für spätere echte Fotos von Team, Objekt oder Einsatz"
               description="Die Seite ist so vorbereitet, dass hochwertige Bilder später direkt eingesetzt werden können."
+              imageSrc="/images/reliable-service.svg"
+              imageAlt="Illustration für zuverlässigen Service und professionelle Betreuung"
+              replacementNote="Datei austauschen: public/images/reliable-service.svg"
             />
             <div className="rounded-[32px] border border-brandBlue/10 bg-white p-8 shadow-[0_22px_48px_rgba(15,45,82,0.08)]">
               <p className="text-sm font-semibold uppercase tracking-[0.24em] text-brandBlueSoft">

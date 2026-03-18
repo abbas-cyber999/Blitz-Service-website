@@ -5,7 +5,7 @@ import { ContactForm } from "@/components/contact-form";
 import { Container } from "@/components/container";
 import { PageHero } from "@/components/page-hero";
 import { PlaceholderImageCard } from "@/components/placeholder-image-card";
-import { business, fullAddress, whatsappHref } from "@/config/business";
+import { business, contactAnchorId, fullAddress, whatsappHref } from "@/config/business";
 
 export const metadata: Metadata = {
   title: "Kontakt",
@@ -90,10 +90,13 @@ export default function ContactPage() {
               badge="Platzhalter"
               title="Bereich für spätere echte Team- oder Objektbilder"
               description="Hier können später hochwertige Fotos von Reinigungseinsätzen, modernen Büroflächen oder Gebäuden eingesetzt werden."
+              imageSrc="/images/reliable-service.svg"
+              imageAlt="Illustration für zuverlässigen Service und professionelle Kundenbetreuung"
+              replacementNote="Später einfach durch echte Team- oder Objektfotos ersetzen"
             />
           </div>
 
-          <div className="space-y-6">
+          <div id={contactAnchorId} className="scroll-mt-32 space-y-6">
             <ContactForm />
             <div className="rounded-[30px] border border-brandBlue/10 bg-white px-6 py-5 text-sm leading-7 text-slate-600 shadow-[0_20px_42px_rgba(15,45,82,0.08)]">
               <p className="font-semibold text-brandBlue">Warum diese Kontaktsektion funktioniert</p>
