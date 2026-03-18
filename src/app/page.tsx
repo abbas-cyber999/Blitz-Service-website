@@ -105,6 +105,24 @@ export default function HomePage() {
         </Container>
       </section>
 
+      <section className="-mt-8 pb-6">
+        <Container>
+          <div className="grid gap-4 rounded-[28px] border border-brandBlue/10 bg-white/92 p-5 shadow-[0_20px_40px_rgba(15,45,82,0.08)] backdrop-blur sm:grid-cols-2 xl:grid-cols-4">
+            {[
+              "schnelle Rückmeldung",
+              "zufriedene Kunden",
+              "flexible Termine",
+              "zuverlässiger Service"
+            ].map((metric) => (
+              <div key={metric} className="flex items-center gap-3 rounded-2xl bg-brandCream px-4 py-3 text-sm text-brandBlue">
+                <Star className="h-4 w-4 text-brandGold" />
+                <span className="font-medium">{metric}</span>
+              </div>
+            ))}
+          </div>
+        </Container>
+      </section>
+
       <section className="section-divider py-24">
         <Container>
           <SectionHeading

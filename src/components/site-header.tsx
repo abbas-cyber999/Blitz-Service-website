@@ -2,9 +2,9 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { Mail, Menu, Phone, X } from "lucide-react";
+import { ChevronDown, Mail, Menu, Phone, X } from "lucide-react";
 import { business } from "@/config/business";
-import { navigation } from "@/data/site-content";
+import { navigation, serviceMenuItems } from "@/data/site-content";
 import { ButtonLink } from "@/components/button-link";
 import { Container } from "@/components/container";
 import { LogoMark } from "@/components/logo-mark";
@@ -12,6 +12,7 @@ import { cn } from "@/lib/utils";
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-40 border-b border-white/10 bg-brandBlue/95 text-white backdrop-blur-xl">
@@ -34,13 +35,72 @@ export function SiteHeader() {
         <LogoMark className="text-white" />
         <nav className="hidden items-center gap-8 lg:flex" aria-label="Hauptnavigation">
           {navigation.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="relative text-sm font-medium text-white/92 transition hover:text-brandGold"
-            >
-              {item.label}
-            </Link>
+            item.label === "Dienstleistungen" ? (
+              <div
+                key={item.href}
+                className="relative"
+                onMouseEnter={() => setServicesOpen(true)}
+                onMouseLeave={() => setServicesOpen(false)}
+              >
+                <button
+                  type="button"
+                  className="inline-flex items-center gap-2 text-sm font-medium text-white/92 transition hover:text-brandGold"
+                  onClick={() => setServicesOpen((value) => !value)}
+                  aria-expanded={servicesOpen}
+                  aria-haspopup="true"
+                >
+                  {item.label}
+                  <ChevronDown className={cn("h-4 w-4 transition", servicesOpen && "rotate-180")} />
+                </button>
+                <div
+                  className={cn(
+                    "absolute left-1/2 top-full mt-5 w-[620px] -translate-x-1/2 rounded-[28px] border border-white/10 bg-white p-5 text-brandDark shadow-[0_30px_60px_rgba(15,45,82,0.22)] transition duration-200",
+                    servicesOpen ? "visible opacity-100" : "invisible opacity-0"
+                  )}
+                >
+                  <div className="mb-4 flex items-center justify-between px-2">
+                    <div>
+                      <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brandBlueSoft">
+                        Dienstleistungen
+                      </p>
+                      <p className="mt-2 text-sm text-slate-500">
+                        Reinigung im Fokus, Transport als ergänzender Service.
+                      </p>
+                    </div>
+                    <ButtonLink href="/services" variant="dark" className="px-4 py-2.5 text-xs">
+                      Alle Leistungen
+                    </ButtonLink>
+                  </div>
+                  <div className="grid gap-3 sm:grid-cols-2">
+                    {serviceMenuItems.map((service) => (
+                      <Link
+                        key={service.title}
+                        href={service.href}
+                        className="rounded-2xl border border-brandBlue/8 p-4 transition hover:-translate-y-0.5 hover:border-brandGold/40 hover:bg-brandCream"
+                      >
+                        <div className="flex items-start gap-3">
+                          <span className="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-brandBlue text-white shadow-[0_12px_20px_rgba(15,45,82,0.16)]">
+                            <service.icon className="h-4.5 w-4.5" />
+                          </span>
+                          <div>
+                            <p className="font-semibold text-brandBlue">{service.title}</p>
+                            <p className="mt-1 text-sm leading-6 text-slate-500">{service.text}</p>
+                          </div>
+                        </div>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="relative text-sm font-medium text-white/92 transition hover:text-brandGold"
+              >
+                {item.label}
+              </Link>
+            )
           ))}
         </nav>
         <div className="hidden items-center gap-3 lg:flex">
@@ -78,6 +138,23 @@ export function SiteHeader() {
               {item.label}
             </Link>
           ))}
+          <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-brandGoldSoft">
+              Dienstleistungen
+            </p>
+            <div className="mt-3 grid gap-3">
+              {serviceMenuItems.slice(0, 4).map((service) => (
+                <Link
+                  key={service.title}
+                  href={service.href}
+                  className="text-sm text-white/82 hover:text-brandGold"
+                  onClick={() => setOpen(false)}
+                >
+                  {service.title}
+                </Link>
+              ))}
+            </div>
+          </div>
           <ButtonLink href="/contact" className="w-full" variant="primary">
             {business.ctaPrimary}
           </ButtonLink>

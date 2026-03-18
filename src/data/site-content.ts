@@ -1,7 +1,10 @@
 import {
+  BriefcaseBusiness,
   Building2,
   ClipboardCheck,
   Clock3,
+  HeartPulse,
+  Home,
   ShieldCheck,
   Sparkles,
   Truck
@@ -10,10 +13,61 @@ import { business } from "@/config/business";
 
 export const navigation = [
   { label: "Home", href: "/" },
-  { label: "Services", href: "/services" },
+  { label: "Dienstleistungen", href: "/services" },
   { label: "Über uns", href: "/ueber-uns" },
   { label: "Bewertungen", href: "/bewertungen" },
   { label: "Kontakt", href: "/contact" }
+] as const;
+
+export const serviceMenuItems = [
+  {
+    title: "Gebäudereinigung",
+    text: "Gepflegte, repräsentative Immobilien mit festen Reinigungsstandards.",
+    href: "/services",
+    icon: Building2
+  },
+  {
+    title: "Büroreinigung",
+    text: "Saubere Arbeitsplätze und Empfangsbereiche für einen professionellen Eindruck.",
+    href: "/services",
+    icon: BriefcaseBusiness
+  },
+  {
+    title: "Treppenhausreinigung",
+    text: "Ordentliche Gemeinschaftsflächen für Wohn- und Gewerbeobjekte.",
+    href: "/services",
+    icon: ClipboardCheck
+  },
+  {
+    title: "Umzugsreinigung",
+    text: "Gründliche Reinigung vor Einzug, Auszug oder Objektübergabe.",
+    href: "/services",
+    icon: Home
+  },
+  {
+    title: "Endreinigung",
+    text: "Sauberer Abschluss nach Bauphase, Renovierung oder Objektwechsel.",
+    href: "/services",
+    icon: ShieldCheck
+  },
+  {
+    title: "Fensterreinigung",
+    text: "Klare Glasflächen und ein gepflegter Gesamteindruck für Ihr Objekt.",
+    href: "/services",
+    icon: Sparkles
+  },
+  {
+    title: "Praxisreinigung",
+    text: "Diskrete Reinigung sensibler Arbeitsumgebungen mit hohem Anspruch.",
+    href: "/services",
+    icon: HeartPulse
+  },
+  {
+    title: "Transport / Umzug",
+    text: "Ergänzende Transportleistungen für koordinierte Gesamtprojekte.",
+    href: "/services",
+    icon: Truck
+  }
 ] as const;
 
 export const serviceOptions = [
