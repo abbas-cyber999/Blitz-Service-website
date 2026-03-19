@@ -60,9 +60,9 @@ export default function ServicesPage() {
               badge="Transport / Umzug"
               title="Ergänzende Visualisierung für Transport und Umzug"
               description="Der sekundäre Service bleibt sichtbar, aber klar nachgeordnet zur Reinigung. Die Bildfläche kann später direkt mit einem passenden Foto ersetzt werden."
-              imageSrc="/images/transport-service.svg"
-              imageAlt="Illustration eines Transport- und Umzugsservices"
-              replacementNote="Datei austauschen: public/images/transport-service.svg"
+              imageSrc="/images/homepage/transport-moving-service.svg"
+              imageAlt="Visualisierung eines Umzugs- und Transportservices mit Möbeltransport"
+              replacementNote="Datei austauschen: public/images/homepage/transport-moving-service.svg"
             />
           </div>
           <div className="grid gap-6">

@@ -14,10 +14,9 @@ export const homeSectionMedia = {
       "https://www.pexels.com/photo/modern-office-space-interior-5511093/"
   },
   transport: {
-    src: "/images/homepage/transport-service.jpg",
-    alt: "Professioneller Transportservice im Einsatz an einem Gebäude",
-    sourceLabel: "Pexels",
-    sourceUrl:
-      "https://www.pexels.com/photo/man-working-and-carrying-luggage-20706503/"
+    src: "/images/homepage/transport-moving-service.svg",
+    alt: "Umzugsservice mit Transporter, Möbeltransport und Umzugskartons",
+    sourceLabel: "Lokale Grafik",
+    sourceUrl: "/images/homepage/transport-moving-service.svg"
   }
 } as const;
