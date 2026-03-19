@@ -1,10 +1,9 @@
-import { PrismaAdapter } from "@auth/prisma-adapter";
-import type { Adapter } from "next-auth/adapters";
-import { compare } from "bcryptjs";
-import Credentials from "next-auth/providers/credentials";
 import NextAuth from "next-auth";
-import { z } from "zod";
+import Credentials from "next-auth/providers/credentials";
+import { PrismaAdapter } from "@auth/prisma-adapter";
 import { prisma } from "@/lib/prisma";
+import { compare } from "bcryptjs";
+import { z } from "zod";
 
 const credentialsSchema = z.object({
   email: z.string().email().trim().toLowerCase(),
@@ -12,11 +11,9 @@ const credentialsSchema = z.object({
 });
 
 export const { handlers, auth, signIn, signOut } = NextAuth({
-  adapter: PrismaAdapter(prisma) as Adapter,
-  secret: process.env.AUTH_SECRET,
-  trustHost: process.env.AUTH_TRUST_HOST === "true",
+  adapter: PrismaAdapter(prisma),
   session: {
-    strategy: "database"
+    strategy: "jwt"
   },
   providers: [
     Credentials({
@@ -28,51 +25,22 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
       async authorize(rawCredentials) {
         const parsed = credentialsSchema.safeParse(rawCredentials);
 
-        if (!parsed.success) {
-          return null;
-        }
+        if (!parsed.success) return null;
 
         const user = await prisma.user.findUnique({
-          where: {
-            email: parsed.data.email
-          }
+          where: { email: parsed.data.email }
         });
 
-        if (!user?.passwordHash) {
-          return null;
-        }
+        if (!user?.passwordHash) return null;
 
-        const isValid = await compare(parsed.data.password, user.passwordHash);
+        const valid = await compare(parsed.data.password, user.passwordHash);
 
-        if (!isValid) {
-          return null;
-        }
+        if (!valid) return null;
 
         return user;
       }
     })
   ],
-  callbacks: {
-    jwt({ token, user }) {
-      if (user) {
-        token.role = user.role;
-        token.nativeLanguageCode = user.nativeLanguageCode;
-        token.targetLanguageCode = user.targetLanguageCode;
-      }
-
-      return token;
-    },
-    session({ session, user }) {
-      if (session.user) {
-        session.user.id = user.id;
-        session.user.role = user.role;
-        session.user.nativeLanguageCode = user.nativeLanguageCode;
-        session.user.targetLanguageCode = user.targetLanguageCode;
-      }
-
-      return session;
-    }
-  },
   pages: {
     signIn: "/login"
   }

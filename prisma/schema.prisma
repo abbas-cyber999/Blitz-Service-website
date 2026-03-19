@@ -3,7 +3,7 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "sqlite"
   url      = env("DATABASE_URL")
 }
 
@@ -55,8 +55,8 @@ model User {
   image              String?
   passwordHash       String?
   role               UserRole            @default(USER)
-  nativeLanguageCode String?             @db.VarChar(8)
-  targetLanguageCode String              @default("de") @db.VarChar(8)
+  nativeLanguageCode String?
+  targetLanguageCode String              @default("de")
   createdAt          DateTime            @default(now())
   updatedAt          DateTime            @updatedAt
 
@@ -73,12 +73,12 @@ model Account {
   type              String
   provider          String
   providerAccountId String
-  refresh_token     String? @db.Text
-  access_token      String? @db.Text
+  refresh_token     String?
+  access_token      String?
   expires_at        Int?
   token_type        String?
   scope             String?
-  id_token          String? @db.Text
+  id_token          String?
   session_state     String?
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
@@ -109,9 +109,9 @@ model Course {
   code               String    @unique
   title              String
   description        String?
-  targetLanguageCode String    @db.VarChar(8)
-  nativeLanguageCode String    @db.VarChar(8)
-  cefrLevel          String    @db.VarChar(8)
+  targetLanguageCode String
+  nativeLanguageCode String
+  cefrLevel          String
   published          Boolean   @default(false)
   createdAt          DateTime  @default(now())
   updatedAt          DateTime  @updatedAt
@@ -149,7 +149,7 @@ model Lesson {
   description      String?
   orderIndex       Int
   lessonType       LessonType
-  cefrLevel        String      @db.VarChar(8)
+  cefrLevel        String
   published        Boolean     @default(false)
   createdAt        DateTime    @default(now())
   updatedAt        DateTime    @updatedAt
@@ -206,8 +206,8 @@ model Exercise {
 model PlacementTest {
   id                 String    @id @default(cuid())
   courseId           String?
-  languageCode       String    @db.VarChar(8)
-  targetLanguageCode String    @db.VarChar(8)
+  languageCode       String
+  targetLanguageCode String
   title              String
   published          Boolean   @default(false)
   createdAt          DateTime  @default(now())
@@ -221,7 +221,7 @@ model PlacementQuestion {
   id              String   @id @default(cuid())
   placementTestId String
   legacySourceId  String?
-  cefrLevel       String   @db.VarChar(8)
+  cefrLevel       String
   prompt          String
   orderIndex      Int
   contentJson     Json
