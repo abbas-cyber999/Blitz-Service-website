@@ -2,6 +2,7 @@
 
 import { AuthError } from "next-auth";
 import { hash } from "bcryptjs";
+import { redirect } from "next/navigation";
 import { z } from "zod";
 import { signIn, signOut } from "@/auth";
 import { prisma } from "@/lib/prisma";
@@ -52,11 +53,20 @@ export async function loginAction(
   }
 
   try {
-    await signIn("credentials", {
+    const result = await signIn("credentials", {
       email: parsed.data.email,
       password: parsed.data.password,
-      redirectTo: getRedirectTarget(parsed.data.redirectTo)
+      redirect: false
     });
+
+    if (result?.error) {
+      return {
+        error:
+          result.error === "CredentialsSignin"
+            ? "Incorrect email or password."
+            : "Unable to sign in right now."
+      };
+    }
   } catch (error) {
     if (error instanceof AuthError) {
       return {
@@ -67,7 +77,7 @@ export async function loginAction(
     throw error;
   }
 
-  return initialState;
+  redirect(getRedirectTarget(parsed.data.redirectTo));
 }
 
 export async function registerAction(
@@ -101,7 +111,7 @@ export async function registerAction(
 
   const passwordHash = await hash(parsed.data.password, 12);
 
-  await prisma.user.create({
+  const createdUser = await prisma.user.create({
     data: {
       name: parsed.data.name,
       email: parsed.data.email,
@@ -111,12 +121,27 @@ export async function registerAction(
     }
   });
 
+  if (!createdUser.id || !createdUser.passwordHash) {
+    return {
+      error: "Account creation failed before sign-in."
+    };
+  }
+
   try {
-    await signIn("credentials", {
+    const result = await signIn("credentials", {
       email: parsed.data.email,
       password: parsed.data.password,
-      redirectTo: getRedirectTarget(parsed.data.redirectTo)
+      redirect: false
     });
+
+    if (result?.error) {
+      return {
+        error:
+          result.error === "CredentialsSignin"
+            ? "Your account was created, but automatic sign-in failed. Please sign in manually."
+            : "Your account was created, but sign-in could not be completed."
+      };
+    }
   } catch (error) {
     if (error instanceof AuthError) {
       return {
@@ -127,7 +152,7 @@ export async function registerAction(
     throw error;
   }
 
-  return initialState;
+  redirect(getRedirectTarget(parsed.data.redirectTo));
 }
 
 export async function logoutAction() {

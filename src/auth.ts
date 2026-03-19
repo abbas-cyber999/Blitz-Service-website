@@ -12,6 +12,8 @@ const credentialsSchema = z.object({
 
 export const { handlers, auth, signIn, signOut } = NextAuth({
   adapter: PrismaAdapter(prisma),
+  secret: process.env.AUTH_SECRET,
+  trustHost: process.env.AUTH_TRUST_HOST === "true",
   session: {
     strategy: "jwt"
   },
@@ -41,6 +43,35 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
       }
     })
   ],
+  callbacks: {
+    jwt({ token, user }) {
+      if (user) {
+        token.id = user.id;
+        token.role = user.role;
+        token.nativeLanguageCode = user.nativeLanguageCode;
+        token.targetLanguageCode = user.targetLanguageCode;
+      }
+
+      return token;
+    },
+    session({ session, token }) {
+      if (session.user) {
+        session.user.id =
+          typeof token.id === "string"
+            ? token.id
+            : typeof token.sub === "string"
+              ? token.sub
+              : "";
+        session.user.role = typeof token.role === "string" ? token.role : "USER";
+        session.user.nativeLanguageCode =
+          typeof token.nativeLanguageCode === "string" ? token.nativeLanguageCode : null;
+        session.user.targetLanguageCode =
+          typeof token.targetLanguageCode === "string" ? token.targetLanguageCode : null;
+      }
+
+      return session;
+    }
+  },
   pages: {
     signIn: "/login"
   }
