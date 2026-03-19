@@ -53,6 +53,15 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
     })
   ],
   callbacks: {
+    jwt({ token, user }) {
+      if (user) {
+        token.role = user.role;
+        token.nativeLanguageCode = user.nativeLanguageCode;
+        token.targetLanguageCode = user.targetLanguageCode;
+      }
+
+      return token;
+    },
     session({ session, user }) {
       if (session.user) {
         session.user.id = user.id;
@@ -65,6 +74,6 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
     }
   },
   pages: {
-    signIn: "/admin/login"
+    signIn: "/login"
   }
 });
