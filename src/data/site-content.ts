@@ -198,20 +198,6 @@ export const processSteps = [
   }
 ] as const;
 
-export const homeHighlights = [
-  "Sauberkeit mit sichtbarem Qualitätsanspruch",
-  "Zuverlässige Termine und verbindliche Kommunikation",
-  "Schnelle Reaktionszeiten für gewerbliche und private Anfragen",
-  "Professionelle, diskrete Arbeitsweise im Alltag Ihrer Immobilie"
-] as const;
-
-export const aboutValues = [
-  "Verlässlichkeit in der Terminplanung und Ausführung",
-  "Sorgfalt bei Details und sensiblen Arbeitsumgebungen",
-  "Klare Kommunikation ohne übertriebene Versprechen",
-  "Kundenorientierung vom Erstkontakt bis zur laufenden Betreuung"
-] as const;
-
 export const trustPoints = [
   {
     title: "Zuverlässige Einsatzplanung",
@@ -225,6 +211,13 @@ export const trustPoints = [
     title: "Schnelle Rückmeldung",
     text: "Kurze Reaktionszeiten bei Anfragen, Besichtigungen und Angebotswünschen."
   }
+] as const;
+
+export const aboutValues = [
+  "Verlässlichkeit in der Terminplanung und Ausführung",
+  "Sorgfalt bei Details und sensiblen Arbeitsumgebungen",
+  "Klare Kommunikation ohne übertriebene Versprechen",
+  "Kundenorientierung vom Erstkontakt bis zur laufenden Betreuung"
 ] as const;
 
 export const faqs = [

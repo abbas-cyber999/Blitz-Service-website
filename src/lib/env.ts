@@ -6,14 +6,20 @@ export function hasDatabaseUrl() {
   return Boolean(process.env.DATABASE_URL);
 }
 
-export function hasAuthSecret() {
-  return Boolean(process.env.AUTH_SECRET);
+export function hasEmailConfig() {
+  return Boolean(
+    process.env.EMAIL_SERVER && process.env.EMAIL_FROM && process.env.COMPANY_NOTIFICATION_EMAIL
+  );
 }
 
-export function getSeedAdminEmail() {
-  return process.env.SEED_ADMIN_EMAIL ?? "admin@deutschhero.local";
+export function hasAdminPassword() {
+  return Boolean(process.env.ADMIN_PASSWORD);
 }
 
-export function getSeedAdminPassword() {
-  return process.env.SEED_ADMIN_PASSWORD ?? "change-me-now";
+export function hasAdminSessionSecret() {
+  return Boolean(process.env.ADMIN_SESSION_SECRET);
+}
+
+export function hasAdminAuthConfig() {
+  return hasAdminPassword() && hasAdminSessionSecret();
 }
