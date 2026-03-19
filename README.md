@@ -1,47 +1,46 @@
-# DeutschHero
+# Blitz Service GmbH Website
 
-DeutschHero is being rebuilt as a serious German learning platform with a modern full-stack architecture.
-
-## Current status
-
-Phase 1 establishes the production foundation:
-
-- Next.js full-stack app
-- Prisma schema for users, lessons, content blocks, placement, progress, and imports
-- PostgreSQL integration scaffolding
-- Auth.js credentials foundation
-- safe staging area for legacy lesson JSON
+Next.js website for Blitz Service GmbH with a clear focus on cleaning services, an optional PostgreSQL-backed contact form, and a simple protected admin area.
 
 ## Stack
 
-- Next.js
+- Next.js App Router
 - TypeScript
-- PostgreSQL
-- Prisma
-- Auth.js
 - Tailwind CSS
+- Prisma ORM
+- PostgreSQL
 - Zod
+- Nodemailer
 
-## Environment
+## Environment variables
 
-Copy `.env.example` to `.env` and set:
+Only variables relevant to Blitz Service remain:
 
 - `DATABASE_URL`
-- `AUTH_SECRET`
-- `NEXTAUTH_URL`
-- `SEED_ADMIN_EMAIL`
-- `SEED_ADMIN_PASSWORD`
+- `EMAIL_SERVER`
+- `EMAIL_FROM`
+- `COMPANY_NOTIFICATION_EMAIL`
+- `ADMIN_PASSWORD`
+- `ADMIN_SESSION_SECRET`
 
-## Useful commands
+## Scripts
 
-```bash
-npm install
-npm run prisma:generate
-npm run prisma:migrate
-npm run prisma:seed
-npm run dev
-```
+- `npm run dev`
+- `npm run build`
+- `npm run start`
+- `npm run lint`
+- `npm run typecheck`
+- `npm run prisma:generate`
+- `npm run prisma:migrate`
+- `npm run prisma:migrate:deploy`
 
-## Legacy content
+## Deployment
 
-The original static-site content is staged under `content-import/legacy-data` so it can be validated and imported in later phases without rewriting lesson material by hand.
+The public website builds without unrelated learning-platform code.  
+Set the required environment variables in Vercel before enabling persisted contact storage or admin login.
+
+## Notes
+
+- Legal pages are still placeholders and must be completed later.
+- Business content can still be refined later.
+- Homepage media can be replaced later in `public/images/homepage/`.

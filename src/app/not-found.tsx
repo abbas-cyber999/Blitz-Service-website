@@ -2,20 +2,19 @@ import Link from "next/link";
 
 export default function NotFoundPage() {
   return (
-    <section className="mx-auto flex min-h-screen max-w-3xl items-center px-6 py-20 sm:px-8">
-      <div className="w-full rounded-[32px] border border-white/10 bg-white/5 p-10 text-center backdrop-blur">
-        <p className="text-sm font-semibold uppercase tracking-[0.24em] text-sky-200">404</p>
-        <h1 className="mt-6 font-display text-5xl text-white">Page not found</h1>
-        <p className="mt-6 text-base leading-8 text-slate-300">
-          This route is not part of the current DeutschHero foundation. Return to the homepage
-          to continue with the platform rebuild.
+    <section className="mx-auto flex min-h-[70vh] max-w-3xl items-center px-6 py-20 sm:px-8">
+      <div className="w-full rounded-[32px] border border-brandBlue/10 bg-white p-10 text-center shadow-[0_20px_42px_rgba(15,45,82,0.08)]">
+        <p className="text-sm font-semibold uppercase tracking-[0.24em] text-brandBlueSoft">404</p>
+        <h1 className="mt-6 font-display text-5xl text-brandBlue">Seite nicht gefunden</h1>
+        <p className="mt-6 text-base leading-8 text-slate-600">
+          Die gewünschte Seite ist nicht verfügbar. Zurück zur Startseite von Blitz Service GmbH.
         </p>
         <div className="mt-8 flex justify-center">
           <Link
             href="/"
-            className="rounded-full bg-amber-300 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-amber-200"
+            className="rounded-2xl bg-brandGold px-6 py-3 text-sm font-semibold text-brandBlue shadow-[0_16px_30px_rgba(200,163,79,0.24)]"
           >
-            Back to homepage
+            Zur Startseite
           </Link>
         </div>
       </div>

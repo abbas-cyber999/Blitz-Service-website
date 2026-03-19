@@ -7,8 +7,7 @@ const config = [
       "node_modules/**",
       ".next/**",
       "coverage/**",
-      "dist/**",
-      "repo_audit_02_deutsch_hero/**"
+      "dist/**"
     ]
   }
 ];

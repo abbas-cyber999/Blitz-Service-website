@@ -1,6 +1,7 @@
 import { MetadataRoute } from "next";
+import { business } from "@/config/business";
 
-const baseUrl = "https://www.deutschhero.com";
+const baseUrl = `https://${business.domain}`;
 
 export default function robots(): MetadataRoute.Robots {
   return {
