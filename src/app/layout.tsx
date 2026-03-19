@@ -1,10 +1,6 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Manrope } from "next/font/google";
 import "./globals.css";
-import { business } from "@/config/business";
-import { FloatingActions } from "@/components/floating-actions";
-import { SiteFooter } from "@/components/site-footer";
-import { SiteHeader } from "@/components/site-header";
 
 const displayFont = Cormorant_Garamond({
   subsets: ["latin"],
@@ -18,30 +14,30 @@ const bodyFont = Manrope({
   weight: ["400", "500", "600", "700"]
 });
 
-const siteUrl = `https://${business.domain}`;
+const siteUrl = "https://www.deutschhero.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: `${business.name} | Professionelle Reinigung in Moers`,
-    template: `%s | ${business.name}`
+    default: "DeutschHero | German Learning Platform",
+    template: `%s | DeutschHero`
   },
   description:
-    "Premium Reinigungsdienstleistungen für Gebäude, Büros und Treppenhäuser sowie ergänzende Transportservices im Raum Moers und Niederrhein.",
+    "DeutschHero is a modern German learning platform built for structured lessons, progress tracking, and scalable multilingual learning.",
   openGraph: {
-    title: `${business.name} | Professionelle Reinigung in Moers`,
+    title: "DeutschHero | German Learning Platform",
     description:
-      "Gebäudereinigung, Büroreinigung, Treppenhausreinigung und ergänzende Transportservices mit Fokus auf Qualität, Verlässlichkeit und schnelle Ausführung.",
-    locale: "de_DE",
+      "Structured German learning with lessons, grammar, placement, progress tracking, and a scalable platform foundation.",
+    locale: "en_US",
     type: "website",
     url: siteUrl,
-    siteName: business.name
+    siteName: "DeutschHero"
   },
   twitter: {
     card: "summary_large_image",
-    title: business.name,
+    title: "DeutschHero",
     description:
-      "Professionelle Reinigungsleistungen und ergänzende Transportservices für Unternehmen und Privatkunden."
+      "A production-focused German learning platform foundation built with Next.js, Prisma, PostgreSQL, and Auth.js."
   },
   alternates: {
     canonical: siteUrl
@@ -58,20 +54,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="de" className={`${displayFont.variable} ${bodyFont.variable}`}>
-      <body className="font-sans text-brandDark antialiased">
-        <a
-          href="#content"
-          className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-brandGold focus:px-4 focus:py-2 focus:text-brandBlue"
-        >
-          Zum Inhalt springen
-        </a>
-        <SiteHeader />
+    <html lang="en" className={`${displayFont.variable} ${bodyFont.variable}`}>
+      <body className="min-h-screen bg-slate-950 font-sans text-slate-100 antialiased">
+        <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top,_rgba(56,189,248,0.16),_transparent_32%),radial-gradient(circle_at_20%_80%,_rgba(250,204,21,0.10),_transparent_24%),linear-gradient(180deg,_#020617,_#0f172a)]" />
         <main id="content" className="overflow-x-clip">
           {children}
         </main>
-        <SiteFooter />
-        <FloatingActions />
       </body>
     </html>
   );

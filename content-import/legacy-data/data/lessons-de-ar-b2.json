@@ -1,0 +1,1414 @@
+{
+  "level": "B2",
+  "title": "B2 – Themen für Fortgeschrittene",
+  "lessons": [
+{
+  "id": "B2_L01_Kommunikation_Medien",
+  "title": {
+    "ar": "التواصل ووسائل الإعلام",
+    "de": "Kommunikation & Medien",
+    "en": "Communication & Media"
+  },
+  "interactiveScene": "Noa يستيقظ صباحًا ويمسك هاتفه بسرعة. 12 رسالة واتساب، 3 رسائل صوتية، 40 إشعارًا من إنستغرام، وفيديو طويل عن كيفية تقطيع البصل دون بكاء. فوق ذلك كله، عنوان ضخم: „BREAKING NEWS“. Noa يتساءل: هل هذا تواصل حقيقي أم مجرد غرق في طوفان المعلومات؟ هكذا يبدأ درس التواصل ووسائل الإعلام في عصر السرعة.",
+  "explanation": [
+    { "de": "die Medienlandschaft", "ar": "المشهد الإعلامي" },
+    { "de": "ständig erreichbar sein", "ar": "أن تكون متاحًا دائمًا" },
+    { "de": "die Informationsflut", "ar": "طوفان / سيل المعلومات" },
+    { "de": "seriöse Quelle", "ar": "مصدر موثوق" },
+    { "de": "die Falschmeldung", "ar": "خبر كاذب" },
+    { "de": "manipulativ", "ar": "تلاعُبي / مؤثر على التفكير" },
+    { "de": "Inhalte konsumieren", "ar": "استهلاك المحتوى" },
+    { "de": "filtern", "ar": "تصفية / فرز المعلومات" },
+    { "de": "die Sprachaufnahme", "ar": "رسالة صوتية" },
+    { "de": "die Datenschutzfrage", "ar": "قضية حماية البيانات" }
+  ],
+  "phrasesTable": [
+    {
+      "de": "Wir leben in einer Zeit, in der Informationen schneller verbreitet werden als je zuvor.",
+      "ar": "نحن نعيش في زمن تنتشر فيه المعلومات أسرع من أي وقت مضى."
+    },
+    {
+      "de": "Nicht jede Nachricht im Internet ist automatisch vertrauenswürdig.",
+      "ar": "ليست كل الأخبار على الإنترنت جديرة بالثقة تلقائيًا."
+    },
+    {
+      "de": "Die größte Herausforderung ist, zwischen Fakten und Meinungen zu unterscheiden.",
+      "ar": "أكبر تحدٍّ هو التمييز بين الحقائق والآراء."
+    },
+    {
+      "de": "Viele Menschen fühlen sich gestresst, weil sie ständig erreichbar sein müssen.",
+      "ar": "كثير من الناس يشعرون بالتوتر لأنهم يجب أن يكونوا متاحين دائمًا."
+    },
+    {
+      "de": "Medien können informieren, aber sie können auch manipulieren.",
+      "ar": "وسائل الإعلام يمكن أن تُعلِم… لكنها يمكن أيضًا أن تؤثر بشكل تلاعُبي."
+    }
+  ],
+  "tip": "في عصر السرعة، أهم مهارة في التواصل هي القدرة على التحقق من المصادر، واستخدام عقل بارد أمام المحتوى السريع. جملة B2 ذهبية: „Bevor ich etwas teile, prüfe ich die Quelle.“",
+  "dialogue": [
+    {
+      "speaker": "Noa",
+      "de": "Hast du die letzte Nachricht gesehen?",
+      "ar": "هل رأيت آخر خبر؟"
+    },
+    {
+      "speaker": "Freund",
+      "de": "Welche? Es gibt jede Minute etwas Neues!",
+      "ar": "أي واحد؟ كل دقيقة يوجد شيء جديد!"
+    },
+    {
+      "speaker": "Noa",
+      "de": "Genau das ist das Problem.",
+      "ar": "وهذا بالضبط هو المشكلة."
+    },
+    {
+      "speaker": "Freund",
+      "de": "Aber die Information klingt glaubwürdig.",
+      "ar": "لكن المعلومة تبدو مقنعة."
+    },
+    {
+      "speaker": "Noa",
+      "de": "Von wem kommt sie?",
+      "ar": "من أين جاءت؟"
+    },
+    {
+      "speaker": "Freund",
+      "de": "Ein Account ohne Bild… aber viele haben es geteilt!",
+      "ar": "من حساب بدون صورة… لكن كثيرين شاركوها!"
+    },
+    {
+      "speaker": "Noa",
+      "de": "Teilen heißt nicht glauben.",
+      "ar": "المشاركة لا تعني التصديق."
+    },
+    {
+      "speaker": "Freund",
+      "de": "Stimmt… man kann leicht manipuliert werden.",
+      "ar": "صحيح… يمكن التلاعب بالناس بسهولة."
+    },
+    {
+      "speaker": "Noa",
+      "de": "Deshalb vergleiche ich immer mehrere Quellen.",
+      "ar": "ولهذا السبب أقارن بين عدة مصادر."
+    },
+    {
+      "speaker": "Freund",
+      "de": "Klingt klug.",
+      "ar": "يبدو ذكيًا."
+    },
+    {
+      "speaker": "Noa",
+      "de": "Nicht klug…",
+      "ar": "ليس ذكيًا… بل ضروري في هذا الزمن."
+    }
+  ],
+  "summary": [
+    {
+      "de": "Wir konsumieren täglich enorme Mengen an Informationen.",
+      "ar": "نستهلك يوميًا كميات هائلة من المعلومات."
+    },
+    {
+      "de": "Die Geschwindigkeit der Medien erschwert es, Fakten von Meinungen zu unterscheiden.",
+      "ar": "سرعة الإعلام تجعل من الصعب التمييز بين الحقائق والآراء."
+    },
+    {
+      "de": "Ständige Erreichbarkeit führt oft zu Stress und Überforderung.",
+      "ar": "التوفر الدائم يؤدي غالبًا إلى التوتر والإرهاق."
+    },
+    {
+      "de": "Überprüfte Informationen sind wertvoller als schnelle Informationen.",
+      "ar": "المعلومات المُتحقق منها أثمن من المعلومات السريعة."
+    }
+  ],
+  "quiz": [
+  {
+    "question": "Was bedeutet 'Informationsflut' im digitalen Zeitalter?",
+    "options": [
+      "Ein Mangel an Informationen",
+      "Eine sehr große Menge an Informationen, die schwer zu verarbeiten ist",
+      "Nur geprüfte Nachrichten"
+    ],
+    "answer": 1,
+    "hint": "تذكّر: Flut = فيضان… يعني كمية هائلة من المعلومات."
+  },
+  {
+    "question": "Warum sind 'seriöse Quellen' wichtig?",
+    "options": [
+      "Weil sie Informationen ohne Prüfung veröffentlichen",
+      "Weil sie glaubwürdige und überprüfte Informationen bereitstellen",
+      "Weil sie immer die schnellsten Nachrichten liefern"
+    ],
+    "answer": 1,
+    "hint": "Seriös = موثوق. يعني ناس بتتأكد من صحة الخبر."
+  },
+  {
+    "question": "Was bedeutet 'ständig erreichbar sein'?",
+    "options": [
+      "Nur am Wochenende erreichbar sein",
+      "Immer für Nachrichten und Anrufe verfügbar sein",
+      "Keinen Zugang zum Internet haben"
+    ],
+    "answer": 1,
+    "hint": "عبارة توصل فكرة العصر: متاح طول الوقت، حتى لو مو لازم!"
+  },
+  {
+    "question": "Welche Aussage beschreibt ein Risiko moderner Medien?",
+    "options": [
+      "Medien verbreiten Informationen immer korrekt.",
+      "Man kann durch manipulative Inhalte beeinflusst werden.",
+      "Soziale Medien machen jede Information glaubwürdig."
+    ],
+    "answer": 1,
+    "hint": "manipulativ = محتوى يلعب بعقلك بدون ما تحس."
+  },
+  {
+    "question": "Wie kann man Falschmeldungen vermeiden?",
+    "options": [
+      "Indem man Informationen sofort teilt",
+      "Indem man mehrere Quellen vergleicht",
+      "Indem man nur Titel liest"
+    ],
+    "answer": 1,
+    "hint": "بـB2 أهم شيء: قلّة التصديق وكثرة التحقق."
+  }
+
+
+  ],
+  "writingExercise": {
+    "instruction_de": "Schreibe einen Text (120–150 Wörter): Wie beeinflussen soziale Medien deinen Alltag?",
+    "instruction_ar": "اكتب نصًا (120–150 كلمة): كيف تؤثر وسائل التواصل الاجتماعي على حياتك اليومية؟",
+    "exampleAnswer": "Soziale Medien haben meinen Alltag stark verändert. Einerseits ermöglichen sie eine schnelle Kommunikation und einfache Informationssuche. Andererseits fühle ich mich manchmal überfordert, weil ich ständig erreichbar sein muss. Viele Nachrichten wirken glaubwürdig, obwohl sie nicht überprüft sind. Deshalb versuche ich, bewusster mit Informationen umzugehen und nur Inhalte zu konsumieren, die aus seriösen Quellen stammen. Meiner Meinung nach ist es wichtig, klare Grenzen zu setzen, damit soziale Medien uns nicht kontrollieren.",
+    "feedbackHints": [
+      "استخدم رأيًا واضحًا: Meiner Meinung nach…",
+      "اذكر جانبين: Vorteile und Nachteile.",
+      "استخدم جملة ثانوية: weil / obwohl / damit."
+    ]
+  }
+}
+,
+{
+  "id": "B2_L02_Arbeit_Karriere_Zukunft",
+  "title": {
+    "ar": "العمل، المسيرة المهنية والمستقبل",
+    "de": "Arbeit, Karriere & Zukunft",
+    "en": "Work, Career & Future"
+  },
+  "interactiveScene": "Noa يجلس أمام نافذة كبيرة في كافيه. ينظر إلى الناس وهم يذهبون إلى أعمالهم: بعضهم مسرع، بعضهم متوتر، وبعضهم يبدو وكأنه يذهب مجبرًا. Noa يتساءل: هل يجب أن تكون الحياة المهنية سباقًا؟ أم يمكن أن تكون رحلة بحث عن مكان يناسبنا؟ في عقله يظهر السؤال الكلاسيكي: Wo sehe ich mich in fünf Jahren?",
+  "explanation": [
+    { "de": "die Weiterbildung", "ar": "التطوير المهني / متابعة التعليم" },
+    { "de": "sich beruflich verändern", "ar": "تغيير المسار المهني" },
+    { "de": "die Aufstiegschance", "ar": "فرصة الترقّي" },
+    { "de": "die Vereinbarkeit von Beruf und Familie", "ar": "التوفيق بين العمل والعائلة" },
+    { "de": "flexible Arbeitszeiten", "ar": "أوقات عمل مرنة" },
+    { "de": "im Homeoffice arbeiten", "ar": "العمل من المنزل" },
+    { "de": "ein sicheres Einkommen", "ar": "دخل ثابت / آمن" },
+    { "de": "langfristige Perspektive", "ar": "منظور طويل الأمد" },
+    { "de": "berufliche Zufriedenheit", "ar": "الرضا المهني" },
+    { "de": "sich weiterentwickeln", "ar": "التطوّر / تحسين النفس مهنياً" }
+  ],
+  "phrasesTable": [
+    {
+      "de": "Für mich ist es wichtig, in einem Beruf zu arbeiten, der sowohl Sicherheit als auch Entwicklungsmöglichkeiten bietet.",
+      "ar": "من المهم بالنسبة لي أن أعمل في مهنة توفر الأمان وفرص التطور."
+    },
+    {
+      "de": "Viele Menschen wünschen sich flexible Arbeitszeiten, um Arbeit und Privatleben besser zu verbinden.",
+      "ar": "كثير من الناس يتمنون أوقات عمل مرنة لتسهيل التوازن بين العمل والحياة الخاصة."
+    },
+    {
+      "de": "Berufliche Zufriedenheit entsteht nicht nur durch Geld, sondern auch durch Anerkennung und gute Arbeitsbedingungen.",
+      "ar": "الرضا المهني لا يأتي من المال فقط، بل من التقدير وظروف العمل الجيدة."
+    },
+    {
+      "de": "Ich kann mir vorstellen, mich in den nächsten Jahren beruflich zu verändern.",
+      "ar": "أستطيع أن أتخيل أنني سأغير مساري المهني في السنوات القادمة."
+    },
+    {
+      "de": "Homeoffice bietet viele Vorteile, erfordert jedoch auch Selbstdisziplin.",
+      "ar": "العمل من المنزل يوفر فوائد كثيرة لكنه يحتاج إلى انضباط ذاتي."
+    }
+  ],
+  "tip": "في الامتحانات التي تتعلق بالعمل والمستقبل، استخدم دائمًا تراكيب تربط بين *الرغبات* و *الأسباب*: „mir ist wichtig, weil…“ أو „ich bevorzuge…, da…“. هذا يزيد من قوة الجمل ويُظهر مستوى B2 الحقيقي.",
+  "dialogue": [
+    {
+      "speaker": "Noa",
+      "de": "Was ist dir im Beruf am wichtigsten?",
+      "ar": "ما أهم شيء بالنسبة لك في العمل؟"
+    },
+    {
+      "speaker": "Kollege",
+      "de": "Ich brauche einen Job, der mir Stabilität gibt.",
+      "ar": "أحتاج إلى وظيفة تمنحني الاستقرار."
+    },
+    {
+      "speaker": "Noa",
+      "de": "Mir geht es eher um die Weiterentwicklung.",
+      "ar": "بالنسبة لي، التطور المهني أهم."
+    },
+    {
+      "speaker": "Kollege",
+      "de": "Kannst du dir vorstellen, im Ausland zu arbeiten?",
+      "ar": "هل تتخيل أن تعمل في الخارج؟"
+    },
+    {
+      "speaker": "Noa",
+      "de": "Langfristig vielleicht, aber im Moment nicht.",
+      "ar": "ربما على المدى البعيد، ولكن ليس الآن."
+    },
+    {
+      "speaker": "Kollege",
+      "de": "Homeoffice wäre doch etwas für dich, oder?",
+      "ar": "العمل من المنزل يناسبك، أليس كذلك؟"
+    },
+    {
+      "speaker": "Noa",
+      "de": "Auf jeden Fall. Es gibt mir mehr Freiheit.",
+      "ar": "أكيد. يمنحني حرية أكبر."
+    }
+  ],
+  "summary": [
+    {
+      "de": "Arbeit und Karriere hängen stark von persönlichen Werten ab.",
+      "ar": "العمل والمسيرة المهنية يعتمدان بشدة على القيم الشخصية."
+    },
+    {
+      "de": "Viele Menschen suchen Berufe, die sowohl flexibel als auch sicher sind.",
+      "ar": "الكثير يبحث عن وظائف تجمع بين المرونة والأمان."
+    },
+    {
+      "de": "Weiterbildung spielt eine entscheidende Rolle bei beruflichem Erfolg.",
+      "ar": "التطوير المهني يلعب دورًا حاسماً في النجاح المهني."
+    },
+    {
+      "de": "Die Zukunftsgestaltung beginnt mit realistischen, langfristigen Plänen.",
+      "ar": "تشكيل المستقبل يبدأ بخطط واقعية طويلة الأمد."
+    }
+  ],
+ "quiz": [
+  {
+    "question": "Was bedeutet 'Weiterbildung' im beruflichen Kontext?",
+    "options": [
+      "Urlaub machen, um sich zu entspannen",
+      "Neue Kenntnisse und Fähigkeiten lernen, um sich beruflich zu verbessern",
+      "Den Arbeitsplatz ohne Grund wechseln"
+    ],
+    "answer": 1,
+    "hint": "فكر في دورات، Seminare، Umschulung … كلها Teil من Weiterbildung."
+  },
+  {
+    "question": "Was beschreibt 'Vereinbarkeit von Beruf und Familie' am besten?",
+    "options": [
+      "Nur für die Arbeit leben",
+      "Arbeit und Familienleben gut miteinander kombinieren können",
+      "Nur am Wochenende arbeiten"
+    ],
+    "answer": 1,
+    "hint": "الكلمة الأساسية: kombinieren بين Job و Familie."
+  },
+  {
+    "question": "Welche Aussage passt zu einer langfristigen beruflichen Perspektive?",
+    "options": [
+      "Ich möchte jedes Jahr den Job wechseln.",
+      "Ich plane, mich Schritt für Schritt weiterzuentwickeln.",
+      "Ich habe keine Ziele für meine Zukunft."
+    ],
+    "answer": 1,
+    "hint": "langfristig = تخطيط على المدى البعيد، مو فوضى كل سنة."
+  },
+  {
+    "question": "Was bedeutet 'im Homeoffice arbeiten'?",
+    "options": [
+      "Von zu Hause aus arbeiten",
+      "Im Büro übernachten",
+      "Nur am Wochenende arbeiten"
+    ],
+    "answer": 0,
+    "hint": "Home + Office = مكتبك صار بالبيت 😉."
+  },
+  {
+    "question": "Was ist ein typisches B2-Argument zum Thema Karriere?",
+    "options": [
+      "Geld ist das Einzige, was zählt.",
+      "Berufliche Zufriedenheit entsteht durch mehrere Faktoren, nicht nur durch das Gehalt.",
+      "Je mehr Stress, desto besser der Job."
+    ],
+    "answer": 1,
+    "hint": "B2 يحب الجواب المتوازن، مو جواب متطرف."
+  }
+
+
+
+  ],
+  "writingExercise": {
+    "instruction_de": "Schreibe einen strukturierten Text (130–160 Wörter): Wie stellst du dir deinen idealen Beruf vor und welche Rolle spielen Sicherheit, Flexibilität und Entwicklungsmöglichkeiten?",
+    "instruction_ar": "اكتب نصًا منظمًا (130–160 كلمة): كيف تتخيل مهنتك المثالية؟ وما دور الأمان، المرونة، وفرص التطور في قرارك؟",
+    "exampleAnswer": "Mein idealer Beruf ist eine Tätigkeit, die sowohl Sicherheit als auch Entwicklungsmöglichkeiten bietet. Besonders wichtig ist mir, dass ich flexibel arbeiten kann, damit ich mein Privatleben gut organisieren kann. Homeoffice ist für mich eine attraktive Option, weil ich dort konzentrierter arbeiten kann. Dennoch brauche ich ein Team, mit dem ich regelmäßig kommuniziere. Ein sicheres Einkommen ist notwendig, aber nicht der einzige Faktor. Viel wichtiger ist es, dass ich mich in meinem Beruf weiterentwickeln und neue Fähigkeiten lernen kann. Langfristig wünsche ich mir eine Position, die Verantwortung beinhaltet und gleichzeitig Raum für Kreativität lässt.",
+    "feedbackHints": [
+      "استخدم Konnektoren: weil, obwohl, daher.",
+      "اذكر 3 عناصر أساسية: Sicherheit, Flexibilität, Entwicklung.",
+      "اختم بجملة تعبر عن رؤية طويلة الأمد."
+    ]
+  }
+}
+,
+{
+  "id": "B2_L03_Gesellschaft_Zusammenleben",
+  "title": {
+    "ar": "المجتمع والتعايش",
+    "de": "Gesellschaft & Zusammenleben",
+    "en": "Society & Living Together"
+  },
+  "interactiveScene": "Noa يمشي في حي متعدد الثقافات: الأطفال يلعبون معًا رغم اختلاف لغاتهم، روائح الطعام من دول مختلفة تملأ الشوارع، وموسيقى من أكثر من قارة تُسمع من النوافذ. في المصعد يسمع Noa ثلاث لغات في عشر ثوانٍ. يتساءل: هل يجعل التنوع التعايش أكثر تعقيدًا… أم أكثر غنى؟ هكذا يبدأ درس المجتمع والتفاعل بين الناس.",
+  "explanation": [
+    { "de": "die Vielfalt", "ar": "التنوّع" },
+    { "de": "das Zusammenleben", "ar": "التعايش" },
+    { "de": "Vorurteile abbauen", "ar": "التخلص من الأحكام المسبقة" },
+    { "de": "jemanden ausgrenzen", "ar": "إقصاء / تهميش شخص" },
+    { "de": "sich engagieren (ehrenamtlich)", "ar": "الانخراط / المشاركة (تطوعًا)" },
+    { "de": "Rücksicht nehmen auf", "ar": "مراعاة (شخص/شيء)" },
+    { "de": "kulturelle Unterschiede", "ar": "اختلافات ثقافية" },
+    { "de": "Missverständnisse", "ar": "سوء تفاهم" },
+    { "de": "Integration fördern", "ar": "دعم الاندماج" },
+    { "de": "Konflikte lösen", "ar": "حلّ النزاعات" }
+  ],
+  "phrasesTable": [
+    {
+      "de": "In einer vielfältigen Gesellschaft ist gegenseitige Rücksicht besonders wichtig.",
+      "ar": "في مجتمع متنوع، تصبح المراعاة المتبادلة مهمة بشكل خاص."
+    },
+    {
+      "de": "Viele Konflikte entstehen durch Missverständnisse und nicht durch böse Absicht.",
+      "ar": "كثير من النزاعات تنشأ بسبب سوء الفهم وليس النية السيئة."
+    },
+    {
+      "de": "Gemeinsame Projekte können das Zusammenleben deutlich verbessern.",
+      "ar": "يمكن للمشاريع المشتركة أن تحسن التعايش بشكل واضح."
+    },
+    {
+      "de": "Niemand sollte aufgrund seiner Herkunft ausgegrenzt werden.",
+      "ar": "لا ينبغي تهميش أحد بسبب أصله."
+    },
+    {
+      "de": "Ehrenamtliches Engagement stärkt das Gemeinschaftsgefühl.",
+      "ar": "العمل التطوعي يعزز الشعور بالمجتمع."
+    }
+  ],
+  "tip": "في موضوع المجتمع، استخدم دائمًا تراكيب B2 القوية: „einerseits… andererseits“, „nicht nur… sondern auch“, „zum einen… zum anderen“. هذه التراكيب تُظهر نضجًا لغويًا واضحًا.",
+  "dialogue": [
+    {
+      "speaker": "Noa",
+      "de": "Ich finde es spannend, in einem multikulturellen Viertel zu leben.",
+      "ar": "أجد العيش في حي متعدد الثقافات أمرًا ممتعًا."
+    },
+    {
+      "speaker": "Nachbar",
+      "de": "Ja, aber manchmal entstehen Missverständnisse, zum Beispiel wegen der Sprache.",
+      "ar": "نعم، لكن أحيانًا تحدث سوء تفاهم، خصوصًا بسبب اللغة."
+    },
+    {
+      "speaker": "Noa",
+      "de": "Das stimmt. Deshalb sind gemeinsame Feste so hilfreich.",
+      "ar": "صحيح. لهذا تكون الاحتفالات المشتركة مفيدة جدًا."
+    },
+    {
+      "speaker": "Nachbar",
+      "de": "Ich habe das Gefühl, dass Vielfalt uns bereichern kann, wenn wir offen bleiben.",
+      "ar": "أشعر أن التنوع يمكن أن يغنينا إذا بقينا منفتحين."
+    },
+    {
+      "speaker": "Noa",
+      "de": "Genau. Respekt ist die Grundlage von allem.",
+      "ar": "بالضبط. الاحترام هو أساس كل شيء."
+    }
+  ],
+  "summary": [
+    {
+      "de": "Vielfalt bietet Chancen, bringt aber auch Herausforderungen mit sich.",
+      "ar": "التنوع يقدم فرصًا، ولكنه يأتي أيضًا بتحديات."
+    },
+    {
+      "de": "Viele Probleme entstehen durch kulturelle Unterschiede und Missverständnisse.",
+      "ar": "العديد من المشاكل تنشأ بسبب الاختلافات الثقافية وسوء الفهم."
+    },
+    {
+      "de": "Rücksicht und Respekt sind grundlegende Elemente für friedliches Zusammenleben.",
+      "ar": "المراعاة والاحترام عنصران أساسيان للتعايش السلمي."
+    },
+    {
+      "de": "Ehrenamtliches Engagement kann das Gemeinschaftsgefühl stärken.",
+      "ar": "العمل التطوعي قد يعزز الشعور بالمجتمع."
+    }
+  ],
+"quiz": [
+  {
+    "question": "Was bedeutet 'Vielfalt' im gesellschaftlichen Kontext?",
+    "options": [
+      "Eine Gruppe mit identischen Meinungen",
+      "Das Zusammenleben verschiedener Kulturen und Lebensweisen",
+      "Ein Stadtteil ohne soziale Kontakte"
+    ],
+    "answer": 1,
+    "hint": "Vielfalt = Farben مختلفة للمجتمع، مو لون واحد."
+  },
+  {
+    "question": "Wodurch entstehen Missverständnisse häufig?",
+    "options": [
+      "Durch klare, offene Kommunikation",
+      "Durch kulturelle Unterschiede und unterschiedliche Erwartungen",
+      "Durch höfliches Verhalten"
+    ],
+    "answer": 1,
+    "hint": "السؤال عن مشاكل التفاهم بين ثقافات مختلفة."
+  },
+  {
+    "question": "Was bedeutet 'jemanden ausgrenzen'?",
+    "options": [
+      "Jemanden bewusst nicht in eine Gruppe aufnehmen",
+      "Jemanden freundlich einladen",
+      "Jemandem beim Umzug helfen"
+    ],
+    "answer": 0,
+    "hint": "ausgrenzen = حطّ واحد برا المجموعة عن قصد."
+  },
+  {
+    "question": "Was kann das Zusammenleben in einem multikulturellen Viertel verbessern?",
+    "options": [
+      "Strikte Trennung aller Gruppen",
+      "Gemeinsame Projekte und Feste",
+      "Keine Kommunikation zwischen den Bewohnern"
+    ],
+    "answer": 1,
+    "hint": "فكر في Aktivitäten مشتركة تجمع الناس، مو تفصلهم."
+  },
+  {
+    "question": "Welche Haltung passt zu einer offenen Gesellschaft?",
+    "options": [
+      "Vorurteile verstärken",
+      "Respekt und Interesse an anderen Lebensweisen zeigen",
+      "Nur mit Menschen aus der eigenen Kultur sprechen"
+    ],
+    "answer": 1,
+    "hint": "B2 يحب كلمة Respekt دائمًا في Themen عن Gesellschaft."
+  }
+
+
+
+  ],
+  "writingExercise": {
+    "instruction_de": "Schreibe einen Text (130–160 Wörter): Welche Vorteile und Schwierigkeiten hat das Leben in einem multikulturellen Viertel?",
+    "instruction_ar": "اكتب نصًا (130–160 كلمة): ما فوائد وصعوبات العيش في حي متعدد الثقافات؟",
+    "exampleAnswer": "Ein multikulturelles Viertel bietet viele Vorteile. Man lernt Menschen aus verschiedenen Ländern kennen und bekommt Einblicke in unterschiedliche Traditionen. Zum Beispiel erlebt man Feste, Speisen und Sprachen, die man sonst nie kennengelernt hätte. Andererseits gibt es natürlich auch Herausforderungen. Missverständnisse entstehen schnell, besonders wenn Menschen unterschiedliche Vorstellungen von Regeln oder Kommunikation haben. Dennoch bin ich überzeugt, dass Vielfalt eine Bereicherung ist, wenn man offen und respektvoll bleibt. Durch gemeinsame Aktivitäten kann man Vorurteile abbauen und das Zusammenleben stärken.",
+    "feedbackHints": [
+      "اكتب مثالًا إيجابيًا وآخر سلبيًا.",
+      "استخدم تراكيب: einerseits… andererseits.",
+      "اختم بجملة توضح رأيك الشخصي."
+    ]
+  }
+}
+,
+{
+  "id": "B2_L04_Wissenschaft_Technik_Fortschritt",
+  "title": {
+    "ar": "العلم، التقنية والتقدّم",
+    "de": "Wissenschaft, Technik & Fortschritt",
+    "en": "Science, Technology & Progress"
+  },
+  "interactiveScene": "Noa يجلس أمام شاشة كبيرة ويلاحظ أن البرامج والتطبيقات أصبحت 'تفكر' أسرع من البشر في بعض الحالات. ذكاء اصطناعي يقترح، ويحلل، ويكتب، ويصحح، بل ويتوقع احتياجات المستخدم. يسأل Noa نفسه: هل التقدم التكنولوجي دائمًا تقدمًا للإنسان؟ أم أن هناك جانبًا آخر لا نراه بوضوح؟",
+  "explanation": [
+    { "de": "der Fortschritt", "ar": "التقدّم" },
+    { "de": "die Entwicklung", "ar": "التطوّر" },
+    { "de": "Daten auswerten", "ar": "تحليل البيانات" },
+    { "de": "automatisieren", "ar": "أتمتة" },
+    { "de": "die Künstliche Intelligenz (KI)", "ar": "الذكاء الاصطناعي" },
+    { "de": "der Eingriff in die Privatsphäre", "ar": "التدخل في الخصوصية" },
+    { "de": "der Nutzen", "ar": "الفائدة" },
+    { "de": "das Risiko", "ar": "الخطر / المخاطرة" },
+    { "de": "arbeitslos werden durch Automatisierung", "ar": "فقدان الوظيفة بسبب الأتمتة" },
+    { "de": "technologische Abhängigkeit", "ar": "الاعتماد التكنولوجي" }
+  ],
+  "phrasesTable": [
+    {
+      "de": "Technologischer Fortschritt bietet große Chancen, ist aber auch mit Risiken verbunden.",
+      "ar": "التقدم التكنولوجي يقدم فرصًا كبيرة، لكنه يحمل أيضًا مخاطر."
+    },
+    {
+      "de": "Durch KI können enorme Datenmengen in kurzer Zeit ausgewertet werden.",
+      "ar": "يمكن للذكاء الاصطناعي تحليل كميات هائلة من البيانات في فترة قصيرة."
+    },
+    {
+      "de": "Viele Menschen haben Sorge, dass Maschinen Arbeitsplätze ersetzen könnten.",
+      "ar": "كثير من الناس يخشون أن تحلّ الآلات مكان الوظائف."
+    },
+    {
+      "de": "Datenschutz spielt eine wichtige Rolle in einer digitalisierten Gesellschaft.",
+      "ar": "حماية البيانات تلعب دورًا مهمًا في مجتمع رقمي."
+    },
+    {
+      "de": "Neue Technologien sollten dem Menschen dienen – nicht umgekehrt.",
+      "ar": "يجب أن تخدم التقنيات الجديدة الإنسان، لا أن يحدث العكس."
+    }
+  ],
+  "tip": "عند الحديث عن العلم والتقنية، استخدم دائمًا تراكيب B2 مثل: 'einerseits… andererseits', 'sowohl… als auch', 'obwohl'. واذكر دائمًا جانبين: الفائدة + الخطر. هكذا تتشكل إجابة B2 كاملة.",
+  "dialogue": [
+    {
+      "speaker": "Noa",
+      "de": "Ich finde es faszinierend, wie schnell sich die Technik entwickelt.",
+      "ar": "أجد من المدهش السرعة التي تتطور بها التقنية."
+    },
+    {
+      "speaker": "Kollege",
+      "de": "Ja, aber manchmal habe ich das Gefühl, dass wir die Kontrolle verlieren.",
+      "ar": "نعم، لكن أحيانًا أشعر أننا نفقد السيطرة."
+    },
+    {
+      "speaker": "Noa",
+      "de": "Das stimmt. Vor allem, wenn es um Datenschutz geht.",
+      "ar": "صحيح، خاصة عندما يتعلق الأمر بحماية البيانات."
+    },
+    {
+      "speaker": "Kollege",
+      "de": "Hast du keine Sorge, dass KI zu mächtig wird?",
+      "ar": "ألا تقلق من أن يصبح الذكاء الاصطناعي قويًا جدًا؟"
+    },
+    {
+      "speaker": "Noa",
+      "de": "Doch. Aber ich glaube, klare Regeln können helfen.",
+      "ar": "بالتأكيد، لكن أعتقد أن القوانين الواضحة يمكن أن تساعد."
+    },
+    {
+      "speaker": "Kollege",
+      "de": "Dann bleibt nur die Frage: Wer setzt die Regeln?",
+      "ar": "يبقى السؤال: من يضع هذه القوانين؟"
+    }
+  ],
+  "summary": [
+    {
+      "de": "Technologie kann viele Prozesse erleichtern, ersetzt aber menschliche Entscheidungen nicht vollständig.",
+      "ar": "التقنية يمكن أن تسهّل العديد من العمليات، لكنها لا يمكن أن تستبدل القرار البشري بالكامل."
+    },
+    {
+      "de": "Automatisierung bringt Effizienz, kann aber Arbeitsplätze gefährden.",
+      "ar": "الأتمتة تجلب الكفاءة، لكنها قد تهدد الوظائف."
+    },
+    {
+      "de": "Datenschutz bleibt ein zentrales Thema in der modernen Welt.",
+      "ar": "حماية البيانات تبقى موضوعًا أساسيًا في العالم الحديث."
+    },
+    {
+      "de": "Technologie sollte verantwortungsvoll und bewusst genutzt werden.",
+      "ar": "يجب استخدام التقنية بوعي ومسؤولية."
+    }
+  ],
+  "quiz": [
+  {
+    "question": "Was bedeutet 'Daten auswerten'?",
+    "options": [
+      "Daten löschen",
+      "Daten analysieren und interpretieren",
+      "Daten geheim halten"
+    ],
+    "answer": 1,
+    "hint": "auswerten = من Info تطلع نتيجة أو Interpretation."
+  },
+  {
+    "question": "Welche Aussage beschreibt ein ausgewogenes B2-Argument?",
+    "options": [
+      "Technologie hat nur Vorteile.",
+      "Technologie hat sowohl Vorteile als auch Risiken.",
+      "Technologie sollte komplett verboten werden."
+    ],
+    "answer": 1,
+    "hint": "B2 = دائمًا Vorteile + Nachteile معًا."
+  },
+  {
+    "question": "Was ist eine mögliche Gefahr der Automatisierung?",
+    "options": [
+      "Mehr Freizeit für alle",
+      "Verlust von Arbeitsplätzen",
+      "Bessere Kaffeequalität"
+    ],
+    "answer": 1,
+    "hint": "Thema Klassiker: Maschinen nehmen Jobs weg."
+  },
+  {
+    "question": "Warum ist Datenschutz wichtig?",
+    "options": [
+      "Er schützt persönliche Informationen vor Missbrauch.",
+      "Er macht Geräte schneller.",
+      "Er reduziert Stromkosten."
+    ],
+    "answer": 0,
+    "hint": "Datenschutz = حماية معلوماتك من ناس غلط."
+  },
+  {
+    "question": "Was beschreibt 'technologische Abhängigkeit'?",
+    "options": [
+      "Menschen können gut ohne Technik leben.",
+      "Menschen verlassen sich stark auf Geräte und Systeme.",
+      "Technologie wird kaum genutzt."
+    ],
+    "answer": 1,
+    "hint": "تخيّل حياتك بدون Handy… هون تفهم كلمة Abhängigkeit 😅."
+  }
+
+  ],
+  "writingExercise": {
+    "instruction_de": "Schreibe einen argumentativen Text (130–160 Wörter): Sind neue Technologien eher eine Chance oder eine Gefahr für die Gesellschaft?",
+    "instruction_ar": "اكتب نصًا حِجَاجيًا (130–160 كلمة): هل تُعد التقنيات الحديثة فرصة أم خطرًا على المجتمع؟",
+    "exampleAnswer": "Neue Technologien haben unseren Alltag stark verändert. Einerseits ermöglichen sie schnellere Kommunikation, effizientere Arbeitsprozesse und innovative Lösungen in Medizin und Forschung. Andererseits entstehen durch Automatisierung und KI neue Risiken, wie der Verlust von Arbeitsplätzen oder der Eingriff in die Privatsphäre. Meiner Meinung nach hängt es davon ab, wie verantwortungsvoll wir mit Technologie umgehen. Wenn klare Regeln bestehen und der Mensch im Mittelpunkt bleibt, überwiegen die Chancen. Ohne Regulierung können jedoch ernsthafte Probleme entstehen. Daher ist es wichtig, Fortschritt bewusst und kritisch zu begleiten.",
+    "feedbackHints": [
+      "Nutze Konnektoren: einerseits… andererseits.",
+      "Führe mindestens ein Risiko und eine Chance an.",
+      "Schließe mit einer klaren Meinung."
+    ]
+  }
+}
+,
+{
+  "id": "B2_L05_Gesundheit_Ernaehrung_Lifestyle",
+  "title": {
+    "ar": "الصحة، التغذية وأسلوب الحياة",
+    "de": "Gesundheit, Ernährung & Lifestyle",
+    "en": "Health, Nutrition & Lifestyle"
+  },
+  "interactiveScene": "Noa يقرر أن يعيش يومًا صحيًا: يبدأ صباحه بماء دافئ ورياضة خفيفة وإفطار متوازن. في المساء يجد نفسه أمام بيتزا كبيرة ومشروب غازي وفيديوهات قصيرة لا تنتهي. يتساءل Noa: هل أنا فعلاً مشغول… أم فقط غير منظم؟ هنا يبدأ الطريق بين النوايا الجيدة والواقع اليومي.",
+  "explanation": [
+    { "de": "sich ausgewogen ernähren", "ar": "التغذّي بشكل متوازن" },
+    { "de": "der Schlafmangel", "ar": "نقص النوم" },
+    { "de": "auf etwas verzichten", "ar": "الامتناع عن شيء" },
+    { "de": "die Gewohnheit", "ar": "العادة" },
+    { "de": "der Ausgleich", "ar": "التوازن / التعويض" },
+    { "de": "mit Stress umgehen", "ar": "التعامل مع الضغط النفسي" },
+    { "de": "sich etwas vornehmen", "ar": "أن ينوي فعل شيء / يخطط" },
+    { "de": "scheitern an + Dativ", "ar": "يفشل بسبب…" },
+    { "de": "bewusst konsumieren", "ar": "الاستهلاك بوعي" },
+    { "de": "überfordert sein", "ar": "أن يكون مثقلًا نفسياً" }
+  ],
+  "phrasesTable": [
+    {
+      "de": "Ich versuche, mich ausgewogen zu ernähren, aber im Alltag ist das oft schwierig.",
+      "ar": "أحاول أن أتغذى بشكل متوازن، لكن ذلك صعب غالبًا في الحياة اليومية."
+    },
+    {
+      "de": "Viele gute Vorsätze scheitern daran, dass man zu viel auf einmal ändern will.",
+      "ar": "تفشل كثير من النوايا الجيدة لأن الأشخاص يحاولون تغيير أشياء كثيرة دفعة واحدة."
+    },
+    {
+      "de": "Ein kurzer Spaziergang kann ein guter Ausgleich nach einem stressigen Tag sein.",
+      "ar": "يمكن لنزهة قصيرة أن تكون توازنًا جيدًا بعد يوم مليء بالضغط."
+    },
+    {
+      "de": "Auf Zucker zu verzichten fällt vielen Menschen schwer.",
+      "ar": "الامتناع عن السكر صعب على كثير من الناس."
+    },
+    {
+      "de": "Ausreichender Schlaf ist oft wichtiger als eine perfekte Ernährung.",
+      "ar": "النوم الكافي غالبًا أهم من تغذية مثالية."
+    }
+  ],
+  "tip": "تذكّر Noa-Rregel: \"Kleine Schritte statt große Pläne.\" أي خطوة صغيرة مستمرة أهم من محاولة تغيير الحياة كاملة في أسبوع واحد. هذا المنطق يُعتبر أساس نصوص B2 حول الصحة والعادات.",
+  "dialogue": [
+    {
+      "speaker": "Noa",
+      "de": "Ich nehme mir jede Woche vor, weniger Süßigkeiten zu essen.",
+      "ar": "أخطط كل أسبوع أن آكل حلويات أقل."
+    },
+    {
+      "speaker": "Freund",
+      "de": "Und klappt es?",
+      "ar": "وهل ينجح الأمر؟"
+    },
+    {
+      "speaker": "Noa",
+      "de": "Montags ja, ab Mittwoch meistens nicht mehr.",
+      "ar": "نعم يوم الاثنين، لكن من الأربعاء عادة لا."
+    },
+    {
+      "speaker": "Freund",
+      "de": "Warum ist es so schwer, Gewohnheiten zu ändern?",
+      "ar": "لماذا من الصعب تغيير العادات؟"
+    },
+    {
+      "speaker": "Noa",
+      "de": "Weil wir oft alles gleichzeitig ändern wollen.",
+      "ar": "لأننا غالبًا نحاول تغيير كل شيء دفعة واحدة."
+    }
+  ],
+  "summary": [
+    {
+      "de": "Gesundheit hängt nicht nur von Ernährung, sondern auch von Schlaf und Stress ab.",
+      "ar": "الصحة لا تعتمد على التغذية فقط، بل على النوم والضغط النفسي."
+    },
+    {
+      "de": "Kleine realistische Schritte führen langfristig zu besseren Ergebnissen.",
+      "ar": "الخطوات الصغيرة الواقعية تؤدي إلى نتائج أفضل على المدى الطويل."
+    },
+    {
+      "de": "Bewusster Konsum und gute Gewohnheiten können das Wohlbefinden deutlich verbessern.",
+      "ar": "الاستهلاك الواعي والعادات الجيدة يمكن أن يحسّنا الشعور العام بشكل واضح."
+    }
+  ],
+  
+"quiz": [
+  {
+    "question": "Was bedeutet 'auf etwas verzichten'?",
+    "options": [
+      "Etwas häufiger konsumieren",
+      "Etwas bewusst weglassen oder nicht benutzen",
+      "Etwas neu kaufen"
+    ],
+    "answer": 1,
+    "hint": "مثال: auf Zucker, auf Fast Food, auf Cola verzichten."
+  },
+  {
+    "question": "Warum scheitern viele gute Vorsätze laut Text?",
+    "options": [
+      "Weil man zu viel gleichzeitig ändern will",
+      "Weil der Tag zu viele Stunden hat",
+      "Weil man zu motiviert ist"
+    ],
+    "answer": 0,
+    "hint": "الجملة الذهبية: Viele gute Vorsätze scheitern daran, dass…"
+  },
+  {
+    "question": "Was kann ein guter Ausgleich nach einem stressigen Tag sein?",
+    "options": [
+      "Ein kurzer Spaziergang",
+      "Mehr Bildschirmzeit",
+      "Noch mehr Arbeit"
+    ],
+    "answer": 0,
+    "hint": "Ausgleich = شيء يخفف الضغط، مو يزيده."
+  },
+  {
+    "question": "Was ist laut Lektion oft wichtiger als perfekte Ernährung?",
+    "options": [
+      "Längere Arbeitszeit",
+      "Ausreichender Schlaf",
+      "Mehr Kaffee"
+    ],
+    "answer": 1,
+    "hint": "الصحة = أكل + نوم + Stress… مو أكل فقط."
+  },
+  {
+    "question": "Was bedeutet 'bewusst konsumieren'?",
+    "options": [
+      "Ohne nachzudenken konsumieren",
+      "Mit Aufmerksamkeit und klaren Entscheidungen konsumieren",
+      "So viel wie möglich konsumieren"
+    ],
+    "answer": 1,
+    "hint": "يعني تسأل حالك قبل ما تشتري أو تاكل: هل أحتاج هذا؟"
+  }
+
+  ],
+  "writingExercise": {
+    "instruction_de": "Schreibe einen reflektierenden Text (130–160 Wörter): Welche Gewohnheit würdest du gerne ändern, um gesünder zu leben?",
+    "instruction_ar": "اكتب نصًا تأمليًا (130–160 كلمة): ما العادة التي ترغب بتغييرها للعيش بشكل أكثر صحة؟",
+    "exampleAnswer": "Ich habe mir vorgenommen, abends weniger Zeit am Handy zu verbringen. Oft scrolle ich lange durch soziale Netzwerke, obwohl ich müde bin. Das führt dazu, dass ich später einschlafe und morgens nicht erholt bin. Um gesünder zu leben, möchte ich mein Handy ab 21 Uhr weglegen und stattdessen ein Buch lesen oder einen kurzen Spaziergang machen. Außerdem möchte ich meine Ernährung bewusster gestalten, indem ich weniger Zucker konsumiere. Kleine Schritte sind realistischer als große Veränderungen. Wenn ich meine Gewohnheiten langsam verbessere, wird sich das langfristig positiv auf meine Gesundheit auswirken.",
+    "feedbackHints": [
+      "Nenne eine konkrete Gewohnheit.",
+      "Erkläre, warum sie ungesund ist.",
+      "Schließe mit einem realistischen Ziel oder Plan."
+    ]
+  }
+}
+,
+{
+  "id": "B2_L06_Kultur_Kreativitaet",
+  "title": {
+    "ar": "الثقافة والإبداع",
+    "de": "Kultur & Kreativität",
+    "en": "Culture & Creativity"
+  },
+  "interactiveScene": "Noa يقف في معرض فني معاصر. لوحة مجرد خطوط وألوان، تبدو بسيطة لكنها تحمل شيئًا غامضًا. صديق Noa يقول: „Das kann ich auch!“، بينما يتساءل Noa: إذا كان يستطيع فعلها… لماذا لم يفعل؟ في تلك اللحظة يدرك Noa أن الإبداع ليس مهارة فقط، بل طريقة رؤية وفهم وتفسير للعالم.",
+  "explanation": [
+    { "de": "die Kultur", "ar": "الثقافة" },
+    { "de": "kreativ sein", "ar": "أن يكون الشخص مبدعًا" },
+    { "de": "etwas ausdrücken", "ar": "التعبير عن شيء" },
+    { "de": "die Interpretation", "ar": "التفسير" },
+    { "de": "künstlerisch", "ar": "فنّي / ذو صبغة فنية" },
+    { "de": "kulturelle Vielfalt", "ar": "التنوع الثقافي" },
+    { "de": "traditionell vs. modern", "ar": "تقليدي مقابل عصري" },
+    { "de": "inspiration finden", "ar": "إيجاد الإلهام" },
+    { "de": "die Ausdrucksform", "ar": "أسلوب/طريقة التعبير" },
+    { "de": "ästhetisch", "ar": "جمالي / ذو طابع فني جميل" }
+  ],
+  "phrasesTable": [
+    {
+      "de": "Kreativität bedeutet, neue Perspektiven zu entdecken und Ideen ungewöhnlich zu verbinden.",
+      "ar": "الإبداع يعني اكتشاف وجهات نظر جديدة وربط الأفكار بطريقة غير مألوفة."
+    },
+    {
+      "de": "Kunst muss nicht jedem gefallen – sie soll zum Nachdenken anregen.",
+      "ar": "ليس من الضروري أن يعجب الفن الجميع، بل يجب أن يدفع للتفكير."
+    },
+    {
+      "de": "Traditionelle Elemente können in moderner Kunst neu interpretiert werden.",
+      "ar": "يمكن إعادة تفسير العناصر التقليدية في الفن الحديث."
+    },
+    {
+      "de": "Inspiration findet man oft im Alltag, nicht nur in Museen.",
+      "ar": "غالبًا ما نجد الإلهام في الحياة اليومية، وليس فقط في المتاحف."
+    },
+    {
+      "de": "Kulturelle Vielfalt bereichert die kreative Szene einer Gesellschaft.",
+      "ar": "التنوع الثقافي يُثري المشهد الإبداعي في المجتمع."
+    }
+  ],
+  "tip": "في موضوع الثقافة والإبداع، استخدم دائمًا لغة وصفية ورأي شخصي: „Meiner Meinung nach…“, „Ich finde es beeindruckend, dass…“، فالممتحِن يريد رؤية الحس التحليلي باللغة.",
+  "dialogue": [
+    {
+      "speaker": "Noa",
+      "de": "Wie interpretierst du dieses Bild?",
+      "ar": "كيف تفسر هذه اللوحة؟"
+    },
+    {
+      "speaker": "Freund",
+      "de": "Ich glaube, es zeigt Freiheit und Chaos gleichzeitig.",
+      "ar": "أعتقد أنها تُظهر الحرية والفوضى في الوقت نفسه."
+    },
+    {
+      "speaker": "Noa",
+      "de": "Interessant. Für mich wirkt es eher ruhig.",
+      "ar": "مثير للاهتمام. بالنسبة لي تبدو أكثر هدوءًا."
+    },
+    {
+      "speaker": "Freund",
+      "de": "Das zeigt, wie unterschiedlich Kunst wahrgenommen wird.",
+      "ar": "وهذا يُظهر كيف يُدرَك الفن بشكل مختلف عند الناس."
+    },
+    {
+      "speaker": "Noa",
+      "de": "Genau. Jeder bringt seine eigenen Erfahrungen mit.",
+      "ar": "بالضبط. كل شخص يأتي بخبراته الخاصة."
+    }
+  ],
+  "summary": [
+    {
+      "de": "Kultur und Kreativität spiegeln die Vielfalt einer Gesellschaft wider.",
+      "ar": "الثقافة والإبداع يعكسان تنوع المجتمع."
+    },
+    {
+      "de": "Kunst lebt von Interpretation und persönlichen Perspektiven.",
+      "ar": "الفن يعيش عبر التفسير والوجهات الشخصية."
+    },
+    {
+      "de": "Inspiration kann in alltäglichen Situationen entstehen.",
+      "ar": "الإلهام يمكن أن ينشأ من مواقف الحياة اليومية."
+    },
+    {
+      "de": "Tradition und Moderne können kreativ kombiniert werden.",
+      "ar": "يمكن دمج التقليدي والحديث بشكل إبداعي."
+    }
+  ],
+ "quiz": [
+  {
+    "question": "Was bedeutet 'Interpretation' im künstlerischen Kontext?",
+    "options": [
+      "Eine genaue Kopie eines Kunstwerks",
+      "Eine persönliche Deutung eines Kunstwerks",
+      "Eine technische Reparatur"
+    ],
+    "answer": 1,
+    "hint": "كل شخص يشوف اللوحة بشكل مختلف → هذا هو Interpretation."
+  },
+  {
+    "question": "Was kann kulturelle Vielfalt bewirken?",
+    "options": [
+      "Weniger kreative Ideen",
+      "Eine Bereicherung der kreativen Szene",
+      "Eine einheitliche Sichtweise"
+    ],
+    "answer": 1,
+    "hint": "تخيّل موسيقى، أكل، لغات من ثقافات مختلفة = Ideen mehr."
+  },
+  {
+    "question": "Was beschreibt Kreativität am besten?",
+    "options": [
+      "Das Wiederholen bekannter Ideen",
+      "Das Finden neuer Perspektiven und Verbindungen",
+      "Das Ignorieren kultureller Einflüsse"
+    ],
+    "answer": 1,
+    "hint": "Kreativität = sehen, was andere nicht sehen."
+  },
+  {
+    "question": "Was bedeutet 'Inspiration finden'?",
+    "options": [
+      "Etwas mechanisch auswendig lernen",
+      "Ideen entdecken, die zu neuen Gedanken führen",
+      "Etwas kaufen"
+    ],
+    "answer": 1,
+    "hint": "فكر بلحظة: فجأة خطرتلك فكرة حلوة من موقف بسيط."
+  },
+  {
+    "question": "Welche Aussage passt zu moderner Kunst?",
+    "options": [
+      "Sie muss immer realistisch sein.",
+      "Sie kann traditionelle Elemente neu interpretieren.",
+      "Sie darf keine Emotionen ausdrücken."
+    ],
+    "answer": 1,
+    "hint": "الجميل في الفن الحديث: يلعب بالتقليدي ويعيد تشكيله."
+  }
+
+  ],
+  "writingExercise": {
+    "instruction_de": "Schreibe einen Text (130–160 Wörter): Welche Rolle spielt Kreativität in deinem Alltag und wie beeinflussen Kultur und Umgebung deine Ideen?",
+    "instruction_ar": "اكتب نصًا (130–160 كلمة): ما دور الإبداع في حياتك اليومية؟ وكيف تؤثر الثقافة والبيئة على أفكارك؟",
+    "exampleAnswer": "Für mich spielt Kreativität im Alltag eine wichtige Rolle. Oft entstehen neue Ideen in Momenten, in denen ich gar nicht damit rechne – zum Beispiel beim Spazierengehen oder beim Beobachten von Menschen. Kultur beeinflusst meine Kreativität stark. Unterschiedliche Traditionen, Sprachen und Kunstformen eröffnen neue Perspektiven. Besonders inspirierend finde ich Orte, an denen verschiedene Kulturen aufeinandertreffen. Dort entstehen einzigartige Kombinationen aus traditionellen und modernen Elementen. Meiner Meinung nach ist Kreativität nicht nur Talent, sondern eine Art, die Welt bewusst wahrzunehmen.",
+    "feedbackHints": [
+      "Erwähne mindestens ein Beispiel aus dem Alltag.",
+      "Nutze ein B2-Konnektor wie 'einerseits… andererseits'.",
+      "Schließe mit einer klaren persönlichen Meinung."
+    ]
+  }
+}
+,
+{
+  "id": "B2_L07_Politik_Wirtschaft_Globalisierung",
+  "title": {
+    "ar": "السياسة، الاقتصاد والعولمة",
+    "de": "Politik, Wirtschaft & Globalisierung",
+    "en": "Politics, Economy & Globalization"
+  },
+  "interactiveScene": "Noa يشاهد نشرة الأخبار: انتخابات في دولة ما، أزمة في سوق العمل، تحسن في التجارة العالمية، نقاشات حول الضرائب… وفي الخلفية تقرير عن تأثير الشركات الكبرى على حياتنا اليومية. يتساءل Noa: هل ما يحدث في قارة بعيدة يمكن أن يؤثر فعلاً على حياتي هنا؟ الإجابة غالبًا: نعم. وهكذا يبدأ درس السياسة والاقتصاد والعولمة.",
+  "explanation": [
+    { "de": "die Globalisierung", "ar": "العولمة" },
+    { "de": "die Wirtschaftslage", "ar": "الوضع الاقتصادي" },
+    { "de": "politische Entscheidung", "ar": "قرار سياسي" },
+    { "de": "der Einfluss", "ar": "التأثير" },
+    { "de": "die Arbeitslosigkeit", "ar": "البطالة" },
+    { "de": "Fairer Handel", "ar": "التجارة العادلة" },
+    { "de": "der Wohlstand", "ar": "الرفاهية" },
+    { "de": "der Konflikt", "ar": "الصراع" },
+    { "de": "internationale Zusammenarbeit", "ar": "التعاون الدولي" },
+    { "de": "die Steuern", "ar": "الضرائب" }
+  ],
+  "phrasesTable": [
+    {
+      "de": "Globalisierung verbindet Länder wirtschaftlich, kulturell und politisch.",
+      "ar": "العولمة تربط الدول اقتصاديًا وثقافيًا وسياسيًا."
+    },
+    {
+      "de": "Politische Entscheidungen haben oft direkte Auswirkungen auf den Alltag der Menschen.",
+      "ar": "القرارات السياسية غالبًا ما يكون لها تأثير مباشر على حياة الناس."
+    },
+    {
+      "de": "Eine stabile Wirtschaftslage schafft Sicherheit und neue Arbeitsplätze.",
+      "ar": "الوضع الاقتصادي المستقر يخلق الأمان وفرص عمل جديدة."
+    },
+    {
+      "de": "Internationale Zusammenarbeit ist wichtig, um globale Probleme zu lösen.",
+      "ar": "التعاون الدولي مهم لحل المشاكل العالمية."
+    },
+    {
+      "de": "Hohe Steuern können einerseits den Staat stärken, andererseits die Bürger belasten.",
+      "ar": "الضرائب المرتفعة يمكن أن تقوي الدولة من ناحية، ولكن تثقل كاهل المواطنين من ناحية أخرى."
+    }
+  ],
+  "tip": "في نصوص السياسة والاقتصاد، أظهر دائمًا تفكيرًا تحليليًا: استخدم Konnektoren مثل 'einerseits… andererseits', 'zum einen… zum anderen', 'daher', 'infolgedessen'. بهذا تُظهر أنك قادر على فهم العلاقات بين السبب والنتيجة.",
+  "dialogue": [
+    {
+      "speaker": "Noa",
+      "de": "Hast du die neuesten Nachrichten gesehen?",
+      "ar": "هل شاهدت آخر الأخبار؟"
+    },
+    {
+      "speaker": "Freund",
+      "de": "Ja, die Wirtschaftslage verändert sich ständig.",
+      "ar": "نعم، الوضع الاقتصادي يتغير باستمرار."
+    },
+    {
+      "speaker": "Noa",
+      "de": "Globalisierung spielt dabei eine große Rolle.",
+      "ar": "العولمة تلعب دورًا كبيرًا في ذلك."
+    },
+    {
+      "speaker": "Freund",
+      "de": "Stimmt. Entscheidungen in einem Land können andere Länder sofort beeinflussen.",
+      "ar": "صحيح. القرارات في دولة ما قد تؤثر فورًا على دول أخرى."
+    },
+    {
+      "speaker": "Noa",
+      "de": "Deshalb ist internationale Zusammenarbeit so wichtig.",
+      "ar": "ولهذا يكون التعاون الدولي مهمًا جدًا."
+    }
+  ],
+  "summary": [
+    {
+      "de": "Politik und Wirtschaft beeinflussen das tägliche Leben stärker, als viele denken.",
+      "ar": "السياسة والاقتصاد يؤثران على الحياة اليومية أكثر مما يعتقد الكثيرون."
+    },
+    {
+      "de": "Globalisierung schafft Chancen, führt aber auch zu neuen Herausforderungen.",
+      "ar": "العولمة تخلق فرصًا، لكنها تؤدي أيضًا إلى تحديات جديدة."
+    },
+    {
+      "de": "Internationale Zusammenarbeit ist entscheidend, um Konflikte und globale Probleme zu bewältigen.",
+      "ar": "التعاون الدولي ضروري لمواجهة الصراعات والمشاكل العالمية."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Was bedeutet 'Globalisierung'?",
+      "options": [
+        "Die Isolation einzelner Länder",
+        "Die weltweite wirtschaftliche und kulturelle Vernetzung",
+        "Die Abschaffung des Handels"
+      ],
+      "answer": 1,
+      "hint": "Global = عالمي. Vernetzung = ارتباط."
+    },
+    {
+      "question": "Was beschreibt eine stabile Wirtschaftslage?",
+      "options": [
+        "Viele Veränderungen und Unsicherheiten",
+        "Wachstum, Sicherheit und gute Arbeitsmöglichkeiten",
+        "Sehr hohe Arbeitslosigkeit"
+      ],
+      "answer": 1,
+      "hint": "stabil = ثابت، آمن، بدون تقلبات كبيرة."
+    },
+    {
+      "question": "Was kann eine Folge politischer Entscheidungen sein?",
+      "options": [
+        "Keine Änderungen im Alltag",
+        "Direkte Auswirkungen auf Bürger und Unternehmen",
+        "Komplettes Ende der Globalisierung"
+      ],
+      "answer": 1,
+      "hint": "السياسة → قوانين → تؤثر على حياتك اليومية."
+    },
+    {
+      "question": "Was ist ein Ziel internationaler Zusammenarbeit?",
+      "options": [
+        "Mehr Konflikte zwischen Ländern",
+        "Globale Probleme gemeinsam lösen",
+        "Handel komplett stoppen"
+      ],
+      "answer": 1,
+      "hint": "مثل مكافحة التغير المناخي أو الأزمات الاقتصادية."
+    },
+    {
+      "question": "Was kann eine negative Seite hoher Steuern sein?",
+      "options": [
+        "Bürger werden finanziell stärker belastet",
+        "Mehr Wohlstand für alle privat",
+        "Keine Auswirkungen auf die Bevölkerung"
+      ],
+      "answer": 0,
+      "hint": "Belastung = عبء."
+    }
+  ],
+  "writingExercise": {
+    "instruction_de": "Schreibe einen argumentativen Text (140–170 Wörter): Welche Auswirkungen hat Globalisierung auf dein tägliches Leben?",
+    "instruction_ar": "اكتب نصًا حِجَاجيًا (140–170 كلمة): ما تأثير العولمة على حياتك اليومية؟",
+    "exampleAnswer": "Globalisierung beeinflusst meinen Alltag auf vielfältige Weise. Einerseits habe ich Zugang zu Produkten aus der ganzen Welt, was das Leben einfacher und komfortabler macht. Andererseits führt die internationale Vernetzung dazu, dass wirtschaftliche Krisen in anderen Ländern auch mich indirekt betreffen können. Durch globale Medien bekomme ich Informationen schneller, aber auch das Risiko von Falschmeldungen steigt. Außerdem ermöglicht Globalisierung neue Arbeitsmöglichkeiten, besonders im digitalen Bereich. Meiner Meinung nach ist Globalisierung eine Chance, solange faire Arbeitsbedingungen und Datenschutz ernst genommen werden. Ohne diese Regeln kann Globalisierung jedoch negative Folgen für Gesellschaft und Wirtschaft haben.",
+    "feedbackHints": [
+      "Nutze konkrete Beispiele aus deinem Alltag.",
+      "Kombiniere Vorteile und Nachteile.",
+      "Verwende B2-Konnektoren wie 'einerseits… andererseits'."
+    ]
+  }
+}
+,
+{
+  "id": "B2_L08_Umwelt_Natur_Nachhaltigkeit",
+  "title": {
+    "ar": "البيئة، الطبيعة والاستدامة",
+    "de": "Umwelt, Natur & Nachhaltigkeit",
+    "en": "Environment, Nature & Sustainability"
+  },
+  "interactiveScene": "Noa يسير في حديقة واسعة: أشجار طويلة، رائحة تراب بعد المطر، أصوات طيور، هدوء شبه كامل. لكن على الطاولة القريبة منه توجد عبوات بلاستيكية فارغة وورق مرمي عالأرض. يلتقط Noa واحدة ويقول: „Ein kleiner Schritt… aber ein Anfang.“ ثم يسأل نفسه: هل التغيير الحقيقي يبدأ من الأفراد أم من الحكومات؟ وهكذا يبدأ درس الاستدامة.",
+  "explanation": [
+    { "de": "die Nachhaltigkeit", "ar": "الاستدامة" },
+    { "de": "die Umweltbelastung", "ar": "الضرر البيئي" },
+    { "de": "der Klimawandel", "ar": "تغيّر المناخ" },
+    { "de": "die erneuerbaren Energien", "ar": "الطاقات المتجددة" },
+    { "de": "Müll trennen", "ar": "فرز النفايات" },
+    { "de": "ressourcenschonend", "ar": "موفّر للموارد" },
+    { "de": "umweltfreundlich", "ar": "صديق للبيئة" },
+    { "de": "CO2-Ausstoß reduzieren", "ar": "تقليل انبعاثات CO₂" },
+    { "de": "die Verantwortung übernehmen", "ar": "تحمّل المسؤولية" },
+    { "de": "ökologisch handeln", "ar": "التصرف بطريقة بيئية" }
+  ],
+  "phrasesTable": [
+    {
+      "de": "Nachhaltigkeit bedeutet, die Bedürfnisse der Gegenwart zu erfüllen, ohne die Zukunft zu gefährden.",
+      "ar": "الاستدامة تعني تلبية احتياجات الحاضر دون تعريض المستقبل للخطر."
+    },
+    {
+      "de": "Kleine Veränderungen im Alltag können große Wirkung auf die Umwelt haben.",
+      "ar": "التغييرات الصغيرة في الحياة اليومية قد يكون لها تأثير كبير على البيئة."
+    },
+    {
+      "de": "Erneuerbare Energien spielen eine wichtige Rolle im Kampf gegen den Klimawandel.",
+      "ar": "الطاقات المتجددة تلعب دورًا مهمًا في مواجهة تغيّر المناخ."
+    },
+    {
+      "de": "Umweltprobleme lassen sich nur gemeinsam lösen: durch Politik, Wirtschaft und Gesellschaft.",
+      "ar": "يمكن حل مشاكل البيئة فقط من خلال التعاون بين السياسة والاقتصاد والمجتمع."
+    },
+    {
+      "de": "Umweltfreundliches Verhalten beginnt oft mit einfachen Entscheidungen.",
+      "ar": "السلوك الصديق للبيئة يبدأ غالبًا بقرارات بسيطة."
+    }
+  ],
+  "tip": "استخدم دائمًا في هذا الموضوع كلمات B2 قوية مثل: 'verantwortungsbewusst', 'ressourcenschonend', 'langfristig', 'weltweit', 'Maßnahmen ergreifen'. كلها تظهر وعياً عميقاً وتثير إعجاب الممتحِن.",
+  "dialogue": [
+    {
+      "speaker": "Noa",
+      "de": "Findest du, dass wir genug für die Umwelt tun?",
+      "ar": "هل تعتقد أننا نفعل ما يكفي من أجل البيئة؟"
+    },
+    {
+      "speaker": "Freund",
+      "de": "Ehrlich gesagt: wahrscheinlich nicht.",
+      "ar": "بصراحة: على الأغلب لا."
+    },
+    {
+      "speaker": "Noa",
+      "de": "Viele denken, dass kleine Schritte nichts bringen.",
+      "ar": "كثيرون يعتقدون أن الخطوات الصغيرة لا تفيد."
+    },
+    {
+      "speaker": "Freund",
+      "de": "Dabei könnten kleine Gewohnheiten viel verändern.",
+      "ar": "مع أن العادات الصغيرة يمكن أن تغيّر الكثير."
+    },
+    {
+      "speaker": "Noa",
+      "de": "Stimmt. Jeder trägt Verantwortung.",
+      "ar": "صحيح. كل شخص يتحمل مسؤولية."
+    }
+  ],
+  "summary": [
+    {
+      "de": "Nachhaltigkeit betrifft individuelles Verhalten und politische Maßnahmen.",
+      "ar": "الاستدامة تتعلق بالسلوك الفردي والإجراءات السياسية."
+    },
+    {
+      "de": "Der Klimawandel erfordert weltweite Zusammenarbeit.",
+      "ar": "تغيّر المناخ يتطلب تعاونًا عالميًا."
+    },
+    {
+      "de": "Umweltfreundliche Gewohnheiten können langfristig große Wirkung haben.",
+      "ar": "العادات الصديقة للبيئة قد يكون لها تأثير كبير على المدى البعيد."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Was bedeutet 'Nachhaltigkeit'?",
+      "options": [
+        "Nur kurzfristige Lösungen finden",
+        "Ressourcen so nutzen, dass zukünftige Generationen nicht gefährdet werden",
+        "Alles sofort verbrauchen"
+      ],
+      "answer": 1,
+      "hint": "فكر في: حاضر + مستقبل = دون تدمير الموارد."
+    },
+    {
+      "question": "Was ist ein Beispiel für umweltfreundliches Verhalten?",
+      "options": [
+        "Müll richtig trennen",
+        "Täglich mehr Plastik verbrauchen",
+        "Licht immer anlassen"
+      ],
+      "answer": 0,
+      "hint": "إعادة التدوير واحدة من أوضح الأمثلة."
+    },
+    {
+      "question": "Was kann den Klimawandel verlangsamen?",
+      "options": [
+        "Mehr CO₂ produzieren",
+        "Erneuerbare Energien nutzen",
+        "Weniger Pflanzen anbauen"
+      ],
+      "answer": 1,
+      "hint": "Wind, Sonne, Wasser = طاقات نظيفة."
+    },
+    {
+      "question": "Wer trägt Verantwortung für Umweltprobleme?",
+      "options": [
+        "Nur die Politik",
+        "Politik, Wirtschaft und Gesellschaft gemeinsam",
+        "Nur einzelne Personen"
+      ],
+      "answer": 1,
+      "hint": "الموضوع عالمي، مو مسؤولية جهة وحدها."
+    },
+    {
+      "question": "Was bedeutet 'ökologisch handeln'?",
+      "options": [
+        "Entscheidungen treffen, die der Umwelt schaden",
+        "Im Alltag bewusst und umweltfreundlich handeln",
+        "Nur Luxusprodukte kaufen"
+      ],
+      "answer": 1,
+      "hint": "ökologisch = صديق للبيئة."
+    }
+  ],
+  "writingExercise": {
+    "instruction_de": "Schreibe einen reflektierenden Text (140–170 Wörter): Welche Verantwortung hat jeder Einzelne für die Umwelt?",
+    "instruction_ar": "اكتب نصًا تأمليًا (140–170 كلمة): ما مسؤولية كل فرد تجاه البيئة؟",
+    "exampleAnswer": "Jeder Einzelne trägt eine wichtige Verantwortung für die Umwelt. Oft denken Menschen, dass ihre Entscheidungen keinen großen Unterschied machen. Doch viele kleine Veränderungen können langfristig eine große Wirkung haben. Wenn man beispielsweise Müll trennt, Wasser spart oder öfter zu Fuß geht, reduziert man die Umweltbelastung spürbar. Auch der bewusste Konsum spielt eine große Rolle: weniger Plastik, regionale Produkte und erneuerbare Energien unterstützen eine nachhaltige Zukunft. Meiner Meinung nach beginnt nachhaltiges Verhalten im Alltag – bei den Entscheidungen, die wir jeden Tag treffen. Politik und Wirtschaft müssen ebenfalls Maßnahmen ergreifen, aber ohne das Verhalten der Menschen bleibt der Fortschritt begrenzt.",
+    "feedbackHints": [
+      "Nenne mindestens zwei konkrete Beispiele.",
+      "Benutze B2-Konnektoren: 'einerseits… andererseits'.",
+      "Beziehe Verantwortung von Individuen UND Staaten ein."
+    ]
+  }
+}
+,
+{
+  "id": "B2_L09_Menschen_Emotionen_Psychologie",
+  "title": {
+    "ar": "الإنسان والمشاعر (علم النفس المبسّط)",
+    "de": "Menschen & Emotionen (Psychologie light)",
+    "en": "People & Emotions (Psychology Light)"
+  },
+  "interactiveScene": "Noa يجلس في مقهى هادئ. يلاحظ شخصين يتحدثان: واحد يقول „Mir geht’s gut“, لكن نبرته منخفضة، وعيناه تتحركان بسرعة، وكتفاه منضمان. يدرك Noa أن ما نقوله ليس دائمًا ما نشعر به. هنا يبدأ فهم لغة الجسد، الإشارات الصغيرة، وتأثير المشاعر على التواصل بين البشر.",
+  "explanation": [
+    { "de": "die Emotion", "ar": "العاطفة / الشعور" },
+    { "de": "nonverbale Kommunikation", "ar": "التواصل غير اللفظي" },
+    { "de": "Empathie zeigen", "ar": "إظهار التعاطف" },
+    { "de": "überfordert sein", "ar": "أن يكون مثقلًا نفسياً" },
+    { "de": "etwas wahrnehmen", "ar": "الانتباه / إدراك شيء" },
+    { "de": "die Körpersprache", "ar": "لغة الجسد" },
+    { "de": "ein Missverständnis", "ar": "سوء فهم" },
+    { "de": "sensibel reagieren", "ar": "التفاعل بحساسية" },
+    { "de": "die Stimmung", "ar": "المزاج" },
+    { "de": "innere Konflikte", "ar": "صراعات داخلية" }
+  ],
+  "phrasesTable": [
+    {
+      "de": "Viele Gefühle werden eher durch Körpersprache als durch Worte ausgedrückt.",
+      "ar": "الكثير من المشاعر يتم التعبير عنها عبر لغة الجسد أكثر من الكلمات."
+    },
+    {
+      "de": "Missverständnisse entstehen oft nicht durch Worte, sondern durch die Art, wie wir sie sagen.",
+      "ar": "غالبًا ما ينشأ سوء الفهم ليس بسبب الكلمات ذاته، بل بسبب طريقة قولها."
+    },
+    {
+      "de": "Empathie bedeutet, die Perspektive des anderen ernst zu nehmen.",
+      "ar": "التعاطف يعني أخذ وجهة نظر الشخص الآخر على محمل الجد."
+    },
+    {
+      "de": "Zwischenmenschliche Beziehungen brauchen Geduld und ehrliche Signale.",
+      "ar": "العلاقات بين البشر تحتاج إلى صبر وإشارات صادقة."
+    },
+    {
+      "de": "Oft zeigt das, was wir nicht sagen, mehr als das, was wir sagen.",
+      "ar": "غالبًا ما يُظهر ما لا نقوله أكثر مما نقوله."
+    }
+  ],
+  "tip": "في موضوع المشاعر، استخدم دائمًا تراكيب مثل: 'obwohl', 'indem', 'wenn auch'. وأضف أمثلة على مواقف اجتماعية حقيقية—الممتحِن يحب هذا النوع من الكتابة.",
+  "dialogue": [
+    {
+      "speaker": "Noa",
+      "de": "Du wirkst heute ein bisschen still.",
+      "ar": "تبدو هادئًا قليلاً اليوم."
+    },
+    {
+      "speaker": "Freund",
+      "de": "Ich hatte einen langen Tag, aber es geht schon.",
+      "ar": "كان يومًا طويلاً، لكن الأمور بخير."
+    },
+    {
+      "speaker": "Noa",
+      "de": "‚Es geht schon‘ klingt nicht sehr überzeugend.",
+      "ar": "‚الأمور بخير‘ لا تبدو مقنعة جدًا."
+    },
+    {
+      "speaker": "Freund",
+      "de": "Ja… ich bin etwas überfordert.",
+      "ar": "نعم… أنا مثقل قليلاً."
+    },
+    {
+      "speaker": "Noa",
+      "de": "Wenn du reden willst, ich bin da.",
+      "ar": "إذا أردت التحدث، أنا موجود."
+    }
+  ],
+  "summary": [
+    {
+      "de": "Emotionen beeinflussen Kommunikation stärker als Worte.",
+      "ar": "المشاعر تؤثر على التواصل أكثر من الكلمات."
+    },
+    {
+      "de": "Nonverbale Signale sind oft ehrlicher als gesprochene Sprache.",
+      "ar": "الإشارات غير اللفظية غالبًا أكثر صدقًا من الكلام."
+    },
+    {
+      "de": "Empathie erleichtert das Verständnis zwischen Menschen.",
+      "ar": "التعاطف يسهل الفهم بين الناس."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Was gehört zur nonverbalen Kommunikation?",
+      "options": [
+        "Laut vorlesen",
+        "Körpersprache und Gesichtsausdrücke",
+        "Lange Texte schreiben"
+      ],
+      "answer": 1,
+      "hint": "تخيّل شخص ما بدون كلام… كيف تفهمه؟"
+    },
+    {
+      "question": "Wodurch entstehen Missverständnisse oft?",
+      "options": [
+        "Durch zu viele Emojis",
+        "Durch Tonfall, Körpersprache oder falsche Interpretation",
+        "Durch perfektes Zuhören"
+      ],
+      "answer": 1,
+      "hint": "مو دائمًا الكلام نفسه… بل طريقة تقديمه."
+    },
+    {
+      "question": "Was bedeutet 'überfordert sein'?",
+      "options": [
+        "Sehr entspannt sein",
+        "Zu viele Aufgaben oder Druck haben",
+        "Keine Gefühle zeigen"
+      ],
+      "answer": 1,
+      "hint": "überfordert = أكثر مما يستطيع الشخص تحمّله."
+    },
+    {
+      "question": "Was zeigt echte Empathie?",
+      "options": [
+        "Jemandem nicht zuhören",
+        "Perspektive des anderen ernst nehmen",
+        "Gespräche vermeiden"
+      ],
+      "answer": 1,
+      "hint": "Empathie = فهم الشعور، وليس فقط سماع الكلام."
+    },
+    {
+      "question": "Was kann mehr sagen als Worte?",
+      "options": [
+        "Körpersprache",
+        "Ein lauter Fernseher",
+        "Schweigen ohne Grund"
+      ],
+      "answer": 0,
+      "hint": "غالبًا العيون والإيماءات تحكي قبل اللسان."
+    }
+  ],
+  "writingExercise": {
+    "instruction_de": "Schreibe einen Text (140–170 Wörter): Warum sind nonverbale Signale im Alltag so wichtig?",
+    "instruction_ar": "اكتب نصًا (140–170 كلمة): لماذا تُعد الإشارات غير اللفظية مهمة في الحياة اليومية؟",
+    "exampleAnswer": "Nonverbale Signale spielen im Alltag eine entscheidende Rolle, weil sie oft ehrlicher sind als Worte. Ein Mensch kann sagen, dass alles in Ordnung ist, doch seine Körpersprache zeigt vielleicht das Gegenteil. Mimik, Gestik und Tonfall geben uns Hinweise darauf, wie sich jemand wirklich fühlt. Diese Signale helfen, Missverständnisse zu vermeiden und Beziehungen zu stärken. Wenn wir besser auf nonverbale Hinweise achten, können wir empathischer reagieren und andere intensiver verstehen. Meiner Meinung nach ist nonverbale Kommunikation ein wesentlicher Bestandteil menschlicher Nähe, weil sie Emotionen ausdrückt, die schwer in Worte zu fassen sind.",
+    "feedbackHints": [
+      "Erwähne mindestens zwei konkrete Beispiele.",
+      "Nutze Wörter wie: Körpersprache, Gestik, Mimik.",
+      "Schließe mit einer persönlichen Meinung ab."
+    ]
+  }
+}
+
+  ]}

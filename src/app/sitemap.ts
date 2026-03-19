@@ -1,20 +1,12 @@
 import { MetadataRoute } from "next";
 
-const baseUrl = "https://www.blitz-service-gmbh.de";
+const baseUrl = "https://www.deutschhero.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [
-    "",
-    "/services",
-    "/ueber-uns",
-    "/bewertungen",
-    "/contact",
-    "/impressum",
-    "/datenschutz"
-  ].map((path) => ({
+  return [""].map((path) => ({
     url: `${baseUrl}${path}`,
     lastModified: new Date(),
-    changeFrequency: path === "" ? "weekly" : "monthly",
-    priority: path === "" ? 1 : 0.7
+    changeFrequency: "weekly",
+    priority: 1
   }));
 }

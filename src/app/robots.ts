@@ -1,13 +1,13 @@
 import { MetadataRoute } from "next";
 
-const baseUrl = "https://www.blitz-service-gmbh.de";
+const baseUrl = "https://www.deutschhero.com";
 
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
       userAgent: "*",
       allow: "/",
-      disallow: ["/admin", "/api/admin"]
+      disallow: ["/admin"]
     },
     sitemap: `${baseUrl}/sitemap.xml`
   };

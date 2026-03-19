@@ -1,36 +1,26 @@
-import { redirect } from "next/navigation";
-import { AdminLoginForm } from "@/components/admin-login-form";
-import { Container } from "@/components/container";
-import { hasAdminAuthConfig } from "@/lib/env";
-import { isAdminAuthenticated } from "@/lib/auth";
+import Link from "next/link";
 
-export const dynamic = "force-dynamic";
-
-export default async function AdminLoginPage() {
-  if (await isAdminAuthenticated()) {
-    redirect("/admin");
-  }
-
+export default function AdminLoginPage() {
   return (
-    <section className="py-24">
-      <Container className="max-w-lg">
-        <div className="mb-8 text-center">
-          <p className="text-sm font-semibold uppercase tracking-[0.24em] text-brand-blue-soft">
-            Admin
-          </p>
-          <h1 className="mt-4 font-display text-4xl text-brand-blue">Geschützter Bereich</h1>
-          {!hasAdminAuthConfig() ? (
-            <p className="mt-4 text-sm leading-7 text-slate-600">
-              Der Adminbereich ist noch nicht vollständig eingerichtet. Setzen Sie
-              <code className="mx-1 rounded bg-brandCream px-2 py-1 text-xs">ADMIN_PASSWORD</code>
-              und
-              <code className="mx-1 rounded bg-brandCream px-2 py-1 text-xs">ADMIN_SESSION_SECRET</code>
-              in Ihrer Umgebung.
-            </p>
-          ) : null}
+    <section className="mx-auto max-w-3xl px-6 py-20 sm:px-8">
+      <div className="rounded-[32px] border border-white/10 bg-white/5 p-8 backdrop-blur">
+        <p className="text-sm font-semibold uppercase tracking-[0.24em] text-sky-200">
+          Auth transition
+        </p>
+        <h1 className="mt-4 font-display text-4xl text-white">Credentials login arrives in Phase 2.</h1>
+        <p className="mt-4 text-sm leading-7 text-slate-300">
+          Auth.js has been added as the new foundation. The real login and registration flow
+          will be implemented next, on top of the Prisma-backed user model introduced in Phase 1.
+        </p>
+        <div className="mt-8">
+          <Link
+            href="/"
+            className="rounded-full border border-white/15 bg-white/5 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+          >
+            Back to homepage
+          </Link>
         </div>
-        <AdminLoginForm />
-      </Container>
+      </div>
     </section>
   );
 }
