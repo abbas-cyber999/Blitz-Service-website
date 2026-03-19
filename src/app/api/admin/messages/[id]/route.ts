@@ -1,7 +1,9 @@
 import { NextResponse } from "next/server";
 import { isAdminAuthenticated } from "@/lib/auth";
-import { prisma } from "@/lib/prisma";
+import { getPrismaClient } from "@/lib/prisma";
 import { messageStatusSchema } from "@/lib/validations";
+
+export const runtime = "nodejs";
 
 export async function PATCH(
   request: Request,
@@ -9,6 +11,15 @@ export async function PATCH(
 ) {
   if (!(await isAdminAuthenticated())) {
     return NextResponse.json({ error: "Nicht autorisiert." }, { status: 401 });
+  }
+
+  const prisma = getPrismaClient();
+
+  if (!prisma) {
+    return NextResponse.json(
+      { error: "Die Datenbank ist noch nicht konfiguriert." },
+      { status: 503 }
+    );
   }
 
   const body = await request.json();

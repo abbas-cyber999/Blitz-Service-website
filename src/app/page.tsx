@@ -136,7 +136,7 @@ export default function HomePage() {
               <div key={service.title}>
                 <div className="mb-6">
                   <PlaceholderImageCard
-                    badge={service.featured ? "Hauptservice" : "Service"}
+                    badge={"featured" in service && service.featured ? "Hauptservice" : "Service"}
                     title={service.title}
                     description={service.summary}
                     className="min-h-full"

@@ -8,9 +8,7 @@ export const contactFormSchema = z.object({
   subject: z.string().min(3, "Bitte geben Sie einen Betreff ein.").max(150),
   service: z.enum(serviceOptions),
   message: z.string().min(20, "Bitte beschreiben Sie Ihr Anliegen etwas genauer.").max(4000),
-  privacyAccepted: z.literal(true, {
-    errorMap: () => ({ message: "Bitte stimmen Sie der Datenschutzerklärung zu." })
-  }),
+  privacyAccepted: z.literal(true, { message: "Bitte stimmen Sie der Datenschutzerklärung zu." }),
   website: z.string().max(0).optional().default("")
 });
 
