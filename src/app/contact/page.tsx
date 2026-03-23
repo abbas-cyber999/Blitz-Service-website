@@ -9,8 +9,7 @@ import { business, contactAnchorId, fullAddress, whatsappHref } from "@/config/b
 
 export const metadata: Metadata = {
   title: "Kontakt",
-  description:
-    "Kontaktieren Sie Blitz Service GmbH für Reinigungs- und Transportanfragen."
+  description: "Kontaktieren Sie Blitz Service GmbH für Reinigungs- und Transportanfragen."
 };
 
 export default function ContactPage() {
@@ -22,7 +21,9 @@ export default function ContactPage() {
         description="Ob regelmäßige Reinigung, einmalige Endreinigung oder ergänzende Transportleistung: Beschreiben Sie Ihr Vorhaben kurz und wir melden uns zeitnah mit einer passenden Rückmeldung."
         actions={
           <>
-            <ButtonLink href={whatsappHref}>WhatsApp starten</ButtonLink>
+            <ButtonLink href={whatsappHref} variant="whatsapp">
+              WhatsApp starten
+            </ButtonLink>
             <ButtonLink href={`mailto:${business.email}`} variant="dark">
               E-Mail senden
             </ButtonLink>
@@ -39,9 +40,9 @@ export default function ContactPage() {
               <div className="mt-8 space-y-4">
                 <a
                   href={whatsappHref}
-                  className="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/8 px-5 py-4 hover:border-brandGold/50 hover:bg-white/10"
+                  className="flex items-center gap-4 rounded-2xl border border-[#25D366]/35 bg-[#25D366]/12 px-5 py-4 hover:border-[#1fb458]/70 hover:bg-[#25D366]/18"
                 >
-                  <span className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-brandGold text-brandBlue">
+                  <span className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-[#25D366] text-white shadow-[0_12px_24px_rgba(37,211,102,0.28)]">
                     <MessageCircleMore className="h-5 w-5" />
                   </span>
                   <span>

@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 type ButtonLinkProps = {
   href: string;
   children: ReactNode;
-  variant?: "primary" | "secondary" | "ghost" | "dark";
+  variant?: "primary" | "secondary" | "ghost" | "dark" | "whatsapp";
   className?: string;
 };
 
@@ -24,6 +24,8 @@ export function ButtonLink({
       "border border-white/20 bg-white/10 text-white shadow-[0_14px_30px_rgba(11,25,47,0.18)] hover:border-brandGold/60 hover:bg-white/14 hover:text-brandGold",
     variant === "dark" &&
       "bg-brandBlue text-white shadow-[0_18px_36px_rgba(15,45,82,0.22)] hover:bg-[#14385f] hover:shadow-[0_22px_40px_rgba(15,45,82,0.28)]",
+    variant === "whatsapp" &&
+      "bg-[#25D366] text-white shadow-[0_18px_36px_rgba(37,211,102,0.28)] hover:bg-[#1fb458] hover:shadow-[0_22px_40px_rgba(37,211,102,0.34)] focus:ring-[#25D366]",
     variant === "ghost" &&
       "text-brandBlue hover:bg-brandBlue/5 hover:text-brandBlueSoft",
     className

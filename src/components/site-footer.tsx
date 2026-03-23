@@ -11,9 +11,9 @@ export function SiteFooter() {
         <div>
           <p className="font-display text-3xl text-white">{business.name}</p>
           <p className="mt-4 max-w-md text-sm leading-7 text-white/72">
-            Professionelle Reinigungsleistungen mit Fokus auf Gebäude, Büros und
-            regelmäßig gepflegte Immobilien. Transport- und Umzugsleistungen ergänzen
-            das Angebot dort, wo Kunden eine koordinierte Gesamtlösung wünschen.
+            Professionelle Reinigungsservices für Gebäude, Büros und gepflegte Immobilien.
+            Ergänzend bieten wir Transport- und Umzugsleistungen an, wenn Kunden eine koordiniert
+            organisierte Gesamtlösung wünschen.
           </p>
           <div className="mt-6 space-y-3 text-sm text-white/76">
             <p className="inline-flex items-center gap-2">

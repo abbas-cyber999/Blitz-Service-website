@@ -37,7 +37,7 @@ function FloatingAction({ href, label, icon, primary = false, onClick }: FabProp
         className={cn(
           sharedClass,
           primary
-            ? "bg-brandGold text-brandBlue hover:bg-[#d3ae59]"
+            ? "bg-[#25D366] text-white shadow-[0_18px_34px_rgba(37,211,102,0.28)] hover:bg-[#1fb458]"
             : "border border-brandBlue/10 bg-white text-brandBlue hover:border-brandGold/40 hover:bg-brandCream"
         )}
       >
@@ -54,7 +54,7 @@ function FloatingAction({ href, label, icon, primary = false, onClick }: FabProp
       className={cn(
         sharedClass,
         primary
-          ? "bg-brandGold text-brandBlue hover:bg-[#d3ae59]"
+          ? "bg-[#25D366] text-white shadow-[0_18px_34px_rgba(37,211,102,0.28)] hover:bg-[#1fb458]"
           : "border border-brandBlue/10 bg-white text-brandBlue hover:border-brandGold/40 hover:bg-brandCream"
       )}
     >
