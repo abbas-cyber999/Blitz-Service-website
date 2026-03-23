@@ -88,23 +88,22 @@ export default function ContactPage() {
             </div>
 
             <PlaceholderImageCard
-              badge="Platzhalter"
-              title="Bereich für spätere echte Team- oder Objektbilder"
-              description="Hier können später hochwertige Fotos von Reinigungseinsätzen, modernen Büroflächen oder Gebäuden eingesetzt werden."
+              badge="Blitz Service GmbH"
+              title="Verlässlicher Service mit klarer Erreichbarkeit"
+              description="Ob Reinigung oder ergänzende Transportleistung: Wir reagieren schnell, stimmen Leistungen transparent ab und begleiten Ihr Anliegen verbindlich."
               imageSrc="/images/reliable-service.svg"
-              imageAlt="Illustration für zuverlässigen Service und professionelle Kundenbetreuung"
-              replacementNote="Später einfach durch echte Team- oder Objektfotos ersetzen"
+              imageAlt="Professioneller Service und persönliche Kundenbetreuung"
             />
           </div>
 
           <div id={contactAnchorId} className="scroll-mt-32 space-y-6">
             <ContactForm />
             <div className="rounded-[30px] border border-brandBlue/10 bg-white px-6 py-5 text-sm leading-7 text-slate-600 shadow-[0_20px_42px_rgba(15,45,82,0.08)]">
-              <p className="font-semibold text-brandBlue">Warum diese Kontaktsektion funktioniert</p>
+              <p className="font-semibold text-brandBlue">Schnelle und persönliche Rückmeldung</p>
               <p className="mt-2">
-                Sie bietet ein klassisches Formular für strukturierte Anfragen und gleichzeitig
-                direkte Kontaktwege per WhatsApp, E-Mail und Telefon. So wirkt der Bereich wie
-                ein echter Lead- und Vertrauensblock statt wie ein einfaches Formular am Seitenende.
+                Nutzen Sie das Formular für strukturierte Anfragen oder kontaktieren Sie uns direkt
+                per WhatsApp, E-Mail oder Telefon. So erreichen Sie uns auf dem Weg, der für Sie am
+                besten passt.
               </p>
             </div>
           </div>

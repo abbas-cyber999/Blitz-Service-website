@@ -95,21 +95,15 @@ export default function HomePage() {
             {featuredServices.map((service) => (
               <article
                 key={service.title}
-                className="rounded-[30px] border border-brandBlue/10 bg-white p-8 shadow-[0_20px_45px_rgba(15,45,82,0.08)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_24px_52px_rgba(15,45,82,0.12)]"
+                className="rounded-[28px] border border-brandBlue/10 bg-white p-7 shadow-[0_16px_34px_rgba(15,45,82,0.07)] transition duration-200 hover:-translate-y-0.5 hover:shadow-[0_20px_40px_rgba(15,45,82,0.10)]"
               >
-                <span className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-brandBlue text-white shadow-[0_14px_28px_rgba(15,45,82,0.18)]">
+                <span className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-brandBlue text-white shadow-[0_10px_20px_rgba(15,45,82,0.14)]">
                   <service.icon className="h-5 w-5" />
                 </span>
                 <h3 className="mt-5 font-display text-2xl text-brandBlue">{service.title}</h3>
-                <p className="mt-3 text-sm leading-7 text-slate-600">{service.summary}</p>
-                <ul className="mt-5 space-y-3 text-sm leading-6 text-slate-700">
-                  {service.benefits.slice(0, 2).map((benefit) => (
-                    <li key={benefit} className="flex gap-3">
-                      <span className="mt-2 h-2.5 w-2.5 rounded-full bg-brandGold" />
-                      <span>{benefit}</span>
-                    </li>
-                  ))}
-                </ul>
+                <p className="mt-3 max-w-[34ch] text-sm leading-7 text-slate-600">
+                  {service.summary}
+                </p>
               </article>
             ))}
           </div>
@@ -256,8 +250,8 @@ export default function HomePage() {
               Sie möchten ein gepflegtes Objekt und einen Dienstleister, der verbindlich liefert?
             </h2>
             <p className="mt-4 max-w-2xl text-base leading-8 text-slate-200">
-              Dann sprechen wir über Ihr Objekt, Ihren Bedarf und einen sauberen Ablauf.
-              Reinigung steht an erster Stelle, Transport ergänzt bei Bedarf.
+              Dann sprechen wir über Ihr Objekt, Ihren Bedarf und einen sauberen Ablauf. Reinigung
+              steht an erster Stelle, Transport ergänzt bei Bedarf.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <ButtonLink href="/contact">{business.ctaPrimary}</ButtonLink>

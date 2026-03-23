@@ -133,9 +133,12 @@ export function SiteHeader() {
           )}
         </nav>
         <div className="hidden items-center gap-3 lg:flex">
-          <ButtonLink href="/contact" variant="secondary">
+          <Link
+            href="/contact"
+            className="text-sm font-medium text-white/82 transition hover:text-brandGold"
+          >
             {business.ctaSecondary}
-          </ButtonLink>
+          </Link>
           <ButtonLink href="/contact">{business.ctaPrimary}</ButtonLink>
         </div>
         <button

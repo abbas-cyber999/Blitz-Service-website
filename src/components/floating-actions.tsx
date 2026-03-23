@@ -25,7 +25,7 @@ type FabProps = {
 
 function FloatingAction({ href, label, icon, primary = false, onClick }: FabProps) {
   const sharedClass =
-    "group relative floating-pulse flex h-14 w-14 items-center justify-center rounded-full shadow-[0_18px_34px_rgba(15,45,82,0.18)] transition duration-200 hover:-translate-y-1 active:translate-y-0";
+    "group relative flex h-14 w-14 items-center justify-center rounded-full shadow-[0_18px_34px_rgba(15,45,82,0.18)] transition duration-200 hover:-translate-y-1 active:translate-y-0";
 
   if (href) {
     return (
@@ -86,9 +86,6 @@ export function FloatingActions() {
 
   return (
     <div className="pointer-events-none fixed bottom-5 right-4 z-[60] flex flex-col items-end gap-3 sm:bottom-8 sm:right-8">
-      <div className="pointer-events-none hidden rounded-full bg-brandBlue px-4 py-2 text-xs font-medium text-white shadow-[0_14px_24px_rgba(15,45,82,0.18)] sm:block">
-        Schnell erreichbar: WhatsApp oder Kontakt
-      </div>
       <div className="pointer-events-auto flex flex-col gap-3">
         <FloatingAction
           href={whatsappHref}

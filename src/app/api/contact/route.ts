@@ -57,7 +57,7 @@ export async function POST(request: Request) {
       return NextResponse.json(
         {
           error:
-            "Das Kontaktformular ist aktuell noch nicht vollständig eingerichtet. Bitte hinterlegen Sie Datenbank- oder E-Mail-Konfiguration."
+            "Ihre Anfrage konnte aktuell nicht versendet werden. Bitte kontaktieren Sie uns direkt per E-Mail oder telefonisch."
         },
         { status: 503 }
       );
