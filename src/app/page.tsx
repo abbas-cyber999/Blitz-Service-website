@@ -1,7 +1,9 @@
+import { Metadata } from "next";
 import {
   ArrowRight,
   BadgeCheck,
   CheckCircle2,
+  MapPin,
   MessageCircleMore,
   ShieldCheck,
   Sparkles
@@ -13,6 +15,17 @@ import { ReviewCard } from "@/components/review-card";
 import { SectionHeading } from "@/components/section-heading";
 import { business, whatsappHref } from "@/config/business";
 import { faqs, processSteps, reviews, services, trustPoints } from "@/data/site-content";
+
+export const metadata: Metadata = {
+  title: "Gebäudereinigung & Büroreinigung in Moers | Blitz Service GmbH",
+  description:
+    "Professionelle Gebäudereinigung, Büroreinigung und ergänzende Transportservices im Raum Moers, Duisburg, Krefeld und Umgebung. Jetzt unverbindlich anfragen.",
+  openGraph: {
+    title: "Gebäudereinigung & Büroreinigung in Moers | Blitz Service GmbH",
+    description:
+      "Professionelle Gebäudereinigung, Büroreinigung und ergänzende Transportservices im Raum Moers, Duisburg, Krefeld und Umgebung. Jetzt unverbindlich anfragen."
+  }
+};
 
 const featuredServices = services.slice(0, 4);
 const trustCards = [
@@ -171,12 +184,38 @@ export default function HomePage() {
         <Container>
           <SectionHeading
             eyebrow="Bewertungen"
-            title="Was Kunden an Blitz Service besonders schätzen"
-            description="Verlässlichkeit, saubere Ergebnisse und eine unkomplizierte Abstimmung machen im Alltag den Unterschied. Genau darauf zahlen die folgenden Stimmen ein."
+            title="Das sagen unsere Kunden"
+            description="Zufriedene Kunden sind für uns die beste Empfehlung."
           />
+          <div className="mt-6 rounded-[28px] border border-brandBlue/10 bg-brandCream/70 px-6 py-5 text-sm leading-7 text-slate-600 shadow-[0_16px_34px_rgba(15,45,82,0.06)]">
+            Verlässlichkeit, saubere Ergebnisse und eine unkomplizierte Abstimmung machen im Alltag
+            den Unterschied. Genau darauf beziehen sich die folgenden Stimmen aus unserem regionalen
+            Einsatzgebiet.
+          </div>
           <div className="mt-12 grid gap-6 lg:grid-cols-3">
             {reviews.map((review) => (
               <ReviewCard key={`${review.name}-${review.city}`} {...review} />
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      <section className="bg-white py-24">
+        <Container>
+          <SectionHeading
+            eyebrow="FAQ"
+            title="Häufige Fragen"
+            description="Die wichtigsten Antworten auf typische Fragen zu Reinigung, Einsatzgebiet und Anfrageprozess."
+          />
+          <div className="mt-12 grid gap-5 lg:grid-cols-2">
+            {faqs.map((faq) => (
+              <article
+                key={faq.question}
+                className="rounded-[28px] border border-brandBlue/10 bg-white p-7 shadow-[0_18px_40px_rgba(15,45,82,0.08)]"
+              >
+                <h3 className="font-display text-2xl text-brandBlue">{faq.question}</h3>
+                <p className="mt-3 text-sm leading-7 text-slate-600">{faq.answer}</p>
+              </article>
             ))}
           </div>
         </Container>
@@ -229,13 +268,23 @@ export default function HomePage() {
           </div>
           <div className="rounded-[34px] border border-brandBlue/10 bg-white p-8 shadow-[0_24px_56px_rgba(15,45,82,0.10)]">
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-brandBlueSoft">
-              Häufige Fragen
+              Regional im Einsatz
             </p>
+            <h2 className="mt-4 font-display text-3xl text-brandBlue">
+              Kurze Wege, klare Abstimmung und schnelle Erreichbarkeit
+            </h2>
             <div className="mt-6 space-y-4">
-              {faqs.map((faq) => (
-                <div key={faq.question} className="rounded-2xl bg-brandCream p-5">
-                  <p className="font-semibold text-brandBlue">{faq.question}</p>
-                  <p className="mt-2 text-sm leading-7 text-slate-600">{faq.answer}</p>
+              {business.serviceAreas.map((area) => (
+                <div key={area} className="flex items-center gap-3 rounded-2xl bg-brandCream p-4">
+                  <span className="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-brandBlue text-white">
+                    <MapPin className="h-4 w-4" />
+                  </span>
+                  <div>
+                    <p className="font-semibold text-brandBlue">{area}</p>
+                    <p className="text-sm leading-6 text-slate-600">
+                      Reinigung und ergänzende Serviceleistungen im regionalen Umfeld.
+                    </p>
+                  </div>
                 </div>
               ))}
             </div>

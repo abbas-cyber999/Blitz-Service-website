@@ -54,5 +54,5 @@ export const fullAddress = `${business.address.street}, ${business.address.posta
 export const contactAnchorId = "kontakt-formular";
 
 export const whatsappHref = `https://wa.me/${business.whatsappNumber.replace(/\D/g, "")}?text=${encodeURIComponent(
-  "Guten Tag, ich interessiere mich für ein Angebot von Blitz Service GmbH."
+  "Hallo, ich interessiere mich für Ihre Reinigungsleistungen und hätte gern ein unverbindliches Angebot."
 )}`;

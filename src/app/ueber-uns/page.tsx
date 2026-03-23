@@ -9,7 +9,7 @@ import { aboutValues } from "@/data/site-content";
 export const metadata: Metadata = {
   title: "Über uns",
   description:
-    "Lernen Sie Blitz Service GmbH als zuverlässigen, pünktlichen und kundenorientierten Dienstleister kennen."
+    "Lernen Sie Blitz Service GmbH als zuverlässigen, strukturierten und regionalen Dienstleister für Reinigung und ergänzende Transportleistungen kennen."
 };
 
 export default function AboutPage() {
@@ -17,8 +17,8 @@ export default function AboutPage() {
     <>
       <PageHero
         eyebrow="Unternehmen"
-        title="Verlässlicher Service mit klarem Qualitätsanspruch"
-        description="Blitz Service GmbH versteht sich als professioneller Dienstleister mit Fokus auf saubere Ergebnisse, klare Kommunikation und pünktliche Ausführung. Unser Anspruch ist nicht laute Werbung, sondern belastbare Leistung im Alltag unserer Kunden."
+        title="Verlässlicher Service mit klaren Qualitätsstandards"
+        description="Blitz Service GmbH steht für saubere Ausführung, strukturierte Abläufe und einen professionellen Auftritt bei jedem Einsatz. Wir betreuen Kunden im Raum Moers und Umgebung zuverlässig, diskret und mit festem Qualitätsanspruch."
         actions={<ButtonLink href="/contact">Kostenloses Angebot</ButtonLink>}
       />
       <section className="pb-24">
@@ -26,25 +26,24 @@ export default function AboutPage() {
           <div>
             <SectionHeading
               eyebrow="Unser Anspruch"
-              title="Sachlich, professionell und kundenorientiert"
+              title="Regional präsent, professionell organisiert und verlässlich im Alltag"
             />
             <div className="mt-8 space-y-5 text-base leading-8 text-slate-600">
               <p>
                 Wir arbeiten für Unternehmen, Hausverwaltungen und Privatkunden, die einen
-                zuverlässigen Partner für wiederkehrende oder einmalige Leistungen suchen.
-                Im Mittelpunkt steht die Reinigung: gründlich geplant, sauber ausgeführt und
-                passend zur Nutzung der jeweiligen Flächen.
+                Dienstleister mit klarer Terminplanung, sauberer Kommunikation und konstant guter
+                Ausführung erwarten. Im Mittelpunkt steht eine Reinigung, die im Alltag spürbar
+                entlastet und einen gepflegten Eindruck hinterlässt.
               </p>
               <p>
-                Pünktlichkeit, gute Erreichbarkeit und ein strukturierter Ablauf sind für uns
-                Teil der eigentlichen Leistung. Deshalb stimmen wir Einsätze klar ab,
-                reagieren zügig auf Rückfragen und halten den Aufwand für unsere Kunden so
-                gering wie möglich.
+                Unsere Einsätze werden strukturiert vorbereitet, nachvollziehbar abgestimmt und mit
+                festen Qualitätsmaßstäben umgesetzt. So entstehen verlässliche Abläufe statt
+                improvisierter Lösungen.
               </p>
               <p>
-                Wo es sinnvoll ist, ergänzen wir unser Angebot durch Transport- und
-                Umzugsleistungen. So können Kunden mehrere Aufgaben koordiniert über einen
-                Ansprechpartner abwickeln, ohne dass der Schwerpunkt auf Reinigung verloren geht.
+                Im Raum Moers, Duisburg, Krefeld und Umgebung stehen wir für pünktlichen Service,
+                gute Erreichbarkeit und einen professionellen Auftritt, auf den sich Kunden
+                langfristig verlassen können.
               </p>
             </div>
           </div>

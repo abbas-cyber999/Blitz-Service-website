@@ -160,22 +160,22 @@ export const services = [
 
 export const reviews = [
   {
-    name: "Anna",
-    city: "Düsseldorf",
-    rating: 5,
-    text: "Die Reinigung unseres Büros ist konstant zuverlässig und sehr ordentlich. Besonders schätzen wir die pünktliche Abstimmung und die ruhige, professionelle Arbeitsweise."
-  },
-  {
     name: "Markus",
     city: "Duisburg",
     rating: 5,
-    text: "Unsere Treppenhausreinigung läuft seit Monaten reibungslos. Kommunikation, Qualität und Verbindlichkeit sind genau so, wie man es sich wünscht."
+    text: "Die Abstimmung lief schnell und verbindlich. Unser Treppenhaus wird sauber und zuverlässig betreut, und auch bei Rückfragen ist immer sofort jemand erreichbar."
   },
   {
     name: "Selin",
     city: "Moers",
     rating: 5,
-    text: "Vor der Wohnungsübergabe wurde alles gründlich gereinigt. Der Termin war kurzfristig möglich und das Ergebnis war sehr professionell."
+    text: "Für die Wohnungsübergabe brauchten wir kurzfristig Unterstützung. Der Termin wurde pünktlich eingehalten und die Reinigung war gründlich und professionell."
+  },
+  {
+    name: "Anna",
+    city: "Düsseldorf",
+    rating: 5,
+    text: "Unsere Büroräume wirken seit Beginn der Zusammenarbeit deutlich gepflegter. Besonders überzeugt uns die ruhige Arbeitsweise und die konstante Qualität."
   }
 ] as const;
 
@@ -222,19 +222,29 @@ export const aboutValues = [
 
 export const faqs = [
   {
-    question: "Für welche Objekte bieten Sie Reinigung an?",
+    question: "Wie schnell können Sie einen Termin anbieten?",
     answer:
-      "Wir betreuen Büros, Treppenhäuser, Wohnobjekte sowie gewerbliche Flächen. Der Fokus liegt auf regelmäßig gepflegten Immobilien und professioneller Objektbetreuung."
+      "In vielen Fällen können wir kurzfristig reagieren. Nach einer kurzen Abstimmung zu Objekt, Umfang und Einsatzort nennen wir Ihnen zeitnah einen realistischen Termin."
   },
   {
-    question: "Ist Transport ebenfalls möglich?",
+    question: "Bieten Sie auch regelmäßige Büroreinigung an?",
     answer:
-      "Ja. Transport- und Umzugsleistungen sind als ergänzender Service verfügbar, wenn mehrere Aufgaben koordiniert aus einer Hand umgesetzt werden sollen."
+      "Ja. Wir betreuen Büros und gewerbliche Flächen sowohl regelmäßig als auch bei einzelnen Einsätzen. Die Reinigungsintervalle stimmen wir passend zu Ihrem Bedarf ab."
   },
   {
-    question: "Wie schnell erhalten wir ein Angebot?",
+    question: "Arbeiten Sie auch in Duisburg, Moers und Krefeld?",
     answer:
-      "In der Regel sehr kurzfristig. Nach einer kurzen Abstimmung zu Objekt, Umfang und Einsatzort erstellen wir ein passendes Angebot."
+      "Ja. Blitz Service ist regional im Raum Moers, Duisburg, Krefeld und Umgebung im Einsatz. Sprechen Sie uns gern an, wenn Ihr Objekt außerhalb dieser Orte liegt."
+  },
+  {
+    question: "Kann ich ein unverbindliches Angebot anfragen?",
+    answer:
+      "Selbstverständlich. Nach Ihrer Anfrage prüfen wir die Anforderungen und erstellen ein unverbindliches Angebot mit klarer Leistungsbeschreibung."
+  },
+  {
+    question: "Unterstützen Sie auch bei Umzug und Transport?",
+    answer:
+      "Ja. Transport- und Umzugsleistungen bieten wir ergänzend an, wenn Kunden mehrere Aufgaben koordiniert aus einer Hand organisieren möchten."
   }
 ] as const;
 
