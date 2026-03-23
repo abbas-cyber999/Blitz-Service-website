@@ -49,7 +49,8 @@ export function ContactForm() {
             success: true,
             error: "",
             message:
-              data.message ?? "Vielen Dank. Ihre Anfrage wurde erfolgreich übermittelt."
+              data.message ??
+              "Vielen Dank! Ihre Anfrage wurde erfolgreich gesendet. Wir melden uns schnellstmöglich bei Ihnen."
           });
         });
       }}
@@ -104,8 +105,8 @@ export function ContactForm() {
           className="mt-1 h-4 w-4 rounded border-brandBlue/20 text-brandGold focus:ring-brandGold"
         />
         <span>
-          Ich habe die Datenschutzerklärung gelesen und stimme der Verarbeitung meiner
-          Angaben zur Bearbeitung meiner Anfrage zu.
+          Ich habe die Datenschutzerklärung gelesen und stimme der Verarbeitung meiner Angaben zur
+          Bearbeitung meiner Anfrage zu.
         </span>
       </label>
       <button

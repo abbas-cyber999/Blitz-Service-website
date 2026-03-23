@@ -1,10 +1,13 @@
 import { NextResponse } from "next/server";
-import { sendContactNotification } from "@/lib/email";
+import { sendContactEmails } from "@/lib/email";
 import { hasDatabaseUrl, hasEmailConfig } from "@/lib/env";
 import { getPrismaClient } from "@/lib/prisma";
 import { contactFormSchema } from "@/lib/validations";
 
 export const runtime = "nodejs";
+
+const SUCCESS_MESSAGE =
+  "Vielen Dank! Ihre Anfrage wurde erfolgreich gesendet. Wir melden uns schnellstmöglich bei Ihnen.";
 
 export async function POST(request: Request) {
   try {
@@ -22,10 +25,7 @@ export async function POST(request: Request) {
     }
 
     if (parsed.data.website) {
-      return NextResponse.json(
-        { message: "Vielen Dank. Ihre Anfrage wurde erfolgreich übermittelt." },
-        { status: 200 }
-      );
+      return NextResponse.json({ message: SUCCESS_MESSAGE }, { status: 200 });
     }
 
     let savedToDatabase = false;
@@ -49,7 +49,7 @@ export async function POST(request: Request) {
     }
 
     if (hasEmailConfig()) {
-      await sendContactNotification(parsed.data);
+      await sendContactEmails(parsed.data);
       sentByEmail = true;
     }
 
@@ -63,9 +63,7 @@ export async function POST(request: Request) {
       );
     }
 
-    return NextResponse.json({
-      message: "Vielen Dank. Ihre Anfrage wurde erfolgreich übermittelt."
-    });
+    return NextResponse.json({ message: SUCCESS_MESSAGE });
   } catch (error) {
     console.error(error);
     return NextResponse.json(

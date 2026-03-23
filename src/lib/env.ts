@@ -7,9 +7,7 @@ export function hasDatabaseUrl() {
 }
 
 export function hasEmailConfig() {
-  return Boolean(
-    process.env.EMAIL_SERVER && process.env.EMAIL_FROM && process.env.COMPANY_NOTIFICATION_EMAIL
-  );
+  return Boolean(process.env.EMAIL_SERVER && process.env.EMAIL_FROM);
 }
 
 export function hasAdminPassword() {
