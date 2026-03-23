@@ -133,12 +133,6 @@ export function SiteHeader() {
           )}
         </nav>
         <div className="hidden items-center gap-3 lg:flex">
-          <Link
-            href="/contact"
-            className="text-sm font-medium text-white/82 transition hover:text-brandGold"
-          >
-            {business.ctaSecondary}
-          </Link>
           <ButtonLink href="/contact">{business.ctaPrimary}</ButtonLink>
         </div>
         <button
@@ -205,7 +199,8 @@ export function SiteHeader() {
             {business.ctaPrimary}
           </ButtonLink>
           <div className="rounded-2xl border border-white/10 bg-white/5 p-4 text-sm text-white/78">
-            <p>Sekretariat: {business.phones.office}</p>
+            <p>Geschäftsführer: {business.phones.managingDirector}</p>
+            <p className="mt-1">Büro / Sekretariat: {business.phones.office}</p>
             <p className="mt-1">{business.email}</p>
           </div>
         </Container>

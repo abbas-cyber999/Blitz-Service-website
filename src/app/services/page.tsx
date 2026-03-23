@@ -32,11 +32,14 @@ export default function ServicesPage() {
           />
 
           <div className="mt-10 rounded-[30px] border border-brandBlue/10 bg-white p-8 shadow-[0_18px_42px_rgba(15,45,82,0.08)]">
-            <h2 className="font-display text-3xl text-brandBlue">Leistungen mit klarem Schwerpunkt auf Qualität und Verlässlichkeit</h2>
+            <h2 className="font-display text-3xl text-brandBlue">
+              Leistungen mit klarem Schwerpunkt auf Qualität und Verlässlichkeit
+            </h2>
             <p className="mt-4 max-w-4xl text-base leading-8 text-slate-600">
-              Wir arbeiten strukturiert, stimmen Leistungen transparent ab und legen Wert auf saubere,
-              gut planbare Abläufe. So entsteht eine Servicestruktur, die ruhig, professionell und für
-              Unternehmen, Hausverwaltungen und Privatkunden gleichermaßen nachvollziehbar bleibt.
+              Wir arbeiten strukturiert, stimmen Leistungen transparent ab und legen Wert auf
+              saubere, gut planbare Abläufe. So entsteht eine Servicestruktur, die ruhig,
+              professionell und für Unternehmen, Hausverwaltungen und Privatkunden gleichermaßen
+              nachvollziehbar bleibt.
             </p>
           </div>
 
@@ -61,10 +64,10 @@ export default function ServicesPage() {
             </div>
             <div className="flex flex-wrap gap-4">
               <ButtonLink href="/contact">
-                Angebot anfragen <ArrowRight className="h-4 w-4" />
+                {business.ctaPrimary} <ArrowRight className="h-4 w-4" />
               </ButtonLink>
               <ButtonLink href={whatsappHref} variant="whatsapp">
-                Per WhatsApp anfragen
+                Per WhatsApp kontaktieren
               </ButtonLink>
             </div>
           </div>

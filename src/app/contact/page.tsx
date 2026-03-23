@@ -21,11 +21,9 @@ export default function ContactPage() {
         description="Ob regelmäßige Reinigung, einmalige Endreinigung oder ergänzende Transportleistung: Beschreiben Sie Ihr Vorhaben kurz und wir melden uns zeitnah mit einer passenden Rückmeldung."
         actions={
           <>
+            <ButtonLink href="/contact">{business.ctaPrimary}</ButtonLink>
             <ButtonLink href={whatsappHref} variant="whatsapp">
-              WhatsApp starten
-            </ButtonLink>
-            <ButtonLink href={`mailto:${business.email}`} variant="dark">
-              E-Mail senden
+              Per WhatsApp kontaktieren
             </ButtonLink>
           </>
         }
@@ -46,20 +44,8 @@ export default function ContactPage() {
                     <MessageCircleMore className="h-5 w-5" />
                   </span>
                   <span>
-                    <span className="block text-sm text-white/70">WhatsApp</span>
+                    <span className="block text-sm text-white/70">Per WhatsApp kontaktieren</span>
                     <span className="font-semibold">{business.whatsappNumber}</span>
-                  </span>
-                </a>
-                <a
-                  href={`mailto:${business.email}`}
-                  className="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/8 px-5 py-4 hover:border-brandGold/50 hover:bg-white/10"
-                >
-                  <span className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-white text-brandBlue">
-                    <Mail className="h-5 w-5" />
-                  </span>
-                  <span>
-                    <span className="block text-sm text-white/70">E-Mail</span>
-                    <span className="font-semibold">{business.email}</span>
                   </span>
                 </a>
                 <a
@@ -72,6 +58,30 @@ export default function ContactPage() {
                   <span>
                     <span className="block text-sm text-white/70">Geschäftsführer</span>
                     <span className="font-semibold">{business.phones.managingDirector}</span>
+                  </span>
+                </a>
+                <a
+                  href={`tel:${business.phones.office}`}
+                  className="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/8 px-5 py-4 hover:border-brandGold/50 hover:bg-white/10"
+                >
+                  <span className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-white text-brandBlue">
+                    <Phone className="h-5 w-5" />
+                  </span>
+                  <span>
+                    <span className="block text-sm text-white/70">Büro / Sekretariat</span>
+                    <span className="font-semibold">{business.phones.office}</span>
+                  </span>
+                </a>
+                <a
+                  href={`mailto:${business.email}`}
+                  className="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/8 px-5 py-4 hover:border-brandGold/50 hover:bg-white/10"
+                >
+                  <span className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-white text-brandBlue">
+                    <Mail className="h-5 w-5" />
+                  </span>
+                  <span>
+                    <span className="block text-sm text-white/70">E-Mail</span>
+                    <span className="font-semibold">{business.email}</span>
                   </span>
                 </a>
               </div>

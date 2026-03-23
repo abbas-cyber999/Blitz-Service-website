@@ -28,9 +28,9 @@ export const business = {
     "Montag bis Freitag: 08:00 - 18:00 Uhr",
     "Samstag: Nach Vereinbarung"
   ],
-  serviceAreas: ["Moers", "Duisburg", "Krefeld", "Düsseldorf", "Niederrhein"],
-  ctaPrimary: "Kostenloses Angebot",
-  ctaSecondary: "Jetzt anfragen",
+  serviceAreas: ["Moers", "Duisburg", "Krefeld", "Düsseldorf"],
+  ctaPrimary: "Kostenloses Angebot anfragen",
+  ctaSecondary: "Kontakt",
   trackingUsesConsentBanner: false,
   imageAttribution: [
     {

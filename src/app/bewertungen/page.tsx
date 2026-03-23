@@ -4,6 +4,7 @@ import { Container } from "@/components/container";
 import { PageHero } from "@/components/page-hero";
 import { ReviewCard } from "@/components/review-card";
 import { reviews } from "@/data/site-content";
+import { business, whatsappHref } from "@/config/business";
 
 export const metadata: Metadata = {
   title: "Bewertungen",
@@ -17,7 +18,14 @@ export default function ReviewsPage() {
         eyebrow="Kundenbewertungen"
         title="Vertrauen entsteht durch verlässliche Leistung"
         description="Kunden schätzen bei Blitz Service vor allem saubere Ergebnisse, klare Absprachen und eine professionelle Betreuung im Alltag."
-        actions={<ButtonLink href="/contact">Eigene Anfrage stellen</ButtonLink>}
+        actions={
+          <>
+            <ButtonLink href="/contact">{business.ctaPrimary}</ButtonLink>
+            <ButtonLink href={whatsappHref} variant="whatsapp">
+              Per WhatsApp kontaktieren
+            </ButtonLink>
+          </>
+        }
       />
       <section className="pb-24">
         <Container>

@@ -84,10 +84,10 @@ export default function HomePage() {
             </div>
             <div className="flex flex-wrap gap-4">
               <ButtonLink href="/contact">
-                Unverbindlich anfragen <ArrowRight className="h-4 w-4" />
+                {business.ctaPrimary} <ArrowRight className="h-4 w-4" />
               </ButtonLink>
               <ButtonLink href={whatsappHref} variant="whatsapp">
-                Direkt per WhatsApp <MessageCircleMore className="h-4 w-4" />
+                Per WhatsApp kontaktieren <MessageCircleMore className="h-4 w-4" />
               </ButtonLink>
             </div>
           </div>
@@ -113,7 +113,7 @@ export default function HomePage() {
               Ausführung? Wir stimmen den passenden Ablauf für Ihr Objekt direkt mit Ihnen ab.
             </p>
             <ButtonLink href="/contact" variant="dark">
-              Angebot anfordern <ArrowRight className="h-4 w-4" />
+              {business.ctaPrimary} <ArrowRight className="h-4 w-4" />
             </ButtonLink>
           </div>
         </Container>
@@ -230,10 +230,10 @@ export default function HomePage() {
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <ButtonLink href="/contact">
-                Jetzt Anfrage senden <ArrowRight className="h-4 w-4" />
+                {business.ctaPrimary} <ArrowRight className="h-4 w-4" />
               </ButtonLink>
               <ButtonLink href={whatsappHref} variant="whatsapp">
-                Schnell per WhatsApp <MessageCircleMore className="h-4 w-4" />
+                Per WhatsApp kontaktieren <MessageCircleMore className="h-4 w-4" />
               </ButtonLink>
             </div>
           </div>
@@ -256,7 +256,7 @@ export default function HomePage() {
             <div className="mt-8 flex flex-wrap gap-4">
               <ButtonLink href="/contact">{business.ctaPrimary}</ButtonLink>
               <ButtonLink href={whatsappHref} variant="whatsapp">
-                WhatsApp schreiben <MessageCircleMore className="h-4 w-4" />
+                Per WhatsApp kontaktieren <MessageCircleMore className="h-4 w-4" />
               </ButtonLink>
             </div>
           </div>
@@ -265,22 +265,33 @@ export default function HomePage() {
               Regional im Einsatz
             </p>
             <h2 className="mt-4 font-display text-3xl text-brandBlue">
-              Kurze Wege, klare Abstimmung und schnelle Erreichbarkeit
+              Einsätze in Moers und im regionalen Umfeld
             </h2>
             <div className="mt-6 space-y-4">
-              {business.serviceAreas.map((area) => (
-                <div key={area} className="flex items-center gap-3 rounded-2xl bg-brandCream p-4">
-                  <span className="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-brandBlue text-white">
-                    <MapPin className="h-4 w-4" />
-                  </span>
-                  <div>
-                    <p className="font-semibold text-brandBlue">{area}</p>
-                    <p className="text-sm leading-6 text-slate-600">
-                      Reinigung und ergänzende Serviceleistungen im regionalen Umfeld.
-                    </p>
-                  </div>
+              <div className="flex items-start gap-3 rounded-2xl bg-brandCream p-5">
+                <span className="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-brandBlue text-white">
+                  <ShieldCheck className="h-4 w-4" />
+                </span>
+                <div>
+                  <p className="font-semibold text-brandBlue">
+                    Wir arbeiten in Moers sowie in allen Städten im Umkreis von bis zu 150 km.
+                  </p>
+                  <p className="mt-2 text-sm leading-7 text-slate-600">
+                    Dazu zählen unter anderem Duisburg, Krefeld und Düsseldorf. Weitere Einsatzorte
+                    stimmen wir gern individuell mit Ihnen ab.
+                  </p>
                 </div>
-              ))}
+              </div>
+              <div className="grid gap-3 sm:grid-cols-2">
+                {business.serviceAreas.map((area) => (
+                  <div key={area} className="flex items-center gap-3 rounded-2xl bg-white p-4 shadow-[0_10px_22px_rgba(15,45,82,0.06)]">
+                    <span className="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-brandBlue text-white">
+                      <MapPin className="h-4 w-4" />
+                    </span>
+                    <p className="font-semibold text-brandBlue">{area}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </Container>

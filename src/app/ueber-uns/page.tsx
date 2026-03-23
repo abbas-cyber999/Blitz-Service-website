@@ -5,6 +5,7 @@ import { PageHero } from "@/components/page-hero";
 import { PlaceholderImageCard } from "@/components/placeholder-image-card";
 import { SectionHeading } from "@/components/section-heading";
 import { aboutValues } from "@/data/site-content";
+import { business } from "@/config/business";
 
 export const metadata: Metadata = {
   title: "Über uns",
@@ -19,7 +20,7 @@ export default function AboutPage() {
         eyebrow="Unternehmen"
         title="Verlässlicher Service mit klaren Qualitätsstandards"
         description="Blitz Service GmbH steht für saubere Ausführung, strukturierte Abläufe und einen professionellen Auftritt bei jedem Einsatz. Wir betreuen Kunden im Raum Moers und Umgebung zuverlässig, diskret und mit festem Qualitätsanspruch."
-        actions={<ButtonLink href="/contact">Kostenloses Angebot</ButtonLink>}
+        actions={<ButtonLink href="/contact">{business.ctaPrimary}</ButtonLink>}
       />
       <section className="pb-24">
         <Container className="grid gap-10 lg:grid-cols-[1fr_0.95fr]">
@@ -41,9 +42,9 @@ export default function AboutPage() {
                 improvisierter Lösungen.
               </p>
               <p>
-                Im Raum Moers, Duisburg, Krefeld und Umgebung stehen wir für pünktlichen Service,
-                gute Erreichbarkeit und einen professionellen Auftritt, auf den sich Kunden
-                langfristig verlassen können.
+                Wir arbeiten in Moers sowie in allen Städten im Umkreis von bis zu 150 km und
+                stehen für pünktlichen Service, gute Erreichbarkeit und einen professionellen
+                Auftritt, auf den sich Kunden langfristig verlassen können.
               </p>
             </div>
           </div>
