@@ -10,6 +10,7 @@ type PlaceholderImageCardProps = {
   className?: string;
   imageSrc?: string;
   imageAlt?: string;
+  tone?: "light" | "dark";
 };
 
 export function PlaceholderImageCard({
@@ -19,7 +20,8 @@ export function PlaceholderImageCard({
   overlay,
   className,
   imageSrc,
-  imageAlt
+  imageAlt,
+  tone = "light"
 }: PlaceholderImageCardProps) {
   return (
     <div
@@ -42,14 +44,40 @@ export function PlaceholderImageCard({
           <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.18),rgba(15,45,82,0.16))]" />
         </div>
         <div className="relative z-10 flex h-full flex-col justify-end">
-          <div className="max-w-md rounded-[28px] bg-white/88 p-6 shadow-[0_12px_28px_rgba(15,45,82,0.08)] backdrop-blur">
+          <div
+            className={cn(
+              "max-w-md rounded-[28px] p-6 shadow-[0_12px_28px_rgba(15,45,82,0.08)] backdrop-blur",
+              tone === "dark" ? "bg-brandBlue/88" : "bg-white/88"
+            )}
+          >
             {badge ? (
-              <span className="inline-flex rounded-full border border-brandGold/30 bg-brandGold/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-brandBlue">
+              <span
+                className={cn(
+                  "inline-flex rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em]",
+                  tone === "dark"
+                    ? "border border-white/15 bg-white/10 text-brandGoldSoft"
+                    : "border border-brandGold/30 bg-brandGold/10 text-brandBlue"
+                )}
+              >
                 {badge}
               </span>
             ) : null}
-            <h3 className="mt-4 font-display text-3xl text-brandBlue">{title}</h3>
-            <p className="mt-3 text-sm leading-7 text-slate-600">{description}</p>
+            <h3
+              className={cn(
+                "mt-4 font-display text-3xl",
+                tone === "dark" ? "text-white" : "text-brandBlue"
+              )}
+            >
+              {title}
+            </h3>
+            <p
+              className={cn(
+                "mt-3 text-sm leading-7",
+                tone === "dark" ? "text-[#E5E7EB]" : "text-slate-600"
+              )}
+            >
+              {description}
+            </p>
           </div>
           {overlay ? <div className="relative mt-6">{overlay}</div> : null}
         </div>

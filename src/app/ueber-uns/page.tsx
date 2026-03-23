@@ -55,6 +55,7 @@ export default function AboutPage() {
               description="Wir verbinden saubere Ergebnisse mit verbindlicher Kommunikation, festen Standards und einem Service, der im Alltag zuverlässig funktioniert."
               imageSrc="/images/reliable-service.svg"
               imageAlt="Professionelle Betreuung und zuverlässiger Service"
+              tone="dark"
             />
             <div className="rounded-[32px] border border-brandBlue/10 bg-white p-8 shadow-[0_22px_48px_rgba(15,45,82,0.08)]">
               <p className="text-sm font-semibold uppercase tracking-[0.24em] text-brandBlueSoft">
