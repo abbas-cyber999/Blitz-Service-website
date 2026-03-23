@@ -1,6 +1,7 @@
 export const business = {
   name: "Blitz Service GmbH",
   legalName: "Blitz Service GmbH",
+  legalForm: "Gesellschaft mit beschränkter Haftung (GmbH)",
   domain: "blitzservic.de",
   shortDescription:
     "Professionelle Reinigungsleistungen mit Fokus auf Sauberkeit, Verlässlichkeit und schnelle, strukturierte Ausführung.",
@@ -17,9 +18,12 @@ export const business = {
   phone: "0179 6995057",
   whatsappNumber: "+4917615130442",
   email: "info@blitzservic.de",
-  managingDirector: "Geschäftsführer",
-  vatId: "DE123456789",
-  commercialRegister: "Amtsgericht Musterstadt, HRB 12345",
+  managingDirector: "[Name des Geschäftsführers bitte ergänzen]",
+  registerCourt: "[Registergericht bitte ergänzen]",
+  commercialRegisterNumber: "[HRB-Nummer bitte ergänzen]",
+  commercialRegister: "[Registergericht], HRB [Nummer bitte ergänzen]",
+  vatId: "[Umsatzsteuer-ID bitte ergänzen]",
+  contentResponsible: "[Verantwortliche Person nach § 18 Abs. 2 MStV bitte ergänzen]",
   businessHours: [
     "Montag bis Freitag: 08:00 - 18:00 Uhr",
     "Samstag: Nach Vereinbarung"
@@ -27,6 +31,17 @@ export const business = {
   serviceAreas: ["Moers", "Duisburg", "Krefeld", "Düsseldorf", "Niederrhein"],
   ctaPrimary: "Kostenloses Angebot",
   ctaSecondary: "Jetzt anfragen",
+  trackingUsesConsentBanner: false,
+  imageAttribution: [
+    {
+      label: "Pexels",
+      note: "Einzelne Website-Bilder stammen aus lizenzfreien Quellen mit kommerzieller Nutzung gemäß den jeweils geltenden Lizenzbedingungen."
+    },
+    {
+      label: "Eigene / lokal erstellte Grafiken",
+      note: "Zusätzliche Illustrationen und SVG-Grafiken wurden projektbezogen lokal erstellt."
+    }
+  ],
   socialLinks: {
     instagram: "",
     facebook: "",
