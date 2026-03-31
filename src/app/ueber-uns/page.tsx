@@ -10,7 +10,7 @@ import { business } from "@/config/business";
 export const metadata: Metadata = {
   title: "Über uns",
   description:
-    "Lernen Sie Blitz Service GmbH als zuverlässigen, strukturierten und regionalen Dienstleister für Reinigung und ergänzende Transportleistungen kennen."
+    "Lernen Sie Blitz Service GmbH als zuverlässigen, strukturierten Dienstleister für Reinigung sowie ergänzende Umzugs- und Transportleistungen kennen."
 };
 
 export default function AboutPage() {
@@ -19,7 +19,7 @@ export default function AboutPage() {
       <PageHero
         eyebrow="Unternehmen"
         title="Verlässlicher Service mit klaren Qualitätsstandards"
-        description="Blitz Service GmbH steht für saubere Ausführung, strukturierte Abläufe und einen professionellen Auftritt bei jedem Einsatz. Wir betreuen Kunden im Raum Moers und Umgebung zuverlässig, diskret und mit festem Qualitätsanspruch."
+        description="Blitz Service GmbH steht für saubere Ausführung, strukturierte Abläufe und einen professionellen Auftritt bei jedem Einsatz. Wir arbeiten flexibel und projektbezogen und stimmen jedes Vorhaben präzise mit unseren Kunden ab."
         actions={<ButtonLink href="/contact">{business.ctaPrimary}</ButtonLink>}
       />
       <section className="pb-24">
@@ -27,7 +27,7 @@ export default function AboutPage() {
           <div>
             <SectionHeading
               eyebrow="Unser Anspruch"
-              title="Regional präsent, professionell organisiert und verlässlich im Alltag"
+              title="Professionell organisiert, klar erreichbar und im Alltag verlässlich"
             />
             <div className="mt-8 space-y-5 text-base leading-8 text-slate-600">
               <p>
@@ -42,9 +42,9 @@ export default function AboutPage() {
                 improvisierter Lösungen.
               </p>
               <p>
-                Wir arbeiten in Moers sowie in allen Städten im Umkreis von bis zu 150 km und
-                stehen für pünktlichen Service, gute Erreichbarkeit und einen professionellen
-                Auftritt, auf den sich Kunden langfristig verlassen können.
+                Ob regelmäßige Reinigung oder ergänzender Umzugseinsatz: Wir arbeiten flexibel und
+                projektbezogen. Sprechen Sie uns einfach an, wenn Sie eine saubere, professionell
+                organisierte Lösung aus einer Hand wünschen.
               </p>
             </div>
           </div>

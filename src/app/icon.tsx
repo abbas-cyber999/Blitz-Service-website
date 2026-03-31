@@ -17,28 +17,28 @@ export default function Icon() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          background: "linear-gradient(135deg, #0f2d52, #1c4f86)",
-          borderRadius: "16px",
+          background: "linear-gradient(145deg, #f4ecff 0%, #7d5cc6 100%)",
+          borderRadius: "18px",
           position: "relative"
         }}
       >
         <div
           style={{
             position: "absolute",
-            width: 48,
-            height: 48,
-            border: "3px solid #c8a34f",
-            borderRadius: 999
+            inset: 8,
+            borderRadius: 16,
+            border: "1.5px solid rgba(255,255,255,0.55)"
           }}
         />
         <span
           style={{
-            color: "white",
-            fontSize: 30,
-            fontWeight: 700
+            color: "#ffffff",
+            fontSize: 28,
+            fontWeight: 700,
+            letterSpacing: "-0.08em"
           }}
         >
-          B
+          Li
         </span>
       </div>
     ),

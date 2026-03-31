@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { Container } from "@/components/container";
 import { PageHero } from "@/components/page-hero";
+import { business, phoneHref } from "@/config/business";
 
 export const metadata: Metadata = {
   title: "Datenschutz",
@@ -21,18 +22,25 @@ export default function DatenschutzPage() {
           <section>
             <h2 className="font-display text-3xl text-brandBlue">1. Verantwortlicher</h2>
             <div className="mt-4 space-y-2 text-sm leading-7 text-slate-600">
-              <p>Blitz Service GmbH</p>
-              <p>Zwickauer Str. 23</p>
-              <p>47443 Moers</p>
-              <p>Deutschland</p>
-              <p>Geschäftsführer: Othman Hasan</p>
+              <p>{business.legalName}</p>
+              <p>{business.address.street}</p>
+              <p>
+                {business.address.postalCode} {business.address.city}
+              </p>
+              <p>{business.address.country}</p>
+              <p>Geschäftsführer: {business.managingDirector}</p>
               <p>
                 E-Mail:{" "}
-                <a className="text-brandBlue hover:text-brandGold" href="mailto:info@blitzservic.de">
-                  info@blitzservic.de
+                <a className="text-brandBlue hover:text-brandGold" href={`mailto:${business.email}`}>
+                  {business.email}
                 </a>
               </p>
-              <p>Telefon: +49 179 6995057</p>
+              <p>
+                Telefon:{" "}
+                <a className="text-brandBlue hover:text-brandGold" href={phoneHref}>
+                  {business.phones.landline}
+                </a>
+              </p>
             </div>
           </section>
 

@@ -1,27 +1,33 @@
-# Blitz Service GmbH Website
+# Lingoria
 
-Next.js website for Blitz Service GmbH with a clear focus on cleaning services, an optional PostgreSQL-backed contact form, and a simple protected admin area.
+Phase 1 foundation for a premium global language-learning platform, starting with Arabic speakers learning English.
 
 ## Stack
 
 - Next.js App Router
 - TypeScript
 - Tailwind CSS
-- Prisma ORM
+- Supabase
 - PostgreSQL
-- Zod
-- Nodemailer
 
-## Environment variables
+## Phase 1 scope
 
-Only variables relevant to Blitz Service remain:
+- Premium landing page
+- Login and signup flows
+- Onboarding skeleton
+- Dashboard skeleton
+- Reusable UI and layout primitives
+- Light and dark theme foundation
+- RTL and LTR support from the beginning
+- Supabase auth integration structure
 
+## Environment
+
+- `NEXT_PUBLIC_SITE_URL`
+- `NEXT_PUBLIC_SUPABASE_URL`
+- `NEXT_PUBLIC_SUPABASE_ANON_KEY`
 - `DATABASE_URL`
-- `EMAIL_SERVER`
-- `EMAIL_FROM`
-- `COMPANY_NOTIFICATION_EMAIL`
-- `ADMIN_PASSWORD`
-- `ADMIN_SESSION_SECRET`
+- `DIRECT_URL` (optional reference only, not used by default Prisma sync)
 
 ## Scripts
 
@@ -31,16 +37,26 @@ Only variables relevant to Blitz Service remain:
 - `npm run lint`
 - `npm run typecheck`
 - `npm run prisma:generate`
-- `npm run prisma:migrate`
-- `npm run prisma:migrate:deploy`
+- `npm run prisma:sync`
+- `npm run prisma:sync:reset`
+- `npm run prisma:setup`
+- `npm run prisma:seed`
 
-## Deployment
+## Prisma workflow
 
-The public website builds without unrelated learning-platform code.  
-Set the required environment variables in Vercel before enabling persisted contact storage or admin login.
+Use the Supabase pooled `DATABASE_URL` for local development.
 
-## Notes
+- `npm run prisma:sync` uses `prisma db push`
+- `npm run prisma:setup` syncs the schema and then seeds the initial Lingoria course
+- `npm run prisma:migrate` and `npm run prisma:migrate:deploy` intentionally route to the same sync workflow in this environment because direct-host migrations are not reliable from this machine
+- The active Prisma datasource reads only `DATABASE_URL`, so local schema sync stays on the Supabase pooler
 
-- Legal pages are still placeholders and must be completed later.
-- Business content can still be refined later.
-- Homepage media can be replaced later in `public/images/homepage/`.
+## Structure highlights
+
+- `src/app/(marketing)` for the landing experience
+- `src/app/(auth)` for login and signup
+- `src/app/(app)` for product-area shells like onboarding and dashboard
+- `src/components/ui` for reusable design-system building blocks
+- `src/components/marketing`, `src/components/auth`, `src/components/dashboard` for feature-facing UI
+- `src/features/auth` for auth server actions
+- `src/lib/supabase` for browser/server client setup

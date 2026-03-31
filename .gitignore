@@ -11,3 +11,10 @@ prisma/dev.db
 public/favicon.ico
 .volta
 repo_audit_02_deutsch_hero
+.next-phase1
+assistant-desktop
+dev-*.log
+enhance-*.log
+theme-*.log
+redesign-*.log
+umlaut-*.log

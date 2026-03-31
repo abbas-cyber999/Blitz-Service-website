@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { Star } from "lucide-react";
 import { ButtonLink } from "@/components/button-link";
 import { Container } from "@/components/container";
 import { PageHero } from "@/components/page-hero";
@@ -16,8 +17,8 @@ export default function ReviewsPage() {
     <>
       <PageHero
         eyebrow="Kundenbewertungen"
-        title="Vertrauen entsteht durch verlässliche Leistung"
-        description="Kunden schätzen bei Blitz Service vor allem saubere Ergebnisse, klare Absprachen und eine professionelle Betreuung im Alltag."
+        title="Was unsere Kunden sagen"
+        description="Echte Rückmeldungen zu Reinigung, Transport und unserer täglichen Zusammenarbeit mit privaten und gewerblichen Kunden."
         actions={
           <>
             <ButtonLink href="/contact">{business.ctaPrimary}</ButtonLink>
@@ -29,16 +30,26 @@ export default function ReviewsPage() {
       />
       <section className="pb-24">
         <Container>
-          <div className="mb-10 rounded-[32px] border border-brandBlue/10 bg-white p-8 shadow-[0_22px_48px_rgba(15,45,82,0.08)]">
-            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-brandBlueSoft">
-              Kundenstimmen
+          <div className="mb-10 rounded-[32px] border border-[var(--border)] bg-white/94 p-8 shadow-[0_22px_48px_rgba(15,76,129,0.08)]">
+            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[color:var(--primary-strong)]">
+              Kundenbewertungen
             </p>
-            <p className="mt-4 max-w-3xl text-base leading-8 text-slate-600">
-              Die folgenden Rückmeldungen zeigen, worauf Kunden bei Reinigung und ergänzenden
-              Serviceleistungen besonderen Wert legen: Verlässlichkeit, gute Erreichbarkeit und
-              eine saubere, professionelle Ausführung.
+            <h2 className="mt-4 text-3xl text-[color:var(--foreground)] md:text-4xl">
+              Vertrauen durch verlässliche Leistung
+            </h2>
+            <div className="mt-5 inline-flex items-center gap-3 rounded-full bg-[color:var(--secondary)] px-4 py-2.5 text-sm font-semibold text-[color:var(--foreground)]">
+              <span className="inline-flex items-center gap-1 text-[color:var(--accent)]">
+                <Star className="h-4 w-4 fill-current" />
+                <span>4.9 / 5</span>
+              </span>
+              <span className="text-[color:var(--foreground-muted)]">basierend auf Kundenbewertungen</span>
+            </div>
+            <p className="mt-5 max-w-3xl text-base leading-8 text-[color:var(--foreground-muted)]">
+              Die folgenden Rückmeldungen zeigen, worauf Kunden bei Blitz Service besonderen Wert
+              legen: Zuverlässigkeit, gute Erreichbarkeit und eine professionelle Ausführung.
             </p>
           </div>
+
           <div className="grid gap-6 lg:grid-cols-3">
             {reviews.map((review) => (
               <ReviewCard key={`${review.name}-${review.city}`} {...review} />

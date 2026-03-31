@@ -5,7 +5,7 @@ import { ContactForm } from "@/components/contact-form";
 import { Container } from "@/components/container";
 import { PageHero } from "@/components/page-hero";
 import { PlaceholderImageCard } from "@/components/placeholder-image-card";
-import { business, contactAnchorId, fullAddress, whatsappHref } from "@/config/business";
+import { business, contactAnchorId, fullAddress, phoneHref, whatsappHref } from "@/config/business";
 
 export const metadata: Metadata = {
   title: "Kontakt",
@@ -49,27 +49,15 @@ export default function ContactPage() {
                   </span>
                 </a>
                 <a
-                  href={`tel:${business.phones.managingDirector}`}
+                  href={phoneHref}
                   className="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/8 px-5 py-4 hover:border-brandGold/50 hover:bg-white/10"
                 >
                   <span className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-white text-brandBlue">
                     <Phone className="h-5 w-5" />
                   </span>
                   <span>
-                    <span className="block text-sm text-white/70">Geschäftsführer</span>
-                    <span className="font-semibold">{business.phones.managingDirector}</span>
-                  </span>
-                </a>
-                <a
-                  href={`tel:${business.phones.office}`}
-                  className="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/8 px-5 py-4 hover:border-brandGold/50 hover:bg-white/10"
-                >
-                  <span className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-white text-brandBlue">
-                    <Phone className="h-5 w-5" />
-                  </span>
-                  <span>
-                    <span className="block text-sm text-white/70">Büro / Sekretariat</span>
-                    <span className="font-semibold">{business.phones.office}</span>
+                    <span className="block text-sm text-white/70">Festnetz</span>
+                    <span className="font-semibold">{business.phones.landline}</span>
                   </span>
                 </a>
                 <a

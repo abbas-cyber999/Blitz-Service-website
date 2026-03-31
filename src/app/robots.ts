@@ -1,15 +1,11 @@
-import { MetadataRoute } from "next";
-import { business } from "@/config/business";
-
-const baseUrl = `https://${business.domain}`;
+import type { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
       userAgent: "*",
-      allow: "/",
-      disallow: ["/admin"]
+      allow: "/"
     },
-    sitemap: `${baseUrl}/sitemap.xml`
+    sitemap: "https://lingoria.com/sitemap.xml"
   };
 }

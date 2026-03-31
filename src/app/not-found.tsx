@@ -1,23 +1,26 @@
 import Link from "next/link";
+import { Container } from "@/components/ui/container";
 
 export default function NotFoundPage() {
   return (
-    <section className="mx-auto flex min-h-[70vh] max-w-3xl items-center px-6 py-20 sm:px-8">
-      <div className="w-full rounded-[32px] border border-brandBlue/10 bg-white p-10 text-center shadow-[0_20px_42px_rgba(15,45,82,0.08)]">
-        <p className="text-sm font-semibold uppercase tracking-[0.24em] text-brandBlueSoft">404</p>
-        <h1 className="mt-6 font-display text-5xl text-brandBlue">Seite nicht gefunden</h1>
-        <p className="mt-6 text-base leading-8 text-slate-600">
-          Die gewünschte Seite ist nicht verfügbar. Zurück zur Startseite von Blitz Service GmbH.
-        </p>
-        <div className="mt-8 flex justify-center">
+    <main id="main-content" className="flex min-h-screen items-center py-16">
+      <Container>
+        <div className="surface-card-strong mx-auto max-w-2xl rounded-[36px] p-10 text-center">
+          <p className="text-sm uppercase tracking-[0.22em] text-[color:var(--foreground-muted)]">
+            Not found
+          </p>
+          <h1 className="mt-4 text-5xl text-[color:var(--foreground)]">This path does not exist.</h1>
+          <p className="mt-5 text-base leading-8 text-[color:var(--foreground-muted)]">
+            Return to the Lingoria foundation and continue from a valid entry point.
+          </p>
           <Link
             href="/"
-            className="rounded-2xl bg-brandGold px-6 py-3 text-sm font-semibold text-brandBlue shadow-[0_16px_30px_rgba(200,163,79,0.24)]"
+            className="mt-8 inline-flex items-center justify-center rounded-full bg-[color:var(--primary)] px-6 py-3 text-sm font-medium text-white shadow-[var(--shadow-soft)]"
           >
-            Zur Startseite
+            Go to home
           </Link>
         </div>
-      </div>
-    </section>
+      </Container>
+    </main>
   );
 }

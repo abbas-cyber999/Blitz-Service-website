@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { Container } from "@/components/container";
 import { PageHero } from "@/components/page-hero";
+import { business, fullAddress, phoneHref } from "@/config/business";
 
 export const metadata: Metadata = {
   title: "Impressum",
@@ -18,32 +19,37 @@ export default function ImpressumPage() {
       <section className="pb-24">
         <Container className="max-w-4xl space-y-8 rounded-[32px] border border-brandBlue/10 bg-white p-8 shadow-card">
           <section>
-            <h2 className="font-display text-3xl text-brandBlue">
-              Angaben gemäß § 5 DDG
-            </h2>
+            <h2 className="font-display text-3xl text-brandBlue">Angaben gemäß § 5 DDG</h2>
             <div className="mt-4 space-y-2 text-sm leading-7 text-slate-600">
-              <p>Blitz Service GmbH</p>
-              <p>Zwickauer Str. 23</p>
-              <p>47443 Moers</p>
-              <p>Deutschland</p>
+              <p>{business.legalName}</p>
+              <p>{business.address.street}</p>
+              <p>
+                {business.address.postalCode} {business.address.city}
+              </p>
+              <p>{business.address.country}</p>
             </div>
           </section>
 
           <section>
             <h2 className="font-display text-3xl text-brandBlue">Vertreten durch</h2>
             <p className="mt-4 text-sm leading-7 text-slate-600">
-              Geschäftsführer: Othman Hasan
+              Geschäftsführer: {business.managingDirector}
             </p>
           </section>
 
           <section>
             <h2 className="font-display text-3xl text-brandBlue">Kontakt</h2>
             <div className="mt-4 space-y-2 text-sm leading-7 text-slate-600">
-              <p>Telefon: +49 179 6995057</p>
+              <p>
+                Telefon:{" "}
+                <a className="text-brandBlue hover:text-brandGold" href={phoneHref}>
+                  {business.phones.landline}
+                </a>
+              </p>
               <p>
                 E-Mail:{" "}
-                <a className="text-brandBlue hover:text-brandGold" href="mailto:info@blitzservic.de">
-                  info@blitzservic.de
+                <a className="text-brandBlue hover:text-brandGold" href={`mailto:${business.email}`}>
+                  {business.email}
                 </a>
               </p>
             </div>
@@ -52,15 +58,15 @@ export default function ImpressumPage() {
           <section>
             <h2 className="font-display text-3xl text-brandBlue">Handelsregister</h2>
             <div className="mt-4 space-y-2 text-sm leading-7 text-slate-600">
-              <p>Registergericht: Amtsgericht Kleve</p>
-              <p>Handelsregisternummer: HRB 20203</p>
+              <p>Registergericht: {business.registerCourt}</p>
+              <p>Handelsregisternummer: {business.commercialRegisterNumber}</p>
             </div>
           </section>
 
           <section>
             <h2 className="font-display text-3xl text-brandBlue">Umsatzsteuer-ID</h2>
             <p className="mt-4 text-sm leading-7 text-slate-600">
-              Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz: DE454824077
+              Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz: {business.vatId}
             </p>
           </section>
 
@@ -69,10 +75,8 @@ export default function ImpressumPage() {
               Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV
             </h2>
             <div className="mt-4 space-y-2 text-sm leading-7 text-slate-600">
-              <p>Othman Hasan</p>
-              <p>Zwickauer Str. 23</p>
-              <p>47443 Moers</p>
-              <p>Deutschland</p>
+              <p>{business.contentResponsible}</p>
+              <p>{fullAddress}</p>
             </div>
           </section>
 

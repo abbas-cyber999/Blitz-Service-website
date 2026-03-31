@@ -13,9 +13,10 @@ import { business } from "@/config/business";
 
 export const navigation = [
   { label: "Home", href: "/" },
-  { label: "Dienstleistungen", href: "/services" },
+  { label: "News", href: "/news" },
+  { label: "Reinigung", href: "/reinigung" },
+  { label: "Umzug / Transport", href: "/umzug" },
   { label: "Über uns", href: "/ueber-uns" },
-  { label: "Bewertungen", href: "/bewertungen" },
   { label: "Kontakt", href: "/contact" }
 ] as const;
 
@@ -23,49 +24,49 @@ export const serviceMenuItems = [
   {
     title: "Gebäudereinigung",
     text: "Gepflegte, repräsentative Immobilien mit festen Reinigungsstandards.",
-    href: "/services",
+    href: "/reinigung",
     icon: Building2
   },
   {
     title: "Büroreinigung",
     text: "Saubere Arbeitsplätze und Empfangsbereiche für einen professionellen Eindruck.",
-    href: "/services",
+    href: "/reinigung",
     icon: BriefcaseBusiness
   },
   {
     title: "Treppenhausreinigung",
     text: "Ordentliche Gemeinschaftsflächen für Wohn- und Gewerbeobjekte.",
-    href: "/services",
+    href: "/reinigung",
     icon: ClipboardCheck
   },
   {
     title: "Umzugsreinigung",
     text: "Gründliche Reinigung vor Einzug, Auszug oder Objektübergabe.",
-    href: "/services",
+    href: "/reinigung",
     icon: Home
   },
   {
     title: "Endreinigung",
     text: "Sauberer Abschluss nach Bauphase, Renovierung oder Objektwechsel.",
-    href: "/services",
+    href: "/reinigung",
     icon: ShieldCheck
   },
   {
     title: "Fensterreinigung",
     text: "Klare Glasflächen und ein gepflegter Gesamteindruck für Ihr Objekt.",
-    href: "/services",
+    href: "/reinigung",
     icon: Sparkles
   },
   {
     title: "Praxisreinigung",
     text: "Diskrete Reinigung sensibler Arbeitsumgebungen mit hohem Anspruch.",
-    href: "/services",
+    href: "/reinigung",
     icon: HeartPulse
   },
   {
     title: "Transport / Umzug",
     text: "Ergänzende Transportleistungen für koordinierte Gesamtprojekte.",
-    href: "/services",
+    href: "/umzug",
     icon: Truck
   }
 ] as const;
@@ -160,22 +161,64 @@ export const services = [
 
 export const reviews = [
   {
-    name: "Markus",
+    name: "Markus K.",
     city: "Duisburg",
     rating: 5,
-    text: "Die Abstimmung lief schnell und verbindlich. Unser Treppenhaus wird sauber und zuverlässig betreut, und auch bei Rückfragen ist immer sofort jemand erreichbar."
+    text: "Die Abstimmung lief schnell und verbindlich. Unser Treppenhaus wird sauber und zuverlässig betreut."
   },
   {
-    name: "Selin",
+    name: "Selin A.",
     city: "Moers",
     rating: 5,
-    text: "Für die Wohnungsübergabe brauchten wir kurzfristig Unterstützung. Der Termin wurde pünktlich eingehalten und die Reinigung war gründlich und professionell."
+    text: "Sehr freundliches Team und saubere Arbeit. Die Terminvereinbarung war unkompliziert."
   },
   {
-    name: "Anna",
+    name: "Anna W.",
     city: "Düsseldorf",
     rating: 5,
-    text: "Unsere Büroräume wirken seit Beginn der Zusammenarbeit deutlich gepflegter. Besonders überzeugt uns die ruhige Arbeitsweise und die konstante Qualität."
+    text: "Unsere Büroräume wirken deutlich gepflegter seit wir den Service nutzen."
+  },
+  {
+    name: "Mustafa Y.",
+    city: "Krefeld",
+    rating: 5,
+    text: "Sehr professionelle Reinigung und gute Kommunikation."
+  },
+  {
+    name: "Ahmed H.",
+    city: "Essen",
+    rating: 5,
+    text: "Wir brauchten kurzfristig Hilfe und der Termin wurde zuverlässig eingehalten."
+  },
+  {
+    name: "Katarzyna P.",
+    city: "Oberhausen",
+    rating: 5,
+    text: "Sehr gründliche Arbeit und freundliche Mitarbeiter."
+  },
+  {
+    name: "Daniel R.",
+    city: "Duisburg",
+    rating: 5,
+    text: "Die Zusammenarbeit verlief unkompliziert und professionell."
+  },
+  {
+    name: "Fatima S.",
+    city: "Moers",
+    rating: 5,
+    text: "Sehr zufrieden mit der Grundreinigung unserer Wohnung."
+  },
+  {
+    name: "Emre T.",
+    city: "Düsseldorf",
+    rating: 5,
+    text: "Sehr zuverlässig und gut organisiert."
+  },
+  {
+    name: "Joanna L.",
+    city: "Krefeld",
+    rating: 4,
+    text: "Termin musste einmal verschoben werden, aber die Arbeit war sehr gut."
   }
 ] as const;
 
@@ -204,12 +247,12 @@ export const trustPoints = [
     text: "Verbindliche Zeiten, klare Kommunikation und nachvollziehbare Abläufe für Objekte jeder Größe."
   },
   {
-    title: "Reinigung mit Priorität",
-    text: "Die Hauptleistung ist Reinigung. Transport unterstützen wir ergänzend dort, wo es sinnvoll ist."
+    title: "Zwei klare Servicewelten",
+    text: "Reinigung und Umzug sind auf der Website klar getrennt, damit Kunden direkt den passenden Einstieg finden."
   },
   {
-    title: "Schnelle Rückmeldung",
-    text: "Kurze Reaktionszeiten bei Anfragen, Besichtigungen und Angebotswünschen."
+    title: "Flexible Einsatzgebiete",
+    text: "Wir arbeiten flexibel und projektbezogen. Sprechen Sie uns einfach mit Ihrem Vorhaben an."
   }
 ] as const;
 
@@ -232,9 +275,9 @@ export const faqs = [
       "Ja. Wir betreuen Büros und gewerbliche Flächen sowohl regelmäßig als auch bei einzelnen Einsätzen. Die Reinigungsintervalle stimmen wir passend zu Ihrem Bedarf ab."
   },
   {
-    question: "Arbeiten Sie auch in Duisburg, Moers und Krefeld?",
+    question: "Wo sind Sie im Einsatz?",
     answer:
-      "Ja. Blitz Service ist regional im Raum Moers, Duisburg, Krefeld und Umgebung im Einsatz. Sprechen Sie uns gern an, wenn Ihr Objekt außerhalb dieser Orte liegt."
+      "Wir arbeiten flexibel und projektbezogen. Je nach Art und Umfang des Auftrags prüfen wir die Verfügbarkeit individuell und melden uns mit einer klaren Einschätzung zurück."
   },
   {
     question: "Kann ich ein unverbindliches Angebot anfragen?",

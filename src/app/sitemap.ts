@@ -1,23 +1,12 @@
-import { MetadataRoute } from "next";
-import { business } from "@/config/business";
-
-const baseUrl = `https://${business.domain}`;
-
-const routes = [
-  "",
-  "/services",
-  "/ueber-uns",
-  "/bewertungen",
-  "/contact",
-  "/impressum",
-  "/datenschutz"
-] as const;
+import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return routes.map((path) => ({
+  const baseUrl = "https://lingoria.com";
+
+  return ["/", "/login", "/signup", "/onboarding", "/dashboard"].map((path) => ({
     url: `${baseUrl}${path}`,
     lastModified: new Date(),
     changeFrequency: "weekly",
-    priority: path === "" ? 1 : 0.8
+    priority: path === "/" ? 1 : 0.7
   }));
 }

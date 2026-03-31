@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Mail, MapPin, Phone } from "lucide-react";
-import { business, fullAddress } from "@/config/business";
+import { PrivacyPreferencesButton } from "@/components/privacy-preferences";
+import { business, fullAddress, phoneHref } from "@/config/business";
 import { navigation } from "@/data/site-content";
 import { Container } from "@/components/container";
 
@@ -22,7 +23,9 @@ export function SiteFooter() {
             </p>
             <p className="inline-flex items-center gap-2">
               <Phone className="h-4 w-4 text-brandGold" />
-              {business.phones.office}
+              <a href={phoneHref} className="hover:text-brandGold">
+                {business.phones.landline}
+              </a>
             </p>
             <p className="inline-flex items-center gap-2">
               <Mail className="h-4 w-4 text-brandGold" />
@@ -63,6 +66,9 @@ export function SiteFooter() {
               <Link href="/contact" className="hover:text-brandGold">
                 Kontakt
               </Link>
+            </li>
+            <li>
+              <PrivacyPreferencesButton light />
             </li>
           </ul>
         </div>

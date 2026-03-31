@@ -4,7 +4,7 @@ export const business = {
   legalForm: "Gesellschaft mit beschränkter Haftung (GmbH)",
   domain: "blitzservic.de",
   shortDescription:
-    "Professionelle Reinigungsleistungen mit Fokus auf Sauberkeit, Verlässlichkeit und schnelle, strukturierte Ausführung.",
+    "Professionelle Reinigung und ergänzende Umzugs- und Transportleistungen mit klarer Kommunikation, strukturierter Ausführung und flexiblem Einsatzgebiet.",
   address: {
     street: "Zwickauer Str. 23",
     postalCode: "47443",
@@ -12,23 +12,28 @@ export const business = {
     country: "Deutschland"
   },
   phones: {
-    managingDirector: "0179 6995057",
-    office: "0176 15130442"
+    landline: "02841 6004743",
+    office: "02841 6004743",
+    managingDirector: "02841 6004743"
   },
-  phone: "0179 6995057",
+  phone: "02841 6004743",
   whatsappNumber: "+4917615130442",
   email: "info@blitzservic.de",
-  managingDirector: "[Name des Geschäftsführers bitte ergänzen]",
-  registerCourt: "[Registergericht bitte ergänzen]",
-  commercialRegisterNumber: "[HRB-Nummer bitte ergänzen]",
-  commercialRegister: "[Registergericht], HRB [Nummer bitte ergänzen]",
-  vatId: "[Umsatzsteuer-ID bitte ergänzen]",
-  contentResponsible: "[Verantwortliche Person nach § 18 Abs. 2 MStV bitte ergänzen]",
+  managingDirector: "Othman Hasan",
+  registerCourt: "Amtsgericht Kleve",
+  commercialRegisterNumber: "HRB 20203",
+  commercialRegister: "Amtsgericht Kleve, HRB 20203",
+  vatId: "DE454824077",
+  contentResponsible: "Othman Hasan",
   businessHours: [
     "Montag bis Freitag: 08:00 - 18:00 Uhr",
     "Samstag: Nach Vereinbarung"
   ],
-  serviceAreas: ["Moers", "Duisburg", "Krefeld", "Düsseldorf"],
+  serviceAreas: [
+    "Flexible Einsatzgebiete auf Anfrage",
+    "Projektbezogene regionale Betreuung",
+    "Breite Verfügbarkeit je nach Auftragsumfang"
+  ],
   ctaPrimary: "Kostenloses Angebot anfragen",
   ctaSecondary: "Kontakt",
   trackingUsesConsentBanner: false,
@@ -53,6 +58,8 @@ export const fullAddress = `${business.address.street}, ${business.address.posta
 
 export const contactAnchorId = "kontakt-formular";
 
+export const phoneHref = `tel:${business.phones.landline.replace(/\D/g, "")}`;
+
 export const whatsappHref = `https://wa.me/${business.whatsappNumber.replace(/\D/g, "")}?text=${encodeURIComponent(
-  "Hallo, ich interessiere mich für Ihre Reinigungsleistungen und hätte gern ein unverbindliches Angebot."
+  "Hallo, ich interessiere mich für Ihre Dienstleistung."
 )}`;

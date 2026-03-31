@@ -1,4 +1,5 @@
 import nodemailer from "nodemailer";
+import { business } from "@/config/business";
 
 type ContactEmailPayload = {
   name: string;
@@ -82,7 +83,7 @@ export async function sendContactEmails(payload: ContactEmailPayload) {
         "",
         "Blitz Service GmbH",
         COMPANY_EMAIL,
-        "0179 6995057",
+        business.phones.landline,
         WEBSITE_URL
       ].join("\n")
     })

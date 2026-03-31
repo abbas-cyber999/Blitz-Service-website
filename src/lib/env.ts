@@ -1,3 +1,15 @@
+export function getSupabaseUrl() {
+  return process.env.NEXT_PUBLIC_SUPABASE_URL ?? "";
+}
+
+export function getSupabaseAnonKey() {
+  return process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ?? "";
+}
+
+export function hasSupabaseEnv() {
+  return Boolean(getSupabaseUrl() && getSupabaseAnonKey());
+}
+
 export function isProduction() {
   return process.env.NODE_ENV === "production";
 }
