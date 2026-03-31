@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Metadata } from "next";
+import type { Metadata } from "next";
 import { Bell, CalendarDays } from "lucide-react";
 import { MarketingFooter } from "@/components/navigation/marketing-footer";
 import { MarketingNavbar } from "@/components/navigation/marketing-navbar";

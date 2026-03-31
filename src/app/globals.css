@@ -27,10 +27,6 @@
   --surface-glow:
     radial-gradient(circle at top right, rgba(212, 166, 58, 0.18), transparent 26%),
     radial-gradient(circle at left center, rgba(47, 109, 165, 0.12), transparent 32%);
-  --globe-watermark:
-    radial-gradient(circle at center, rgba(47, 109, 165, 0.1) 0%, rgba(47, 109, 165, 0.045) 28%, transparent 58%);
-  --energy-streak:
-    linear-gradient(105deg, transparent 0%, rgba(212, 166, 58, 0.22) 44%, rgba(47, 109, 165, 0.18) 58%, transparent 100%);
 }
 
 @theme {
@@ -98,11 +94,10 @@ body::before {
   inset: 0;
   z-index: -2;
   pointer-events: none;
-  background:
-    url("/images/branding/globe-watermark.svg") no-repeat 85% 12% / min(42vw, 36rem),
-    radial-gradient(circle at 84% 16%, rgba(255, 255, 255, 0.5), transparent 18%),
-    var(--globe-watermark);
-  opacity: 0.72;
+  background: url("/images/branding/globe-watermark.svg") no-repeat 68% 12% / clamp(34rem, 54vw, 62rem);
+  opacity: 0.075;
+  filter: blur(2px);
+  transform: translate3d(0, 0, 0);
 }
 
 body::after {
@@ -112,10 +107,10 @@ body::after {
   z-index: -1;
   pointer-events: none;
   background:
-    linear-gradient(114deg, transparent 0 66%, rgba(212, 166, 58, 0.12) 70%, transparent 75%),
-    linear-gradient(128deg, transparent 0 12%, rgba(47, 109, 165, 0.08) 18%, transparent 24%),
-    linear-gradient(102deg, transparent 0 76%, rgba(47, 109, 165, 0.06) 81%, transparent 86%);
-  opacity: 0.55;
+    linear-gradient(112deg, transparent 0 69%, rgba(212, 166, 58, 0.06) 72%, transparent 76%),
+    linear-gradient(128deg, transparent 0 14%, rgba(47, 109, 165, 0.045) 18%, transparent 24%),
+    linear-gradient(102deg, transparent 0 78%, rgba(47, 109, 165, 0.04) 82%, transparent 87%);
+  opacity: 0.42;
 }
 
 h1,
@@ -640,6 +635,12 @@ textarea {
 }
 
 @media (max-width: 1023px) {
+  body::before {
+    background-position: center 14%;
+    background-size: min(88vw, 34rem);
+    opacity: 0.06;
+  }
+
   .homepage-split-worlds {
     grid-template-columns: 1fr;
   }
@@ -668,6 +669,10 @@ textarea {
 }
 
 @media (min-width: 1024px) {
+  body::before {
+    background-position: 72% 10%;
+  }
+
   .homepage-split-worlds {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
