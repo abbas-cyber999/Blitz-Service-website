@@ -30,11 +30,7 @@ export default function LandingPage() {
         <section className="relative overflow-hidden py-6 md:py-10">
           <Container>
             <div className="homepage-split-worlds">
-              <article className="premium-world premium-world-cleaning">
-                <div className="premium-world-orbit premium-world-orbit-right" />
-                <div className="premium-world-lightning premium-world-lightning-top" />
-                <div className="premium-world-lightning premium-world-lightning-bottom" />
-
+              <article className="premium-world">
                 <div className="premium-world-content">
                   <div className="premium-world-copy">
                     <p className="homepage-kicker">{business.name}</p>
@@ -76,11 +72,7 @@ export default function LandingPage() {
                 </div>
               </article>
 
-              <article className="premium-world premium-world-moving">
-                <div className="premium-world-orbit premium-world-orbit-left" />
-                <div className="premium-world-lightning premium-world-lightning-top" />
-                <div className="premium-world-lightning premium-world-lightning-bottom" />
-
+              <article className="premium-world">
                 <div className="premium-world-content">
                   <div className="premium-world-copy">
                     <p className="homepage-kicker">{business.name}</p>
