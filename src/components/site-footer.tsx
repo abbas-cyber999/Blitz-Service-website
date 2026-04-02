@@ -11,7 +11,7 @@ export function SiteFooter() {
     <footer className="border-t border-brandBlue/10 bg-brandBlue text-white">
       <Container className="grid gap-10 py-14 md:grid-cols-[1.25fr_0.8fr_1fr]">
         <div>
-          <LogoMark compact className="text-white" />
+          <LogoMark compact size="footer" className="text-white" />
           <p className="mt-4 max-w-md text-sm leading-7 text-white/72">
             Professionelle Reinigungsservices für Gebäude, Büros und gepflegte Immobilien.
             Ergänzend bieten wir Transport- und Umzugsleistungen an, wenn Kunden eine koordiniert

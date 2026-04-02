@@ -9,6 +9,7 @@ type LogoMarkProps = {
   priority?: boolean;
   subtitleClassName?: string;
   titleClassName?: string;
+  size?: "header" | "footer";
 };
 
 export function LogoMark({
@@ -16,18 +17,26 @@ export function LogoMark({
   compact = false,
   priority = false,
   subtitleClassName,
-  titleClassName
+  titleClassName,
+  size = "header"
 }: LogoMarkProps) {
+  const imageWrapperClassName =
+    size === "footer"
+      ? "relative block h-10 w-[8.5rem] shrink-0 sm:h-11 sm:w-[9.25rem]"
+      : "relative block h-12 w-[9.5rem] shrink-0 sm:h-14 sm:w-[11rem]";
+
+  const imageSizes = size === "footer" ? "(max-width: 640px) 136px, 148px" : "(max-width: 640px) 152px, 176px";
+
   return (
     <Link href="/" className={cn("inline-flex items-center gap-3", className)}>
-      <span className="relative block h-12 w-[9.5rem] shrink-0 sm:h-14 sm:w-[11rem]">
+      <span className={imageWrapperClassName}>
         <Image
-          src="/logos/blitz-logo.jpeg"
+          src="/logos/blitz-logo-final.jpeg"
           alt="Blitz Service GmbH Logo"
           fill
           priority={priority}
           className="object-contain"
-          sizes="(max-width: 640px) 152px, 176px"
+          sizes={imageSizes}
         />
       </span>
       {!compact ? (

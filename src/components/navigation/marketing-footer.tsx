@@ -9,7 +9,7 @@ export function MarketingFooter() {
     <footer className="border-t border-[var(--border)] bg-[color:var(--primary)] py-10 text-white">
       <Container className="grid gap-8 md:grid-cols-[1.2fr_0.9fr_0.9fr]">
         <div>
-          <LogoMark compact className="text-white" />
+          <LogoMark compact size="footer" className="text-white" />
           <p className="mt-4 max-w-md text-sm leading-7 text-white/72">
             Professionelle Reinigung als Schwerpunkt, ergänzt durch strukturierte Umzugs- und
             Transportleistungen für private und gewerbliche Projekte.
