@@ -18,3 +18,5 @@ enhance-*.log
 theme-*.log
 redesign-*.log
 umlaut-*.log
+
+.vercel
