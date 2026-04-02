@@ -23,15 +23,15 @@ export function LogoMark({
   const imageWrapperClassName =
     size === "footer"
       ? "relative block h-10 w-[8.5rem] shrink-0 sm:h-11 sm:w-[9.25rem]"
-      : "relative block h-12 w-[9.5rem] shrink-0 sm:h-14 sm:w-[11rem]";
+      : "relative block h-12 w-[9.75rem] shrink-0 sm:h-14 sm:w-[11rem]";
 
-  const imageSizes = size === "footer" ? "(max-width: 640px) 136px, 148px" : "(max-width: 640px) 152px, 176px";
+  const imageSizes = size === "footer" ? "(max-width: 640px) 136px, 148px" : "(max-width: 640px) 156px, 176px";
 
   return (
     <Link href="/" className={cn("inline-flex items-center gap-3", className)}>
       <span className={imageWrapperClassName}>
         <Image
-          src="/logos/blitz-logo-final.jpeg"
+          src="/images/logo-blitz-header.png"
           alt="Blitz Service GmbH Logo"
           fill
           priority={priority}
