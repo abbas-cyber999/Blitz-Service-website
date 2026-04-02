@@ -89,7 +89,17 @@ body {
 }
 
 body::before {
-  content: none;
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+  background-image: url("/images/logo-blitz.png");
+  background-repeat: no-repeat;
+  background-position: center 46%;
+  background-size: min(68vw, 70%);
+  opacity: 0.05;
+  filter: blur(2px);
 }
 
 body::after {
@@ -627,6 +637,12 @@ textarea {
 }
 
 @media (max-width: 1023px) {
+  body::before {
+    background-position: center 42%;
+    background-size: 92%;
+    opacity: 0.042;
+  }
+
   .homepage-split-worlds {
     grid-template-columns: 1fr;
   }
