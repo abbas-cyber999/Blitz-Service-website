@@ -516,8 +516,10 @@ textarea {
 
 @media (max-width: 1023px) {
   body::before {
-    background-size: 94%;
-    opacity: 0.095;
+    background-position: center;
+    background-size: 70%;
+    opacity: 0.11;
+    filter: blur(0.8px);
   }
 
   .homepage-split-worlds {
