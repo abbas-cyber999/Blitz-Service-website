@@ -87,9 +87,9 @@ body::before {
   background-image: url("/images/logo-blitz.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 65%;
-  opacity: 0.08;
-  filter: blur(1.5px);
+  background-size: 70%;
+  opacity: 0.11;
+  filter: blur(0.8px);
 }
 
 body::after {
@@ -516,8 +516,8 @@ textarea {
 
 @media (max-width: 1023px) {
   body::before {
-    background-size: 90%;
-    opacity: 0.07;
+    background-size: 94%;
+    opacity: 0.095;
   }
 
   .homepage-split-worlds {
