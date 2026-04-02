@@ -1,26 +1,50 @@
+import Image from "next/image";
 import Link from "next/link";
 import { business } from "@/config/business";
 import { cn } from "@/lib/utils";
 
 type LogoMarkProps = {
   className?: string;
+  compact?: boolean;
+  priority?: boolean;
+  subtitleClassName?: string;
+  titleClassName?: string;
 };
 
-export function LogoMark({ className }: LogoMarkProps) {
+export function LogoMark({
+  className,
+  compact = false,
+  priority = false,
+  subtitleClassName,
+  titleClassName
+}: LogoMarkProps) {
   return (
     <Link href="/" className={cn("inline-flex items-center gap-3", className)}>
-      <div className="relative flex h-12 w-12 items-center justify-center rounded-full border border-brandGold/40 bg-gradient-to-br from-brandBlue to-brandBlueSoft shadow-card">
-        <span className="font-display text-2xl font-semibold text-white">B</span>
-        <span className="absolute -right-2 h-10 w-2 rotate-[32deg] rounded-full bg-brandGold" />
-      </div>
-      <div>
-        <p className="font-display text-2xl uppercase tracking-[0.12em] text-current">
-          Blitz
-        </p>
-        <p className="-mt-1 text-sm font-semibold uppercase tracking-[0.3em] text-brandGold">
-          Service GmbH
-        </p>
-      </div>
+      <span className="relative block h-12 w-[9.5rem] shrink-0 sm:h-14 sm:w-[11rem]">
+        <Image
+          src="/logos/blitz-logo.jpeg"
+          alt="Blitz Service GmbH Logo"
+          fill
+          priority={priority}
+          className="object-contain"
+          sizes="(max-width: 640px) 152px, 176px"
+        />
+      </span>
+      {!compact ? (
+        <span className="min-w-0">
+          <span className={cn("block text-lg font-semibold tracking-[-0.03em] text-current", titleClassName)}>
+            {business.name}
+          </span>
+          <span
+            className={cn(
+              "block text-xs tracking-[0.18em] text-[color:var(--foreground-muted)]",
+              subtitleClassName
+            )}
+          >
+            Reinigung · Umzug · Transport
+          </span>
+        </span>
+      ) : null}
       <span className="sr-only">{business.name}</span>
     </Link>
   );

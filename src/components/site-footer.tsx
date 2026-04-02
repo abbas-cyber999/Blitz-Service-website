@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Mail, MapPin, Phone } from "lucide-react";
+import { LogoMark } from "@/components/logo-mark";
 import { PrivacyPreferencesButton } from "@/components/privacy-preferences";
 import { business, fullAddress, phoneHref } from "@/config/business";
 import { navigation } from "@/data/site-content";
@@ -10,7 +11,7 @@ export function SiteFooter() {
     <footer className="border-t border-brandBlue/10 bg-brandBlue text-white">
       <Container className="grid gap-10 py-14 md:grid-cols-[1.25fr_0.8fr_1fr]">
         <div>
-          <p className="font-display text-3xl text-white">{business.name}</p>
+          <LogoMark compact className="text-white" />
           <p className="mt-4 max-w-md text-sm leading-7 text-white/72">
             Professionelle Reinigungsservices für Gebäude, Büros und gepflegte Immobilien.
             Ergänzend bieten wir Transport- und Umzugsleistungen an, wenn Kunden eine koordiniert

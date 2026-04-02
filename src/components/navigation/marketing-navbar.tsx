@@ -1,8 +1,9 @@
 import Link from "next/link";
 import { Bell, Phone } from "lucide-react";
+import { LogoMark } from "@/components/logo-mark";
 import { ButtonLink } from "@/components/ui/button-link";
 import { Container } from "@/components/ui/container";
-import { business, phoneHref } from "@/config/business";
+import { phoneHref } from "@/config/business";
 import { unreadNewsCount } from "@/data/news";
 
 const links = [
@@ -18,19 +19,7 @@ export function MarketingNavbar() {
   return (
     <header className="sticky top-0 z-40 border-b border-[var(--border)] bg-[color:var(--background)]/88 backdrop-blur-xl">
       <Container className="flex min-h-20 items-center justify-between gap-4">
-        <Link href="/" className="flex items-center gap-3">
-          <span className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-[color:var(--primary)] text-lg font-semibold text-white shadow-[var(--shadow-soft)]">
-            B
-          </span>
-          <div>
-            <p className="text-lg font-semibold tracking-[-0.03em] text-[color:var(--foreground)]">
-              {business.name}
-            </p>
-            <p className="text-xs tracking-[0.18em] text-[color:var(--foreground-muted)]">
-              Reinigung · Umzug · Transport
-            </p>
-          </div>
-        </Link>
+        <LogoMark compact priority className="min-w-0" />
 
         <nav className="hidden items-center gap-6 lg:flex">
           {links.map((item) => {
@@ -87,9 +76,9 @@ export function MarketingNavbar() {
             </span>
           </Link>
           <ButtonLink href="/contact" variant="secondary" className="hidden sm:inline-flex">
-            {business.ctaSecondary}
+            Kostenloses Angebot
           </ButtonLink>
-          <ButtonLink href="/contact">{business.ctaPrimary}</ButtonLink>
+          <ButtonLink href="/contact">Jetzt anfragen</ButtonLink>
         </div>
       </Container>
     </header>

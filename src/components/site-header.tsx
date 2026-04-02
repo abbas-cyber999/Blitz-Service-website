@@ -57,7 +57,11 @@ export function SiteHeader() {
         </Container>
       </div>
       <Container className="flex min-h-[84px] items-center justify-between gap-4">
-        <LogoMark className="text-white" />
+        <LogoMark
+          compact
+          priority
+          className="text-white"
+        />
         <nav className="hidden items-center gap-8 lg:flex" aria-label="Hauptnavigation">
           <div
             className="relative"

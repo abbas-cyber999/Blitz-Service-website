@@ -89,15 +89,7 @@ body {
 }
 
 body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -2;
-  pointer-events: none;
-  background: url("/images/branding/globe-watermark.svg") no-repeat 68% 12% / clamp(34rem, 54vw, 62rem);
-  opacity: 0.075;
-  filter: blur(2px);
-  transform: translate3d(0, 0, 0);
+  content: none;
 }
 
 body::after {
@@ -635,12 +627,6 @@ textarea {
 }
 
 @media (max-width: 1023px) {
-  body::before {
-    background-position: center 14%;
-    background-size: min(88vw, 34rem);
-    opacity: 0.06;
-  }
-
   .homepage-split-worlds {
     grid-template-columns: 1fr;
   }
@@ -669,10 +655,6 @@ textarea {
 }
 
 @media (min-width: 1024px) {
-  body::before {
-    background-position: 72% 10%;
-  }
-
   .homepage-split-worlds {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
