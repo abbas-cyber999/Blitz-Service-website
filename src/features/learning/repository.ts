@@ -1,10 +1,4 @@
-import {
-  CourseStatus,
-  ExerciseType,
-  ProgressStatus,
-  ReviewResult,
-  type Prisma
-} from "@prisma/client";
+import type { Prisma } from "@prisma/client";
 import { prisma } from "@/lib/prisma";
 import { arabicToEnglishCourse } from "@/features/learning/course-data";
 import type {
@@ -14,6 +8,28 @@ import type {
   LearnStep,
   StoredLessonProgress
 } from "@/features/learning/types";
+
+type ExerciseType =
+  | "MULTIPLE_CHOICE"
+  | "SENTENCE_ORDERING"
+  | "FILL_IN_THE_BLANK"
+  | "WRITE_TRANSLATION"
+  | "DIALOGUE_COMPLETION"
+  | "LISTENING_COMPREHENSION";
+
+const CourseStatus = {
+  PUBLISHED: "PUBLISHED"
+} as const;
+
+const ProgressStatus = {
+  IN_PROGRESS: "IN_PROGRESS",
+  COMPLETED: "COMPLETED"
+} as const;
+
+const ReviewResult = {
+  CORRECT: "CORRECT",
+  INCORRECT: "INCORRECT"
+} as const;
 
 function mapExerciseContent(type: ExerciseType, content: Prisma.JsonValue, options: Array<{
   id: string;
