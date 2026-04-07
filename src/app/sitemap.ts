@@ -1,9 +1,9 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://lingoria.com";
+  const baseUrl = "https://blitz-service-website.vercel.app";
 
-  return ["/", "/login", "/signup", "/onboarding", "/dashboard"].map((path) => ({
+  return ["/", "/reinigung", "/umzug", "/contact", "/bewertungen", "/news", "/impressum", "/datenschutz"].map((path) => ({
     url: `${baseUrl}${path}`,
     lastModified: new Date(),
     changeFrequency: "weekly",
