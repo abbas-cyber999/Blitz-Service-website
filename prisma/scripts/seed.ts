@@ -1,6 +1,6 @@
 import { CourseStatus, ExerciseType, LanguageDirection } from "@prisma/client";
-import { prisma } from "../src/lib/prisma";
-import { arabicToEnglishCourse } from "../src/features/learning/course-data";
+import { prisma } from "../../src/lib/prisma";
+import { arabicToEnglishCourse } from "../../src/features/learning/course-data";
 
 function slugify(value: string) {
   return value

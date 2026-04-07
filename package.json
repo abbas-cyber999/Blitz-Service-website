@@ -14,7 +14,7 @@
     "prisma:migrate": "npm run prisma:sync",
     "prisma:migrate:deploy": "npm run prisma:sync",
     "prisma:setup": "npm run prisma:sync && npm run prisma:seed",
-    "prisma:seed": "tsx prisma/seed.ts",
+    "prisma:seed": "tsx prisma/scripts/seed.ts",
     "prisma:studio": "prisma studio"
   },
   "dependencies": {
