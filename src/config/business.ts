@@ -18,7 +18,7 @@ export const business = {
   },
   phone: "02841 6004743",
   whatsappNumber: "+4917615130442",
-  email: "info@blitzservic.de",
+  email: "info@blitzservice.net",
   managingDirector: "Othman Hasan",
   registerCourt: "Amtsgericht Kleve",
   commercialRegisterNumber: "HRB 20203",

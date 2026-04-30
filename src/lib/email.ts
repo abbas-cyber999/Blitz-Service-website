@@ -10,7 +10,7 @@ type ContactEmailPayload = {
   message: string;
 };
 
-const COMPANY_EMAIL = "info@blitzservic.de";
+const COMPANY_EMAIL = "info@blitzservice.net";
 const WEBSITE_URL = "www.blitzservic.de";
 
 function formatTimestamp(date: Date) {
